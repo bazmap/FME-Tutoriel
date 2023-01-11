@@ -1,0 +1,6 @@
+lieu;jour_1_temp_moy;jour_1_espece_vue;jour_2_temp_moy;jour_2_espece_vue;jour_3_temp_moy;jour_3_espece_vue;jour_4_temp_moy;jour_4_espece_vue;jour_5_temp_moy;jour_5_espece_vue
+station 1;12;mésange,moineau,corneille;12;rouge gorge;13;rouge gorge;14;moineau,corneille;13;mésange,moineau,corneille,rouge gorge
+station 2;13;mésange,moineau,corneille,rouge gorge;13,5;moineau,corneille;14,5;mésange,moineau,corneille;14,5;mésange,moineau,corneille,rouge gorge;13;mésange,corneille
+station 3;12,5;mésange,corneille;13,5;mésange,moineau,corneille;13;mésange,moineau,corneille,rouge gorge;13,5;mésange;12;moineau
+station 4;11;rouge gorge;11,5;mésange,moineau,corneille,rouge gorge;12;rouge gorge;12,5;mésange,moineau,corneille,rouge gorge;11,5;rouge gorge
+station 5;14;moineau,corneille;15,5;corneille;16;moineau,corneille;16,5;rouge gorge;15;moineau,corneille
