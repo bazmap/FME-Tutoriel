@@ -1,0 +1,167 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\FME_2024.0.3\fme.exe" "C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Python\Tuto - Python.fmw"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON="print&lt;openparen&gt;&lt;apos&gt;Startup&lt;space&gt;Python&lt;space&gt;Script&lt;space&gt;--------------------------------------------&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;global_var&lt;space&gt;=&lt;space&gt;&lt;quote&gt;Startup&lt;space&gt;Python&lt;space&gt;Script&lt;quote&gt;&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;&lt;apos&gt;Variable&lt;space&gt;globale&lt;space&gt;&lt;u00e0&gt;&lt;space&gt;l&lt;backslash&gt;&lt;apos&gt;initialisation&lt;space&gt;:&lt;space&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;global_var&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;global_function&lt;openparen&gt;value&lt;closeparen&gt;:&lt;lf&gt;&lt;tab&gt;return&lt;space&gt;&lt;quote&gt;Ma&lt;space&gt;fonction&lt;space&gt;globale&lt;space&gt;retourne&lt;space&gt;:&lt;space&gt;&lt;quote&gt;&lt;space&gt;+&lt;space&gt;value&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;global_function&lt;openparen&gt;&lt;apos&gt;initialisation&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;&lt;apos&gt;Startup&lt;space&gt;Python&lt;space&gt;Script&lt;space&gt;--------------------------------------------&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;&lt;apos&gt;Startup&lt;space&gt;Python&lt;space&gt;Script&lt;space&gt;--------------------------------------------&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;import&lt;space&gt;tuto_module&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;&lt;apos&gt;Variable&lt;space&gt;module&lt;space&gt;&lt;u00e0&gt;&lt;space&gt;l&lt;backslash&gt;&lt;apos&gt;initialisation&lt;space&gt;:&lt;space&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;tuto_module.module_var&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;tuto_module.module_function&lt;openparen&gt;&lt;apos&gt;initialisation&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;&lt;apos&gt;Startup&lt;space&gt;Python&lt;space&gt;Script&lt;space&gt;--------------------------------------------&lt;apos&gt;&lt;closeparen&gt;"
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="436.1 71"
+#!   DOC_TOP_LEFT="600 -571"
+#!   END_PYTHON="print&lt;openparen&gt;&lt;apos&gt;Shutdown&lt;space&gt;Python&lt;space&gt;Script&lt;space&gt;--------------------------------------------&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;&lt;apos&gt;Variable&lt;space&gt;globale&lt;space&gt;avant&lt;space&gt;modification&lt;space&gt;:&lt;space&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;global_var&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;global_var&lt;space&gt;=&lt;space&gt;&lt;quote&gt;Shutdown&lt;space&gt;Python&lt;space&gt;Script&lt;quote&gt;&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;&lt;apos&gt;Variable&lt;space&gt;globale&lt;space&gt;apr&lt;u00e8&gt;s&lt;space&gt;modification&lt;space&gt;:&lt;space&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;global_var&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;global_function&lt;openparen&gt;&lt;apos&gt;Shutdown&lt;space&gt;Python&lt;space&gt;Script&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;&lt;apos&gt;Shutdown&lt;space&gt;Python&lt;space&gt;Script&lt;space&gt;--------------------------------------------&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;&lt;apos&gt;Shutdown&lt;space&gt;Python&lt;space&gt;Script&lt;space&gt;--------------------------------------------&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;import&lt;space&gt;tuto_module&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;&lt;apos&gt;Variable&lt;space&gt;module&lt;space&gt;dans&lt;space&gt;le&lt;space&gt;script&lt;space&gt;&lt;u00e0&gt;&lt;space&gt;la&lt;space&gt;fermeture&lt;space&gt;:&lt;space&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;tuto_module.module_var&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;tuto_module.module_function&lt;openparen&gt;&lt;apos&gt;Shutdown&lt;space&gt;Python&lt;space&gt;Script&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;print&lt;openparen&gt;&lt;apos&gt;Shutdown&lt;space&gt;Python&lt;space&gt;Script&lt;space&gt;--------------------------------------------&lt;apos&gt;&lt;closeparen&gt;"
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24220"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="41d81b80-d182-41c0-808b-9f8608337805"
+#!   FME_DOCUMENT_PRIORGUID="3ef8dcb0-15b0-4c3c-b87f-46cc8e9c8c9b"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.0.3.0 (20240603 - Build 24220 - WIN64)"
+#!   LAST_SAVE_DATE="2024-08-26T22:33:54"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="2"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="2"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="310"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-1575.02 490.63"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbXX0="
+#! >
+#! <PARAMETER_INFO>
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="PythonCreator"
+#!   VERSION="3"
+#!   POSITION="600 -500"
+#!   BOUNDING_RECT="600 -500 436.09999999999997 71"
+#!   ORDER="500000000000050"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23319"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE_NEW" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;class&lt;space&gt;FeatureCreator&lt;openparen&gt;object&lt;closeparen&gt;:&lt;lf&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;def&lt;space&gt;__init__&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;print&lt;openparen&gt;&lt;apos&gt;PythonCaller&lt;space&gt;--------------------------------------------&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;global&lt;space&gt;global_var&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;print&lt;openparen&gt;&lt;apos&gt;Variable&lt;space&gt;globale&lt;space&gt;avant&lt;space&gt;modification&lt;space&gt;:&lt;space&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;global_var&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;global_var&lt;space&gt;=&lt;space&gt;&lt;quote&gt;PythonCaller&lt;quote&gt;&lt;lf&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;print&lt;openparen&gt;&lt;apos&gt;Variable&lt;space&gt;globale&lt;space&gt;apr&lt;u00e8&gt;s&lt;space&gt;modification&lt;space&gt;:&lt;space&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;global_var&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;print&lt;openparen&gt;global_function&lt;openparen&gt;&lt;apos&gt;PythonCaller&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;print&lt;openparen&gt;&lt;apos&gt;PythonCaller&lt;space&gt;--------------------------------------------&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;print&lt;openparen&gt;&lt;apos&gt;PythonCaller&lt;space&gt;--------------------------------------------&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;import&lt;space&gt;tuto_module&lt;lf&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;print&lt;openparen&gt;&lt;apos&gt;Variable&lt;space&gt;module&lt;space&gt;dans&lt;space&gt;le&lt;space&gt;PythonCaller&lt;space&gt;:&lt;space&gt;&lt;apos&gt;&lt;space&gt;+&lt;space&gt;tuto_module.module_var&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;print&lt;openparen&gt;tuto_module.module_function&lt;openparen&gt;&lt;apos&gt;PythonCaller&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;print&lt;openparen&gt;&lt;apos&gt;PythonCaller&lt;space&gt;--------------------------------------------&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;def&lt;space&gt;input&lt;openparen&gt;self&lt;comma&gt;&lt;space&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;newFeature&lt;space&gt;=&lt;space&gt;fmeobjects.FMEFeature&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;self.pyoutput&lt;openparen&gt;newFeature&lt;closeparen&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;def&lt;space&gt;close&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;pass"/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="FeatureCreator"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCreator_2"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 310
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD MULTI_DEST
+MULTI_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)Tuto - Python.log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 2
+LOG_MAX_RECORDED_FEATURES 2
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.0.3.0 (20240603 - Build 24220 - WIN64)"
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+FME_BEGIN_PYTHON_ENC print<openparen><apos>Startup<space>Python<space>Script<space>--------------------------------------------<apos><closeparen><lf><lf><lf>global_var<space>=<space><quote>Startup<space>Python<space>Script<quote><lf><lf>print<openparen><apos>Variable<space>globale<space><u00e0><space>l<backslash><apos>initialisation<space>:<space><apos><space>+<space>global_var<closeparen><lf><lf>def<space>global_function<openparen>value<closeparen>:<lf><tab>return<space><quote>Ma<space>fonction<space>globale<space>retourne<space>:<space><quote><space>+<space>value<lf><lf>print<openparen>global_function<openparen><apos>initialisation<apos><closeparen><closeparen><lf><lf><lf>print<openparen><apos>Startup<space>Python<space>Script<space>--------------------------------------------<apos><closeparen><lf><lf><lf><lf>print<openparen><apos>Startup<space>Python<space>Script<space>--------------------------------------------<apos><closeparen><lf><lf>import<space>tuto_module<lf><lf>print<openparen><apos>Variable<space>module<space><u00e0><space>l<backslash><apos>initialisation<space>:<space><apos><space>+<space>tuto_module.module_var<closeparen><lf><lf>print<openparen>tuto_module.module_function<openparen><apos>initialisation<apos><closeparen><closeparen><lf><lf><lf>print<openparen><apos>Startup<space>Python<space>Script<space>--------------------------------------------<apos><closeparen>
+FME_END_PYTHON_ENC print<openparen><apos>Shutdown<space>Python<space>Script<space>--------------------------------------------<apos><closeparen><lf><lf>print<openparen><apos>Variable<space>globale<space>avant<space>modification<space>:<space><apos><space>+<space>global_var<closeparen><lf><lf>global_var<space>=<space><quote>Shutdown<space>Python<space>Script<quote><lf><lf>print<openparen><apos>Variable<space>globale<space>apr<u00e8>s<space>modification<space>:<space><apos><space>+<space>global_var<closeparen><lf><lf>print<openparen>global_function<openparen><apos>Shutdown<space>Python<space>Script<apos><closeparen><closeparen><lf><lf>print<openparen><apos>Shutdown<space>Python<space>Script<space>--------------------------------------------<apos><closeparen><lf><lf><lf><lf>print<openparen><apos>Shutdown<space>Python<space>Script<space>--------------------------------------------<apos><closeparen><lf><lf>import<space>tuto_module<lf><lf>print<openparen><apos>Variable<space>module<space>dans<space>le<space>script<space><u00e0><space>la<space>fermeture<space>:<space><apos><space>+<space>tuto_module.module_var<closeparen><lf><lf>print<openparen>tuto_module.module_function<openparen><apos>Shutdown<space>Python<space>Script<apos><closeparen><closeparen><lf><lf><lf>print<openparen><apos>Shutdown<space>Python<space>Script<space>--------------------------------------------<apos><closeparen>
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME Tuto - Python
+MACRO FME_VIEWER_APP fmedatainspector
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+FACTORY_DEF {*} CreationFactory    FACTORY_NAME { PythonCreator_2_Creator }    OUTPUT { FEATURE_TYPE _____CREATED_PYTHON__ }
+FACTORY_DEF {*} PythonFactory    FACTORY_NAME { PythonCreator_2 }    INPUT FEATURE_TYPE _____CREATED_PYTHON__    SYMBOL_NAME { FeatureCreator }    SOURCE_CODE { import<space>fmeobjects<lf><lf><lf>class<space>FeatureCreator<openparen>object<closeparen>:<lf><tab><lf><tab>def<space>__init__<openparen>self<closeparen>:<lf><tab><tab><lf><tab><tab>print<openparen><apos>PythonCaller<space>--------------------------------------------<apos><closeparen><lf><tab><tab><lf><tab><tab>global<space>global_var<lf><tab><tab>print<openparen><apos>Variable<space>globale<space>avant<space>modification<space>:<space><apos><space>+<space>global_var<closeparen><lf><lf><tab><tab>global_var<space>=<space><quote>PythonCaller<quote><lf><lf><tab><tab>print<openparen><apos>Variable<space>globale<space>apr<u00e8>s<space>modification<space>:<space><apos><space>+<space>global_var<closeparen><lf><lf><tab><tab>print<openparen>global_function<openparen><apos>PythonCaller<apos><closeparen><closeparen><lf><tab><tab><lf><tab><tab>print<openparen><apos>PythonCaller<space>--------------------------------------------<apos><closeparen><lf><tab><tab><lf><tab><tab><lf><tab><tab>print<openparen><apos>PythonCaller<space>--------------------------------------------<apos><closeparen><lf><lf><tab><tab>import<space>tuto_module<lf><lf><tab><tab>print<openparen><apos>Variable<space>module<space>dans<space>le<space>PythonCaller<space>:<space><apos><space>+<space>tuto_module.module_var<closeparen><lf><lf><tab><tab>print<openparen>tuto_module.module_function<openparen><apos>PythonCaller<apos><closeparen><closeparen><lf><lf><lf><tab><tab>print<openparen><apos>PythonCaller<space>--------------------------------------------<apos><closeparen><lf><lf><tab><tab><lf><tab>def<space>input<openparen>self<comma><space>feature<closeparen>:<lf><tab><tab>newFeature<space>=<space>fmeobjects.FMEFeature<openparen><closeparen><lf><lf><tab><tab>self.pyoutput<openparen>newFeature<closeparen><lf><tab><tab><lf><tab>def<space>close<openparen>self<closeparen>:<lf><tab><tab>pass }    OUTPUT { PYOUTPUT FEATURE_TYPE PythonCreator_2_OUTPUT        @SupplyAttributes(?,fme_feature_type,PythonCreator_2)         }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCreator_2 OUTPUT Transformer Output Nuker"   INPUT FEATURE_TYPE PythonCreator_2_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
