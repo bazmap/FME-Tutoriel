@@ -1,4 +1,4 @@
-﻿colonne_B1;colonne_B2;colonne_X
-1;AA;x1
-2;BB;x2
-3;CC;x3
+﻿colonne_A1;colonne_A2;colonne_X;colonne_B1;colonne_B2
+;;x1;1;AA
+;;x2;2;BB
+;;x3;3;CC

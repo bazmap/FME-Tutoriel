@@ -1,0 +1,1005 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\FME_2024.0.3\fme.exe" "C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Transfert de fichiers\transfert_fichier.fmw"
+#          --param_dest "$(FME_MF_DIR)media_export"
+#          --SourceDataset_DATAFILE "$(FME_MF_DIR)media\*"
+#          --FEATURE_TYPES ""
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="2300.96 365"
+#!   DOC_TOP_LEFT="699 35"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24220"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="f54e372a-a850-4886-bc6b-5d572f62afd4"
+#!   FME_DOCUMENT_PRIORGUID="4f75e80b-d749-4266-a6aa-2e8830f84295,bf6d3d62-d5ff-4adb-a959-fe52b23aff94,5b75e9ce-60a8-4043-aaab-c33005a3971e,60748840-5e2d-46b0-855f-acce3c3324a3,058f41ed-cc40-4211-be08-c7a8e74c66af"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.0.3.0 (20240603 - Build 24220 - WIN64)"
+#!   LAST_SAVE_DATE="2024-08-27T16:07:57"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="1"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="1"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="37"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-598.69 1296.07"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="95"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="DATAFILE"
+#!   DATASET="$(SourceDataset_DATAFILE)"
+#!   KEYWORD="DATAFILE_2"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="false"
+#!   EXPOSABLE_ATTRS="data_file_data buffer data_file_eol char(10) data_file_line_length number(6,0) data_file_line_number number(6,0) data_file_type char(64) fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) fme_type char(50) multi_reader_full_id number(11,0) multi_reader_id number(11,0) multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE="FEATURE_TYPES_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24220"
+#!   NAME="Répertoire source"
+#!   COORDSYS=""
+#!   FEATURE_TYPES="$(FEATURE_TYPES)"
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE=""
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Data file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_AUTO_EXPOSE"
+#!   VALUE="data_file_data buffer"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the Data file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="DATAFILE"
+#!   DATASET="$(param_dest)"
+#!   KEYWORD="DATAFILE_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="60"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="data_file_overwrite_file YES data_file_end_of_line System data_file_write_last_eol YES data_file_write_utf8_bom YES data_file_encoding fme-binary"
+#!   DEFLINE_ATTRS="false"
+#!   EXPOSABLE_ATTRS="data_file_data buffer data_file_eol char(10) fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) fme_type char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP data_layer_group data_file_overwrite_file%data_file_end_of_line%data_file_write_last_eol%data_advanced_group File&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP data_advanced_group data_file_write_utf8_bom%data_file_encoding Advanced&quot; &quot;&quot; &quot;GUI CHOICE data_file_overwrite_file YES%NO Overwrite Existing File&quot; YES &quot;GUI CHOICE data_file_end_of_line System%Windows%Unix%Macintosh%Source%None Line Termination&quot; System &quot;GUI CHOICE data_file_write_last_eol YES%NO Write Last Line Terminator&quot; YES &quot;GUI CHOICE data_file_write_utf8_bom YES%NO Write UTF Byte Order Mark&quot; YES &quot;GUI STRING_OR_ENCODING data_file_encoding fme-system%fme-binary%* Character Encoding&quot; fme-binary "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="24220"
+#!   NAME="Répertoire destination [DATAFILE]"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="text/plain"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Data file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_AUTO_EXPOSE"
+#!   VALUE="data_file_data buffer"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the Data file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="DATAFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="DATAFILE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="DATAFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="data_file_none"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="DATAFILE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="DATAFILE"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="10"
+#!   FEAT_GEOMTYPE="data_file_none"
+#!   POSITION="698.99999999999989 100"
+#!   BOUNDING_RECT="698.99999999999989 100 501 65"
+#!   ORDER="500000000000017"
+#!   COLLAPSED="true"
+#!   KEYWORD="DATAFILE_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="true"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="data_file_data" ATTR_TYPE="buffer"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="File100"
+#!   FEATURE_TYPE_NAME="@Value(fme_feature_type)"
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="11"
+#!   FEAT_NAMEDGEOMTYPE=""
+#!   POSITION="2199 100"
+#!   BOUNDING_RECT="2199 100 701 65"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="DATAFILE_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <DEFLINE_PARM PARM_NAME="data_advanced_group" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <DEFLINE_PARM PARM_NAME="data_file_encoding" PARM_VALUE="fme-binary"/>
+#!     <DEFLINE_PARM PARM_NAME="data_file_end_of_line" PARM_VALUE="System"/>
+#!     <DEFLINE_PARM PARM_NAME="data_file_overwrite_file" PARM_VALUE="YES"/>
+#!     <DEFLINE_PARM PARM_NAME="data_file_write_last_eol" PARM_VALUE="YES"/>
+#!     <DEFLINE_PARM PARM_NAME="data_file_write_utf8_bom" PARM_VALUE="YES"/>
+#!     <DEFLINE_PARM PARM_NAME="data_layer_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="DATAFILE_2"
+#!   OVERRIDE="-DATAFILE_2_DATASET"
+#!   DATASET="DATAFILE_2/*"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="DATAFILE_1"
+#!   OVERRIDE="-DATAFILE_1_DATASET"
+#!   DATASET="DATAFILE_1/media_export"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME param_dest Emplacement des fichiers finaux"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)media_export"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_DATAFILE INCLUDE_WEB_BROWSER%All_files(*)|* Source Data File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)media\*"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES_ENCODED FEATURE_TYPES C:&lt;backslash&gt;Users&lt;backslash&gt;abazin&lt;backslash&gt;Documents&lt;backslash&gt;1&lt;space&gt;-&lt;space&gt;BG&lt;backslash&gt;FME&lt;backslash&gt;Formation&lt;backslash&gt;Tutoriels&lt;backslash&gt;Tuto&lt;space&gt;-&lt;space&gt;Transfert&lt;space&gt;de&lt;space&gt;fichiers&lt;backslash&gt;media&lt;backslash&gt;*,_FORMAT_OVERRIDE_,DATAFILE,_DATASET_OVERRIDE_,SourceDataset_DATAFILE,FME_GROUP_NAMED2,,READ_WHOLE_FILE_AT_ONCE,YES,READ_BOTTOM_UP,NO,SKIP_LINES,0,SKIP_FOOTER,0,FME_GROUP_NAMED3,,ENCODING,fme-binary,NETWORK_AUTHENTICATION,,COORDSYS,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_CLOSED,_MERGE_SCHEMAS,YES,DYNAMIC_WORKFLOW,yes,GROUP_BY_DATASET,No,_MERGE_SCHEMAS,YES Feature Types to Read"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiIkKEZNRV9NRl9ESVIpbWVkaWFfZXhwb3J0IiwiaXRlbXNUb1NlbGVjdCI6ImZvbGRlcnMiLCJuYW1lIjoicGFyYW1fZGVzdCIsInByb21wdCI6IkVtcGxhY2VtZW50IGRlcyBmaWNoaWVycyBmaW5hdXgiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJzaG93UHJvbXB0Ijp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUiltZWRpYVxcKiIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJpbmNsdWRlV2ViQnJvd3NlciI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IlNvdXJjZURhdGFzZXRfREFUQUZJTEUiLCJwcm9tcHQiOiJTb3VyY2UgRGF0YSBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiY2hvaWNlU2V0dGluZ3MiOnsiY2hvaWNlU2V0IjoicmVhZGVyVmFsdWVzIiwiY29uZmlndXJhdGlvbiI6W3sibmFtZSI6Il9EQVRBU0VUX09WRVJSSURFXyIsInZhbHVlIjoiU291cmNlRGF0YXNldF9EQVRBRklMRSJ9LHsibmFtZSI6IkZNRV9HUk9VUF9OQU1FRDIiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlJFQURfV0hPTEVfRklMRV9BVF9PTkNFIiwidmFsdWUiOiJZRVMifSx7Im5hbWUiOiJSRUFEX0JPVFRPTV9VUCIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJTS0lQX0xJTkVTIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiU0tJUF9GT09URVIiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJGTUVfR1JPVVBfTkFNRUQzIiwidmFsdWUiOiIifSx7Im5hbWUiOiJFTkNPRElORyIsInZhbHVlIjoiZm1lLWJpbmFyeSJ9LHsibmFtZSI6Ik5FVFdPUktfQVVUSEVOVElDQVRJT04iLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkNPT1JEU1lTIiwidmFsdWUiOiIifSx7Im5hbWUiOiJTVEFSVF9GRUFUVVJFIiwidmFsdWUiOiIifSx7Im5hbWUiOiJNQVhfRkVBVFVSRVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1BWF9GRUFUVVJFU19QRVJfRkVBVFVSRV9UWVBFIiwidmFsdWUiOiIifSx7Im5hbWUiOiJNSU5fRkVBVFVSRVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkVYUE9TRV9BVFRSU19HUk9VUCIsInZhbHVlIjoiRk1FX0RJU0NMT1NVUkVfQ0xPU0VEIn0seyJuYW1lIjoiX01FUkdFX1NDSEVNQVMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IkRZTkFNSUNfV09SS0ZMT1ciLCJ2YWx1ZSI6InllcyJ9LHsibmFtZSI6IkdST1VQX0JZX0RBVEFTRVQiLCJ2YWx1ZSI6Ik5vIn0seyJuYW1lIjoiX01FUkdFX1NDSEVNQVMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IlJFVFJJRVZFX0FMTF9UQUJMRV9OQU1FUyIsInZhbHVlIjoiWUVTIn1dLCJkYXRhc2V0IjoiQzo8YmFja3NsYXNoPlVzZXJzPGJhY2tzbGFzaD5hYmF6aW48YmFja3NsYXNoPkRvY3VtZW50czxiYWNrc2xhc2g+MTxzcGFjZT4tPHNwYWNlPkJHPGJhY2tzbGFzaD5GTUU8YmFja3NsYXNoPkZvcm1hdGlvbjxiYWNrc2xhc2g+VHV0b3JpZWxzPGJhY2tzbGFzaD5UdXRvPHNwYWNlPi08c3BhY2U+VHJhbnNmZXJ0PHNwYWNlPmRlPHNwYWNlPmZpY2hpZXJzPGJhY2tzbGFzaD5tZWRpYTxiYWNrc2xhc2g+KiIsImZvcm1hdCI6IkRBVEFGSUxFIiwidmFsdWVzVG9Vc2UiOiJmZWF0dXJlVHlwZXMifSwiZGVmYXVsdFZhbHVlIjoiIiwibmFtZSI6IkZFQVRVUkVfVFlQRVMiLCJwcm9tcHQiOiJGZWF0dXJlIFR5cGVzIHRvIFJlYWQiLCJyZXF1aXJlZCI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJsaXN0Ym94IiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZFBhcnRzIn1dfQ=="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="param_dest" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)media_export"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI DIRNAME param_dest Emplacement des fichiers finaux"
+#! />
+#!     <INFO NAME="SourceDataset_DATAFILE" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)media\*"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_DATAFILE INCLUDE_WEB_BROWSER%All_files(*)|* Source Data File(s):"
+#! />
+#!     <INFO NAME="FEATURE_TYPES" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES_ENCODED FEATURE_TYPES C:&lt;backslash&gt;Users&lt;backslash&gt;abazin&lt;backslash&gt;Documents&lt;backslash&gt;1&lt;space&gt;-&lt;space&gt;BG&lt;backslash&gt;FME&lt;backslash&gt;Formation&lt;backslash&gt;Tutoriels&lt;backslash&gt;Tuto&lt;space&gt;-&lt;space&gt;Transfert&lt;space&gt;de&lt;space&gt;fichiers&lt;backslash&gt;media&lt;backslash&gt;*,_FORMAT_OVERRIDE_,DATAFILE,_DATASET_OVERRIDE_,SourceDataset_DATAFILE,FME_GROUP_NAMED2,,READ_WHOLE_FILE_AT_ONCE,YES,READ_BOTTOM_UP,NO,SKIP_LINES,0,SKIP_FOOTER,0,FME_GROUP_NAMED3,,ENCODING,fme-binary,NETWORK_AUTHENTICATION,,COORDSYS,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_CLOSED,_MERGE_SCHEMAS,YES,DYNAMIC_WORKFLOW,yes,GROUP_BY_DATASET,No,_MERGE_SCHEMAS,YES Feature Types to Read"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="4"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Lecture de tous les fichiers du répertoire&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="700 400"
+#!   TOP_LEFT="700 400"
+#!   BOTTOM_RIGHT="1299.9566714417144 244.99874998749988"
+#!   BOUNDING_RECT="700 400 599.95667144171443 155.00125001250012"
+#!   ORDER="500000000000018"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{6d90636f-e4c6-4e0a-8a33-eec9599df3ab}"
+#!   COLOUR="0.59999999999999998,0.47058823529411764,0,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="10"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="5"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Ecriture dynamique de tous les éléments qui arrivent&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2200 400"
+#!   TOP_LEFT="2200 400"
+#!   BOTTOM_RIGHT="2999.9586714617144 244.99874998749988"
+#!   BOUNDING_RECT="2200 400 799.95867146171463 155.00125001250012"
+#!   ORDER="500000000000019"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{f2ed1a49-6100-4753-954f-c5a08f910348}"
+#!   COLOUR="0.59999999999999998,0.47058823529411764,0,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="11"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="10"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 37
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_DATAFILE_2,DATAFILE_IN_FME_GROUP_NAMED2_DATAFILE_2,DATAFILE_IN_READ_WHOLE_FILE_AT_ONCE_DATAFILE_2,DATAFILE_IN_READ_BOTTOM_UP_DATAFILE_2,DATAFILE_IN_SKIP_LINES_DATAFILE_2,DATAFILE_IN_SKIP_FOOTER_DATAFILE_2,DATAFILE_IN_FME_GROUP_NAMED3_DATAFILE_2,DATAFILE_IN_ENCODING_DATAFILE_2,DATAFILE_IN_NETWORK_AUTHENTICATION_DATAFILE_2,DestDataset_DATAFILE_1,DATAFILE_OUT_FME_GROUP_NAMED3_DATAFILE_1,DATAFILE_OUT_MIME_TYPE_DATAFILE_1
+# ============================================================================
+DEFAULT_MACRO param_dest $(FME_MF_DIR)media_export
+
+DEFAULT_MACRO SourceDataset_DATAFILE $(FME_MF_DIR)media\*
+
+DEFAULT_MACRO FEATURE_TYPES 
+
+# ============================================================================
+INCLUDE [ if {{$(param_dest$encode)} == {}} { puts_real {Parameter 'param_dest' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_DATAFILE$encode)} == {}} { puts_real {Parameter 'SourceDataset_DATAFILE' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} DATAFILE
+MULTI_READER_KEYWORD{0} DATAFILE_2
+MULTI_READER_GEN_DIRECTIVES{0} READ_BOTTOM_UP,NO,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_CLOSED,_MERGE_SCHEMAS,YES,DYNAMIC_WORKFLOW,yes,SKIP_LINES,0,SKIP_FOOTER,0,GROUP_BY_DATASET,No,ENCODING,fme-binary,DATAFILE_EXPOSE_FORMAT_ATTRS,,READ_WHOLE_FILE_AT_ONCE,YES
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD PRIMARY_DEST
+PRIMARY_DEST_DATASET_ORDER BY_ID
+PRIMARY_DEST_FIRST_WRITER_ID 0
+PRIMARY_DEST_TYPE{0} DATAFILE
+PRIMARY_DEST_KEYWORD{0} DATAFILE_1
+PRIMARY_DEST_GEN_DIRECTIVES{0} WRITE_UTF8_BOM,YES,OVERWRITE_FILE,YES,WRITE_LAST_EOL,YES,ENCODING,fme-binary,COORDINATE_SYSTEM_GRANULARITY,FEATURE,MIME_TYPE,text<solidus>plain,DESTINATION_DATASETTYPE_VALIDATION,Yes,END_OF_LINE,System,ADD_WRITER_NEXT_ACTION,automatic
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "DATAFILE_2"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER DATAFILE DATAFILE_2
+DATAFILE_2_DYNAMIC_WORKFLOW YES
+# =====================================================================
+# The following GUI line prompts for a file to be used as the source
+# data file. The user input is stored in a macro, which is then
+# used to define the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_DATAFILE_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER DATAFILE DATAFILE_2
+DEFAULT_MACRO SourceDataset_DATAFILE_2 $(SourceDataset_DATAFILE)
+GUI MULTIFILE SourceDataset_DATAFILE_2 All_files(*)|* Source Data File(s):
+DEFAULT_MACRO DATAFILE_IN_GROUP_BY_DATASET_DATAFILE_2 No
+DATAFILE_2_GROUP_BY_DATASET "$(DATAFILE_IN_GROUP_BY_DATASET_DATAFILE_2)"
+DEFAULT_MACRO DATAFILE_IN_FME_GROUP_NAMED2_DATAFILE_2 
+GUI OPTIONAL DISCLOSUREGROUP DATAFILE_IN_FME_GROUP_NAMED2_DATAFILE_2 DATAFILE_IN_READ_WHOLE_FILE_AT_ONCE_DATAFILE_2%DATAFILE_IN_READ_BOTTOM_UP_DATAFILE_2%DATAFILE_IN_SKIP_LINES_DATAFILE_2%DATAFILE_IN_SKIP_FOOTER_DATAFILE_2 Reader Parameters
+DEFAULT_MACRO DATAFILE_IN_READ_WHOLE_FILE_AT_ONCE_DATAFILE_2 YES
+DATAFILE_2_READ_WHOLE_FILE_AT_ONCE "$(DATAFILE_IN_READ_WHOLE_FILE_AT_ONCE_DATAFILE_2)"
+GUI ACTIVECHOICE DATAFILE_IN_READ_WHOLE_FILE_AT_ONCE_DATAFILE_2 YES,DATAFILE_IN_READ_BOTTOM_UP_DATAFILE_2,DATAFILE_IN_SKIP_LINES_DATAFILE_2,DATAFILE_IN_SKIP_FOOTER_DATAFILE_2%NO Read Whole File at Once:
+GUI LOOKUP DATAFILE_IN_READ_BOTTOM_UP_DATAFILE_2 <Unused>,NO 
+DEFAULT_MACRO DATAFILE_IN_READ_BOTTOM_UP_DATAFILE_2 NO
+DATAFILE_2_READ_BOTTOM_UP "$(DATAFILE_IN_READ_BOTTOM_UP_DATAFILE_2)"
+GUI CHOICE DATAFILE_IN_READ_BOTTOM_UP_DATAFILE_2 Yes%No Read Bottom Up:
+GUI LOOKUP DATAFILE_IN_SKIP_LINES_DATAFILE_2 <Unused>,0 
+DEFAULT_MACRO DATAFILE_IN_SKIP_LINES_DATAFILE_2 0
+DATAFILE_2_SKIP_LINES "$(DATAFILE_IN_SKIP_LINES_DATAFILE_2)"
+GUI OPTIONAL INTEGER DATAFILE_IN_SKIP_LINES_DATAFILE_2 Number of Lines to Skip:
+GUI LOOKUP DATAFILE_IN_SKIP_FOOTER_DATAFILE_2 <Unused>,0 
+DEFAULT_MACRO DATAFILE_IN_SKIP_FOOTER_DATAFILE_2 0
+DATAFILE_2_SKIP_FOOTER "$(DATAFILE_IN_SKIP_FOOTER_DATAFILE_2)"
+GUI OPTIONAL INTEGER DATAFILE_IN_SKIP_FOOTER_DATAFILE_2 Number of Footer Lines to Skip:
+DEFAULT_MACRO DATAFILE_IN_FME_GROUP_NAMED3_DATAFILE_2 
+GUI OPTIONAL DISCLOSUREGROUP DATAFILE_IN_FME_GROUP_NAMED3_DATAFILE_2 DATAFILE_IN_ENCODING_DATAFILE_2 File Contents
+# =====================================================================
+# Allows to force the encoding of source data file
+DEFAULT_MACRO DATAFILE_IN_ENCODING_DATAFILE_2 fme-binary
+DATAFILE_2_ENCODING "$(DATAFILE_IN_ENCODING_DATAFILE_2)"
+GUI STRING_OR_ENCODING DATAFILE_IN_ENCODING_DATAFILE_2 fme-system%fme-binary%* Character Encoding:
+DEFAULT_MACRO DATAFILE_IN_EXPOSE_ATTRS_GROUP_DATAFILE_2 FME_DISCLOSURE_CLOSED
+DATAFILE_2_EXPOSE_ATTRS_GROUP "$(DATAFILE_IN_EXPOSE_ATTRS_GROUP_DATAFILE_2)"
+# ===========================================================================
+DEFAULT_MACRO DATAFILE_IN_NETWORK_AUTHENTICATION_DATAFILE_2 
+DATAFILE_2_NETWORK_AUTHENTICATION "$(DATAFILE_IN_NETWORK_AUTHENTICATION_DATAFILE_2)"
+GUI OPTIONAL AUTHENTICATOR DATAFILE_IN_NETWORK_AUTHENTICATION_DATAFILE_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO DATAFILE_IN_ATTRIBUTE_READING_DATAFILE_2 ALL
+DATAFILE_2_ATTRIBUTE_READING "$(DATAFILE_IN_ATTRIBUTE_READING_DATAFILE_2)"
+# ============================================================================
+DATAFILE_2_GENERATE_FME_BUILD_NUM 24220
+DATAFILE_2_DATASET "$(SourceDataset_DATAFILE_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "DATAFILE_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER DATAFILE DATAFILE_1
+# =====================================================================
+# The following GUI line prompts for a folder to be used as the
+# the destination for the data files. The user input is stored in
+# a macro, which is then used to define the dataset to be written.
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_DATAFILE_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER DATAFILE DATAFILE_1
+DEFAULT_MACRO DestDataset_DATAFILE_1 $(param_dest)
+GUI DIRNAME DestDataset_DATAFILE_1 Destination Data File Folder:
+DATAFILE_1_PLUGIN_MAX_CHANNELS 100
+# =====================================================================
+# The following GUI line prompts for the overwrite flag. The default is
+# YES. Possible values are YES or NO. Any value other than NO or
+# no is interpreted as YES.
+DEFAULT_MACRO DATAFILE_OUT_OVERWRITE_FILE_DATAFILE_1 YES
+DATAFILE_1_OVERWRITE_FILE "$(DATAFILE_OUT_OVERWRITE_FILE_DATAFILE_1)"
+# =====================================================================
+# Set the type of encoding for the output file
+# =====================================================================
+# Set line termination character
+DEFAULT_MACRO DATAFILE_OUT_END_OF_LINE_DATAFILE_1 System
+DATAFILE_1_END_OF_LINE "$(DATAFILE_OUT_END_OF_LINE_DATAFILE_1)"
+# =====================================================================
+# Set whether to write the last line termination character
+DEFAULT_MACRO DATAFILE_OUT_WRITE_LAST_EOL_DATAFILE_1 YES
+DATAFILE_1_WRITE_LAST_EOL "$(DATAFILE_OUT_WRITE_LAST_EOL_DATAFILE_1)"
+DEFAULT_MACRO DATAFILE_OUT_ENCODING_DATAFILE_1 fme-binary
+DATAFILE_1_ENCODING "$(DATAFILE_OUT_ENCODING_DATAFILE_1)"
+# =====================================================================
+# The following GUI line prompts for the overwrite flag. The default is
+# YES. Possible values are YES or NO. Any value other than NO or
+# no is interpreted as YES.
+DEFAULT_MACRO DATAFILE_OUT_WRITE_UTF8_BOM_DATAFILE_1 YES
+DATAFILE_1_WRITE_UTF8_BOM "$(DATAFILE_OUT_WRITE_UTF8_BOM_DATAFILE_1)"
+DEFAULT_MACRO DATAFILE_OUT_FME_GROUP_NAMED3_DATAFILE_1 
+GUI OPTIONAL DISCLOSUREGROUP DATAFILE_OUT_FME_GROUP_NAMED3_DATAFILE_1 DATAFILE_OUT_MIME_TYPE_DATAFILE_1 FME Server Parameters
+# =====================================================================
+# Set the mime type. Note -- it is actually only used inside of workspaces
+# as a FORMAT_PARAMETER which even then is parsed only by the FME Server
+# Repository Manager
+DEFAULT_MACRO DATAFILE_OUT_MIME_TYPE_DATAFILE_1 text/plain
+DATAFILE_1_MIME_TYPE "$(DATAFILE_OUT_MIME_TYPE_DATAFILE_1)"
+GUI STRING_OR_CHOICE DATAFILE_OUT_MIME_TYPE_DATAFILE_1 application/json%application/octet-stream%application/xml%application/x-www-form-urlencoded%image/gif%image/jpeg%image/png%image/tiff%multipart/mixed%multipart/alternative%multipart/related%text/html%text/plain%text/xml MIME Type:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO DATAFILE_OUT_DESTINATION_DATASETTYPE_VALIDATION_DATAFILE_1 Yes
+DATAFILE_1_DESTINATION_DATASETTYPE_VALIDATION "$(DATAFILE_OUT_DESTINATION_DATASETTYPE_VALIDATION_DATAFILE_1)"
+DEFAULT_MACRO DATAFILE_OUT_COORDINATE_SYSTEM_GRANULARITY_DATAFILE_1 FEATURE
+DATAFILE_1_COORDINATE_SYSTEM_GRANULARITY "$(DATAFILE_OUT_COORDINATE_SYSTEM_GRANULARITY_DATAFILE_1)"
+# ============================================================================
+DATAFILE_1_GENERATE_FME_BUILD_NUM 24220
+DATAFILE_1_DATASET "$(DestDataset_DATAFILE_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)transfert_fichier.log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 1
+LOG_MAX_RECORDED_FEATURES 1
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.0.3.0 (20240603 - Build 24220 - WIN64)"
+DEFAULT_MACRO DATASET_KEYWORD_DATAFILE_2 DATAFILE_2
+DEFAULT_MACRO DATASET_KEYWORD_DATAFILE_1 DATAFILE_1
+# -------------------------------------------------------------------------
+
+DATAFILE_2_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+DATAFILE_2_FEATURE_TYPES $(FEATURE_TYPES)
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME transfert_fichier
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+DATAFILE_2_DEF DATAFILE
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_DATAFILE_2)   INPUT FEATURE_TYPE *    ROUTE DATAFILE DATAFILE_2::DATAFILE multi_reader_keyword,$(DATASET_KEYWORD_DATAFILE_2) TO FME_GENERIC ::DATAFILE ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+DATAFILE_2_MERGE_DEF DATAFILE_2::DATAFILE GLOB *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "DATAFILE_DATAFILE_2 Splitter"    INPUT FEATURE_TYPE DATAFILE    OUTPUT FEATURE_TYPE DATAFILE_DATAFILE_2
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC DATAFILE_DATAFILE_2 TO DATAFILE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>File100<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>fme_feature_type<lt>closeparen<gt><comma>File100<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+DATAFILE_1_DEF File100   data_file_overwrite_file     YES   data_file_end_of_line        System   data_file_write_last_eol     YES   data_file_write_utf8_bom     YES   data_file_encoding           fme-binary

@@ -1,0 +1,3 @@
+Transformer Name,Transformer Type,Document Title,Upgrade Status,Original Version,Destination Version,Change Log,Notes
+AttributeSplitter_3,AttributeSplitter,Main,Successfully upgraded,4,5,Upgrade AttributeSplitter from Version 4 to Version 5;AttributeSplitter Change Log;Version 5;Added Bulk Mode support for 'NsNs...' formats,N/A
+AttributeSplitter_2,AttributeSplitter,Main,Successfully upgraded,4,5,Upgrade AttributeSplitter from Version 4 to Version 5;AttributeSplitter Change Log;Version 5;Added Bulk Mode support for 'NsNs...' formats,N/A
