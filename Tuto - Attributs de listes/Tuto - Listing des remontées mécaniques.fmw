@@ -1,0 +1,1439 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\FME_2024.0.3\fme.exe" "C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Attributs de listes\Tuto - Listing des remontées mécaniques.fmw"
+#          --SourceDataset_OGCGEOPACKAGE "$(FME_MF_DIR_USERTYPED)\data_liste.gpkg"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION="&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le but de ce workspace est de récupérer pour chaque commune de Haute-Savoie, une liste des remontées mécaniques qui sont présentes et de réaliser quelques statistiques dessus.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Les données sont issues d&apos;un geopackage.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Aucune sortie n&apos;est prévue dans le script.&lt;/p&gt;"
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="7136 1465"
+#!   DOC_TOP_LEFT="0 -1165"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24220"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="f74b111a-ff5a-4285-9401-6cb991930b53"
+#!   FME_DOCUMENT_PRIORGUID="2e4bddd3-3685-4f9d-93de-96f23d119292,caa42b36-a0f3-414e-8d9f-749e6db26df1,5df10c2d-c6c0-4fd9-b2ec-c86ad771f82b,6592ed6c-a345-487c-bfde-c3ea49d24506,00a4b889-cf91-4742-9a3c-3969a362256a"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.0.3.0 (20240603 - Build 24220 - WIN64)"
+#!   LAST_SAVE_DATE="2024-08-28T15:05:18"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="2"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="2"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="312"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE="Tuto - Listing des remontées mécaniques"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-592.538 1741.09"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="77"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="OGCGEOPACKAGE"
+#!   DATASET="$(SourceDataset_OGCGEOPACKAGE)"
+#!   KEYWORD="OGCGEOPACKAGE_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="geopackage_type {FME_GEN_GEOMETRY}"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename text(50) fme_color text(50) fme_dataset text(50) fme_feature_type text(50) fme_fill_color text(50) fme_geometry text(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string text(50) fme_type text(50) geopackage_type text(255) multi_reader_full_id mediumint multi_reader_id mediumint multi_reader_keyword text(50) multi_reader_type text(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP geopackage_reader_table_group geopackage_where_clause Table&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_ENCODED geopackage_where_clause WHERE Clause&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES="Indexed PrimaryKey"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24220"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="OGCGEOPACKAGE_OUT_TRANSACTION_SIZE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the GeoPackage file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the GeoPackage file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="blob(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="blob(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="tinyint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mediumint"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mediumint"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multipoint"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multicurve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multilinestring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_curve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_linestring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_compoundcurve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_circularstring"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multisurface"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_surface"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multilinestring"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multisurface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multilinestring"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multipolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multisurface"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_surface"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_curvepolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_curvepolygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_curvepolygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_geometrycollection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_geometry"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="remontees_mecaniques"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_NAMEDGEOMTYPE="geom,geopackage_linestring"
+#!   POSITION="0 -1100"
+#!   BOUNDING_RECT="0 -1100 633 65"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCGEOPACKAGE_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="nom" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="type" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="capacite_horaire" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="capacite_vehicule" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id_0" ATTR_TYPE="int,PrimaryKey" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_reader_table_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_where_clause" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="communes"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="3"
+#!   FEAT_NAMEDGEOMTYPE="geom,geopackage_polygon"
+#!   POSITION="0 -600"
+#!   BOUNDING_RECT="0 -600 653.13153131531317 65"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCGEOPACKAGE_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="nom" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="population" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="code_postal" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="code_insee" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id_0" ATTR_TYPE="int,PrimaryKey" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_reader_table_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_where_clause" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="OGCGEOPACKAGE_1"
+#!   OVERRIDE="-OGCGEOPACKAGE_1_DATASET"
+#!   DATASET="OGCGEOPACKAGE_1/data_liste.gpkg"
+#! />
+#! </READER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_OGCGEOPACKAGE INCLUDE_WEB_BROWSER%GeoPackage_Files(*.gpkg)|*.gpkg|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* GeoPackage File:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)\data_liste.gpkg"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUl9VU0VSVFlQRUQpXFxkYXRhX2xpc3RlLmdwa2ciLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6Ikdlb1BhY2thZ2UgRmlsZXMiLCJmaWx0ZXIiOlsiKi5ncGtnIl19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9PR0NHRU9QQUNLQUdFIiwicHJvbXB0IjoiR2VvUGFja2FnZSBGaWxlOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_OGCGEOPACKAGE" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)\data_liste.gpkg"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_OGCGEOPACKAGE INCLUDE_WEB_BROWSER%GeoPackage_Files(*.gpkg)|*.gpkg|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* GeoPackage File:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="9"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Compter le nombre de RM&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1800 -300"
+#!   TOP_LEFT="1800 -300"
+#!   BOTTOM_RIGHT="2235.9901880268803 -301"
+#!   BOUNDING_RECT="1800 -300 435.99018802688028 1"
+#!   ORDER="500000000000003"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{45845b6a-ebc4-42b7-8f44-b3d362190906}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="7"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="15"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Trier les éléments d&apos;une liste&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="3900 -300"
+#!   TOP_LEFT="3900 -300"
+#!   BOTTOM_RIGHT="4335.9901880268799 -301"
+#!   BOUNDING_RECT="3900 -300 435.99018802688028 1"
+#!   ORDER="500000000000008"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{17c75987-e3d9-496b-a9b1-7f5b78d3ee03}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="11"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="16"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Récupérer la valeur du premier élément d&apos;une liste&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="4600 -300"
+#!   TOP_LEFT="4600 -300"
+#!   BOTTOM_RIGHT="5035.9901880268799 -301"
+#!   BOUNDING_RECT="4600 -300 435.99018802688028 1"
+#!   ORDER="500000000000009"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{0fb9c965-8262-4674-a644-d28bd7c5d64a}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="13"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="21"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Nombre de RM par type&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2500 -300"
+#!   TOP_LEFT="2500 -300"
+#!   BOTTOM_RIGHT="2935.9901880268803 -301"
+#!   BOUNDING_RECT="2500 -300 435.99018802688028 1"
+#!   ORDER="500000000000012"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{27a538a5-1498-41cb-ad9c-bca708075685}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="17"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="22"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Générer une liste des types de RM&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="3200 -285"
+#!   TOP_LEFT="3200 -285"
+#!   BOTTOM_RIGHT="3635.9901880268803 -286"
+#!   BOUNDING_RECT="3200 -285 435.99018802688028 1"
+#!   ORDER="500000000000013"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{85cf188e-5d1b-4716-9159-3ff3114199b1}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="19"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="29"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Calculer la somme des capacités&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="5300 -300"
+#!   TOP_LEFT="5300 -300"
+#!   BOTTOM_RIGHT="5735.9901880268799 -301"
+#!   BOUNDING_RECT="5300 -300 435.99018802688028 1"
+#!   ORDER="500000000000017"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{88aba1ba-aaf2-4f10-bc40-514b18eac096}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="23"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="30"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Calculer la capacité moyenne (somme/nb)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="6000 -300"
+#!   TOP_LEFT="6000 -300"
+#!   BOTTOM_RIGHT="6435.9901880268799 -301"
+#!   BOUNDING_RECT="6000 -300 435.99018802688028 1"
+#!   ORDER="500000000000018"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{f70334f5-bfb5-427d-b3b7-9fd95fecde26}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="26"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="31"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Capacités minimum et maximum&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="6700 -300"
+#!   TOP_LEFT="6700 -300"
+#!   BOTTOM_RIGHT="7135.9901880268799 -301"
+#!   BOUNDING_RECT="6700 -300 435.99018802688028 1"
+#!   ORDER="500000000000019"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{5ae28266-2e5a-47e0-89f7-2e41af48daf4}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="24"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="84"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Générer une liste des RM intersectants chaque commune&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1100 -300"
+#!   TOP_LEFT="1100 -300"
+#!   BOTTOM_RIGHT="1535.9901880268803 -301"
+#!   BOUNDING_RECT="1100 -300 435.99018802688028 1"
+#!   ORDER="500000000000049"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{6073718b-a8dc-4af8-95ec-f174310e4b3a}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="79"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="74"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le but de ce workspace est de récupérer pour chaque commune de Haute-Savoie, une liste des remontées mécaniques qui sont présentes et de réaliser quelques statistiques dessus.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Les données sont issues d&apos;un geopackage.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Aucune sortie n&apos;est prévue dans le script.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="0 300"
+#!   TOP_LEFT="0 300"
+#!   BOTTOM_RIGHT="1400.9900724007239 94.998249982499829"
+#!   BOUNDING_RECT="0 300 1400.9900724007239 205.00175001750017"
+#!   ORDER="500000000000027"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="true"
+#!   UUID="{8c8a6f22-b262-4f5c-b977-5381de368511}"
+#!   COLOUR="0,0.67450980392156867,0.22352941176470589,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="ListElementCounter"
+#!   VERSION="2"
+#!   POSITION="1800 -600"
+#!   BOUNDING_RECT="1800 -600 436 65"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="population" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_postal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_horaire" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_vehicule" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.de9im" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.pass{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nb_remontee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CNT_ATTR" PARM_VALUE="nb_remontee"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListElementCounter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="ListSorter"
+#!   VERSION="4"
+#!   POSITION="3900 -600"
+#!   BOUNDING_RECT="3900 -600 436 65"
+#!   ORDER="500000000000005"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="population" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_postal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_horaire" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_vehicule" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.de9im" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.pass{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nb_remontee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_histogram{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_histogram{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="liste_type_rm" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ORDER" PARM_VALUE="Descending"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SRC_LIST" PARM_VALUE="remontee_mecanique{}.capacite_horaire"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TYPE" PARM_VALUE="Numeric"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListSorter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="13"
+#!   TYPE="AttributeManager"
+#!   VERSION="5"
+#!   POSITION="4600 -600"
+#!   BOUNDING_RECT="4600 -600 436 65"
+#!   ORDER="500000000000007"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_horaire" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_vehicule" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="population" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_postal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nb_remontee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="capacite_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_histogram{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_histogram{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="liste_type_rm" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="capacite_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.de9im" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.pass{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.id remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.id  buffer NO_OP remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.nom remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.nom  buffer NO_OP remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.type remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.type  buffer NO_OP remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.capacite_horaire remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.capacite_horaire  buffer NO_OP remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.capacite_vehicule remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.capacite_vehicule  buffer NO_OP remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.id_0 remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.id_0  int64 NO_OP id id  buffer NO_OP nom nom  buffer NO_OP population population  buffer NO_OP code_postal code_postal  buffer NO_OP code_insee code_insee  buffer NO_OP id_0 id_0  int64 NO_OP nb_remontee nb_remontee  uint32 NO_OP  capacite_max &lt;at&gt;Value&lt;openparen&gt;remontee_mecanique&lt;opencurly&gt;0&lt;closecurly&gt;.capacite_horaire&lt;closeparen&gt; varchar&lt;openparen&gt;200&lt;closeparen&gt; SET_TO rm_histogram&lt;opencurly&gt;&lt;closecurly&gt;.count rm_histogram&lt;opencurly&gt;&lt;closecurly&gt;.count  uint32 NO_OP rm_histogram&lt;opencurly&gt;&lt;closecurly&gt;.value rm_histogram&lt;opencurly&gt;&lt;closecurly&gt;.value  buffer NO_OP liste_type_rm liste_type_rm  buffer NO_OP  capacite_min  varchar&lt;openparen&gt;200&lt;closeparen&gt; SET_TO   &lt;at&gt;Value&lt;openparen&gt;remontee_mecanique&lt;opencurly&gt;&lt;at&gt;evaluate&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;nb_remontee&lt;closeparen&gt;-1&lt;closeparen&gt;&lt;closecurly&gt;.capacite_horaire&lt;closeparen&gt;  SET_TO"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_EXPOSED_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="17"
+#!   TYPE="ListHistogrammer"
+#!   VERSION="0"
+#!   POSITION="2500 -600"
+#!   BOUNDING_RECT="2500 -600 436 65"
+#!   ORDER="500000000000010"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="population" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_postal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_horaire" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_vehicule" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.de9im" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.pass{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nb_remontee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_histogram{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_histogram{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="rm_histogram"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SRC_LIST" PARM_VALUE="remontee_mecanique{}.type"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListHistogrammer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="19"
+#!   TYPE="ListConcatenator"
+#!   VERSION="4"
+#!   POSITION="3200 -600"
+#!   BOUNDING_RECT="3200 -600 436 65"
+#!   ORDER="500000000000011"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="population" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_postal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_horaire" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_vehicule" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.de9im" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.pass{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nb_remontee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_histogram{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_histogram{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="liste_type_rm" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="DROP_EMPTY_PARTS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTR" PARM_VALUE="remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.type"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SEP" PARM_VALUE="&lt;comma&gt;&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="liste_type_rm"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListConcatenator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="23"
+#!   TYPE="ListSummer"
+#!   VERSION="0"
+#!   POSITION="5300 -600"
+#!   BOUNDING_RECT="5300 -600 436 65"
+#!   ORDER="500000000000014"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_horaire" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_vehicule" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="population" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_postal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nb_remontee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="capacite_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_histogram{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_histogram{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="liste_type_rm" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="capacite_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.de9im" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.pass{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_capacite_totale" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RESULT" PARM_VALUE="rm_capacite_totale"/>
+#!     <XFORM_PARM PARM_NAME="SRC_LIST" PARM_VALUE="remontee_mecanique{}.capacite_horaire"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListSummer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="24"
+#!   TYPE="ListRangeExtractor"
+#!   VERSION="0"
+#!   POSITION="6700 -600"
+#!   BOUNDING_RECT="6700 -600 436 65"
+#!   ORDER="500000000000015"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_horaire" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_vehicule" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="population" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_postal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nb_remontee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="capacite_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_capacite_totale" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_capacite_moyenne" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_histogram{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_histogram{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="liste_type_rm" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="capacite_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.de9im" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.pass{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_capacite_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_capacite_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="MAX" PARM_VALUE="rm_capacite_max"/>
+#!     <XFORM_PARM PARM_NAME="MIN" PARM_VALUE="rm_capacite_min"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SRC_LIST" PARM_VALUE="remontee_mecanique{}.capacite_horaire"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListRangeExtractor"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="26"
+#!   TYPE="AttributeManager"
+#!   VERSION="5"
+#!   POSITION="6000 -600"
+#!   BOUNDING_RECT="6000 -600 436 65"
+#!   ORDER="500000000000016"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_horaire" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_vehicule" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="population" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_postal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nb_remontee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="capacite_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_capacite_totale" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_capacite_moyenne" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_histogram{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="rm_histogram{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="liste_type_rm" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="capacite_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.de9im" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.pass{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.id remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.id  buffer NO_OP remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.nom remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.nom  buffer NO_OP remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.type remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.type  buffer NO_OP remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.capacite_horaire remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.capacite_horaire  buffer NO_OP remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.capacite_vehicule remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.capacite_vehicule  buffer NO_OP remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.id_0 remontee_mecanique&lt;opencurly&gt;&lt;closecurly&gt;.id_0  int64 NO_OP id id  buffer NO_OP nom nom  buffer NO_OP population population  buffer NO_OP code_postal code_postal  buffer NO_OP code_insee code_insee  buffer NO_OP id_0 id_0  int64 NO_OP nb_remontee nb_remontee  uint32 NO_OP capacite_max capacite_max  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP rm_capacite_totale rm_capacite_totale  real64 NO_OP  rm_capacite_moyenne &lt;at&gt;Evaluate&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;rm_capacite_totale&lt;closeparen&gt;&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;nb_remontee&lt;closeparen&gt;&lt;closeparen&gt; real64 SET_TO"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_EXPOSED_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="79"
+#!   TYPE="SpatialRelator"
+#!   VERSION="11"
+#!   POSITION="1100 -600"
+#!   BOUNDING_RECT="1100 -600 436 65"
+#!   ORDER="500000000000048"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="population" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_postal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="code_insee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.nom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_horaire" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.capacite_vehicule" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.id_0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.de9im" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="remontee_mecanique{}.pass{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nb_remontee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;Rejected&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="nom" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="population" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="code_postal" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="code_insee" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="id_0" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="capacite_horaire" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="capacite_vehicule" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="AGGREGATE_HANDLING" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CALC_CARD" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="CURVE_BOUNDARY_RULE_PARAM" PARM_VALUE="Default Rule"/>
+#!     <XFORM_PARM PARM_NAME="DIFFATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="IGNORE_NULLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="All Attributes"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="remontee_mecanique"/>
+#!     <XFORM_PARM PARM_NAME="MERGE_ATTR_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PREDICATES" PARM_VALUE="INTERSECTS"/>
+#!     <XFORM_PARM PARM_NAME="SUCCESS_ATTR" PARM_VALUE="nb_remontee"/>
+#!     <XFORM_PARM PARM_NAME="TESTS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SpatialRelator"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="81"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="79"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 1 Supplier"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="80"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="79"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 Requestor"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="18"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="13"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="25"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="20"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="19"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="19"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="27"
+#!   SOURCE_NODE="23"
+#!   TARGET_NODE="26"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="28"
+#!   SOURCE_NODE="26"
+#!   TARGET_NODE="24"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="82"
+#!   SOURCE_NODE="79"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 312
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_FME_CONNECTION_GROUP_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_ADVANCED_GROUP_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_ENFORCE_FOREIGN_KEY_INTEGRITY_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_USE_SEARCH_ENVELOPE_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINX_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINY_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXX_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXY_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_CLIP_TO_ENVELOPE_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_NETWORK_AUTHENTICATION_OGCGEOPACKAGE_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_OGCGEOPACKAGE $(FME_MF_DIR_USERTYPED)\data_liste.gpkg
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_OGCGEOPACKAGE$encode)} == {}} { puts_real {Parameter 'SourceDataset_OGCGEOPACKAGE' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} OGCGEOPACKAGE
+MULTI_READER_KEYWORD{0} OGCGEOPACKAGE_1
+MULTI_READER_GEN_DIRECTIVES{0} ENFORCE_FOREIGN_KEY_INTEGRITY,YES,USE_SEARCH_ENVELOPE,NO,ADVANCED_GROUP,FME_DISCLOSURE_OPEN,EXPOSE_PRIMARY_KEY_ATTRIBUTE,YES,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,_MERGE_SCHEMAS,YES,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_OPEN,READ_NULLS,YES,ENCODE_FEATURE_TYPE_AND_ATTR_NAMES,YES,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,SEARCH_ENVELOPE_MINY,0,OPEN_SINGLE_RASTER_AS_SUBDATASET,YES,OGCGEOPACKAGE_EXPOSE_FORMAT_ATTRS,,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,READ_BOOLEANS_AS_YES_NO,YES,CLIP_TO_ENVELOPE,NO,TABLELIST,communes<space>remontees_mecaniques,READER_REPLACE_INVALID_CHARS,NO,SEARCH_ENVELOPE_MINX,0
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD MULTI_DEST
+MULTI_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "OGCGEOPACKAGE_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER OGCGEOPACKAGE OGCGEOPACKAGE_1
+# ============================================================================
+# The following GUI line prompts for a folder to be used as the
+# source of the GEOPACKAGE Files.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_OGCGEOPACKAGE_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER OGCGEOPACKAGE OGCGEOPACKAGE_1
+DEFAULT_MACRO SourceDataset_OGCGEOPACKAGE_1 $(SourceDataset_OGCGEOPACKAGE)
+GUI MULTIFILE SourceDataset_OGCGEOPACKAGE_1 GeoPackage_Files(*.gpkg)|*.gpkg|All_files(*)|* GeoPackage File:
+DEFAULT_MACRO OGCGEOPACKAGE_IN_FME_CONNECTION_GROUP_OGCGEOPACKAGE_1 
+GUI OPTIONAL DISCLOSUREGROUP OGCGEOPACKAGE_IN_FME_CONNECTION_GROUP_OGCGEOPACKAGE_1 OGCGEOPACKAGE_IN_NAMED_CONNECTION Database Connection
+DEFAULT_MACRO OGCGEOPACKAGE_IN_TABLELIST_OGCGEOPACKAGE_1 
+OGCGEOPACKAGE_1_TABLELIST "$(OGCGEOPACKAGE_IN_TABLELIST_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_IN_ADVANCED_GROUP_OGCGEOPACKAGE_1 
+GUI OPTIONAL DISCLOSUREGROUP OGCGEOPACKAGE_IN_ADVANCED_GROUP_OGCGEOPACKAGE_1 FME_DISCLOSURE_CLOSED%OGCGEOPACKAGE_IN_ENFORCE_FOREIGN_KEY_INTEGRITY_OGCGEOPACKAGE_1 Advanced
+DEFAULT_MACRO OGCGEOPACKAGE_IN_ENFORCE_FOREIGN_KEY_INTEGRITY_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_ENFORCE_FOREIGN_KEY_INTEGRITY "$(OGCGEOPACKAGE_IN_ENFORCE_FOREIGN_KEY_INTEGRITY_OGCGEOPACKAGE_1)"
+GUI LOOKUP_CHOICE OGCGEOPACKAGE_IN_ENFORCE_FOREIGN_KEY_INTEGRITY_OGCGEOPACKAGE_1 Yes,YES%No,NO Enforce Foreign Key Integrity:
+DEFAULT_MACRO OGCGEOPACKAGE_IN_EXPOSE_ATTRS_GROUP_OGCGEOPACKAGE_1 FME_DISCLOSURE_OPEN
+OGCGEOPACKAGE_1_EXPOSE_ATTRS_GROUP "$(OGCGEOPACKAGE_IN_EXPOSE_ATTRS_GROUP_OGCGEOPACKAGE_1)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO OGCGEOPACKAGE_IN_USE_SEARCH_ENVELOPE_OGCGEOPACKAGE_1 NO
+OGCGEOPACKAGE_1_USE_SEARCH_ENVELOPE "$(OGCGEOPACKAGE_IN_USE_SEARCH_ENVELOPE_OGCGEOPACKAGE_1)"
+GUI ACTIVEDISCLOSUREGROUP OGCGEOPACKAGE_IN_USE_SEARCH_ENVELOPE_OGCGEOPACKAGE_1 OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINX_OGCGEOPACKAGE_1%OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINY_OGCGEOPACKAGE_1%OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXX_OGCGEOPACKAGE_1%OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXY_OGCGEOPACKAGE_1%OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCGEOPACKAGE_1%OGCGEOPACKAGE_IN_CLIP_TO_ENVELOPE_OGCGEOPACKAGE_1%OGCGEOPACKAGE_IN_SEARCH_METHOD%OGCGEOPACKAGE_IN_SEARCH_METHOD_FILTER%OGCGEOPACKAGE_IN_SEARCH_ORDER%OGCGEOPACKAGE_IN_SEARCH_FEATURE%OGCGEOPACKAGE_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINX_OGCGEOPACKAGE_1 <Unused>,0 
+DEFAULT_MACRO OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINX_OGCGEOPACKAGE_1 0
+OGCGEOPACKAGE_1_SEARCH_ENVELOPE "$(OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINX_OGCGEOPACKAGE_1)"
+GUI OPTIONAL FLOAT OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINX_OGCGEOPACKAGE_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINY_OGCGEOPACKAGE_1 <Unused>,0 
+DEFAULT_MACRO OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINY_OGCGEOPACKAGE_1 0
+OGCGEOPACKAGE_1_SEARCH_ENVELOPE "$(OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINY_OGCGEOPACKAGE_1)"
+GUI OPTIONAL FLOAT OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINY_OGCGEOPACKAGE_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXX_OGCGEOPACKAGE_1 <Unused>,0 
+DEFAULT_MACRO OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXX_OGCGEOPACKAGE_1 0
+OGCGEOPACKAGE_1_SEARCH_ENVELOPE "$(OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXX_OGCGEOPACKAGE_1)"
+GUI OPTIONAL FLOAT OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXX_OGCGEOPACKAGE_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXY_OGCGEOPACKAGE_1 <Unused>,0 
+DEFAULT_MACRO OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXY_OGCGEOPACKAGE_1 0
+OGCGEOPACKAGE_1_SEARCH_ENVELOPE "$(OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXY_OGCGEOPACKAGE_1)"
+GUI OPTIONAL FLOAT OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXY_OGCGEOPACKAGE_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCGEOPACKAGE_1 <Unused>, 
+DEFAULT_MACRO OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCGEOPACKAGE_1 
+OGCGEOPACKAGE_1_SEARCH_ENVELOPE "$(OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCGEOPACKAGE_1)"
+GUI OPTIONAL COORDSYS OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCGEOPACKAGE_1 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP OGCGEOPACKAGE_IN_CLIP_TO_ENVELOPE_OGCGEOPACKAGE_1 <Unused>,NO 
+DEFAULT_MACRO OGCGEOPACKAGE_IN_CLIP_TO_ENVELOPE_OGCGEOPACKAGE_1 NO
+OGCGEOPACKAGE_1_CLIP_TO_ENVELOPE "$(OGCGEOPACKAGE_IN_CLIP_TO_ENVELOPE_OGCGEOPACKAGE_1)"
+GUI OPTIONAL CHECKBOX OGCGEOPACKAGE_IN_CLIP_TO_ENVELOPE_OGCGEOPACKAGE_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO OGCGEOPACKAGE_IN_READ_BOOLEANS_AS_YES_NO_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_READ_BOOLEANS_AS_YES_NO "$(OGCGEOPACKAGE_IN_READ_BOOLEANS_AS_YES_NO_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_IN_READ_NULLS_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_READ_NULLS "$(OGCGEOPACKAGE_IN_READ_NULLS_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_OGCGEOPACKAGE_1 Yes
+OGCGEOPACKAGE_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(OGCGEOPACKAGE_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_IN_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES "$(OGCGEOPACKAGE_IN_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_IN_OPEN_SINGLE_RASTER_AS_SUBDATASET_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_OPEN_SINGLE_RASTER_AS_SUBDATASET "$(OGCGEOPACKAGE_IN_OPEN_SINGLE_RASTER_AS_SUBDATASET_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_IN_READER_REPLACE_INVALID_CHARS_OGCGEOPACKAGE_1 NO
+OGCGEOPACKAGE_1_READER_REPLACE_INVALID_CHARS "$(OGCGEOPACKAGE_IN_READER_REPLACE_INVALID_CHARS_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_IN_EXPOSE_PRIMARY_KEY_ATTRIBUTE_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_EXPOSE_PRIMARY_KEY_ATTRIBUTE "$(OGCGEOPACKAGE_IN_EXPOSE_PRIMARY_KEY_ATTRIBUTE_OGCGEOPACKAGE_1)"
+# ===========================================================================
+DEFAULT_MACRO OGCGEOPACKAGE_IN_NETWORK_AUTHENTICATION_OGCGEOPACKAGE_1 
+OGCGEOPACKAGE_1_NETWORK_AUTHENTICATION "$(OGCGEOPACKAGE_IN_NETWORK_AUTHENTICATION_OGCGEOPACKAGE_1)"
+GUI OPTIONAL AUTHENTICATOR OGCGEOPACKAGE_IN_NETWORK_AUTHENTICATION_OGCGEOPACKAGE_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO OGCGEOPACKAGE_IN_ATTRIBUTE_READING_OGCGEOPACKAGE_1 DEFLINE
+OGCGEOPACKAGE_1_ATTRIBUTE_READING "$(OGCGEOPACKAGE_IN_ATTRIBUTE_READING_OGCGEOPACKAGE_1)"
+# ============================================================================
+OGCGEOPACKAGE_1_GENERATE_FME_BUILD_NUM 24220
+OGCGEOPACKAGE_1_DATASET "$(SourceDataset_OGCGEOPACKAGE_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)Tuto - Listing des remontées mécaniques.log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 2
+LOG_MAX_RECORDED_FEATURES 2
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.0.3.0 (20240603 - Build 24220 - WIN64)"
+MAPPING_FILE_ID Tuto<space>-<space>Listing<space>des<space>remont<u00e9>es<space>m<u00e9>caniques
+DEFAULT_MACRO DATASET_KEYWORD_OGCGEOPACKAGE_1 OGCGEOPACKAGE_1
+# -------------------------------------------------------------------------
+
+OGCGEOPACKAGE_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME Tuto - Listing des remontées mécaniques
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_OGCGEOPACKAGE_1)   INPUT FEATURE_TYPE *    ROUTE OGCGEOPACKAGE OGCGEOPACKAGE_1::communes multi_reader_keyword,$(DATASET_KEYWORD_OGCGEOPACKAGE_1) TO FME_GENERIC ::communes ALIAS_GEOMETRY    ROUTE OGCGEOPACKAGE OGCGEOPACKAGE_1::remontees_mecaniques multi_reader_keyword,$(DATASET_KEYWORD_OGCGEOPACKAGE_1) TO FME_GENERIC ::remontees_mecaniques ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+OGCGEOPACKAGE_1_MERGE_DEF OGCGEOPACKAGE_1::communes EXACT communes DEFLINE geopackage_type,geopackage_polygon,geopackage_where_clause,,fme_attribute_reading,defined,id,text,nom,text,population,text,code_postal,text,code_insee,text,id_0,int<comma>PrimaryKey
+OGCGEOPACKAGE_1_MERGE_DEF OGCGEOPACKAGE_1::remontees_mecaniques EXACT remontees_mecaniques DEFLINE geopackage_type,geopackage_linestring,geopackage_where_clause,,fme_attribute_reading,defined,id,text,nom,text,type,text,capacite_horaire,text,capacite_vehicule,text,id_0,int<comma>PrimaryKey
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "remontees_mecaniques_OGCGEOPACKAGE_1 Splitter"    INPUT FEATURE_TYPE remontees_mecaniques    OUTPUT FEATURE_TYPE remontees_mecaniques_OGCGEOPACKAGE_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "communes_OGCGEOPACKAGE_1 Splitter"    INPUT FEATURE_TYPE communes    OUTPUT FEATURE_TYPE communes_OGCGEOPACKAGE_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} SpatialRelationshipFactory    FACTORY_NAME { SpatialRelator }    INPUT BASE FEATURE_TYPE communes_OGCGEOPACKAGE_1    INPUT CANDIDATE FEATURE_TYPE remontees_mecaniques_OGCGEOPACKAGE_1    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    PREDICATE { "INTERSECTS" }    LIST_NAME { "remontee_mecanique" }    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE { ALL }    SUCCESS_ATTR { "nb_remontee" }    REJECT_INVALID_GEOM Yes    REJECT_INVALID_PREDICATES Yes    REJECT_RASTERS No    ALLOW_NULLS Yes    CUSTOM_MULTI_HANDLING { Yes }    CURVE_BOUNDARY_RULE { ENDPOINTS_MOD2 }    CALCULATE_CARDINALITY { No }    MERGE_INCOMING_ATTR { NO }    ATTR_ACCUM_MODE { <Unused> }    ATTR_CONFLICT_RES { <Unused> }    INCOMING_ATTR_PREFIX { "<Unused>" }    IGNORE_NULLS { <Unused> }    OUTPUT { TAGGED FEATURE_TYPE SpatialRelator_Output        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListElementCounter }    INPUT  FEATURE_TYPE SpatialRelator_Output    OUTPUT { FEATURE_TYPE ListElementCounter_OUTPUT         @SupplyAttributes(ENCODED, nb_remontee, @NumElements("remontee_mecanique<opencurly><closecurly>",ENCODED))          }
+# -------------------------------------------------------------------------
+Tcl2 proc ListHistogrammer_histo {} {    foreach attr [FME_AttributeNames] {    		 regsub -all \"{\[0-9\]+}\" $attr \"{}\" flatAttr;        if {$flatAttr == \"remontee_mecanique{}.type\" }        {          set attrVal [FME_GetAttribute $attr];          if {$attrVal == {} && [FME_IsAttributeNull $attr]}          {    	         set attrVal {FME_NULL_VALUE};          }; 	       if {[info exists histogram($attrVal)]} { 	           incr histogram($attrVal); 	       } else { 	           set histogram($attrVal) 1; 	       };        };    };    set toSort {};    foreach {name value} [array get histogram] {        lappend s $name $value;        lappend toSort $s;        unset s;    };    set sortedHisto [lsort -integer -decreasing -index end $toSort];    set spot 0;    foreach nameCount $sortedHisto {        set rootName "rm_histogram{$spot}";        set valueAttr "$rootName.value";        set countAttr "$rootName.count";        if {[lindex $nameCount 0] == {FME_NULL_VALUE}} { 	       FME_SetAttributeNull $valueAttr; 	     } else { 	       FME_SetAttribute $valueAttr [lindex $nameCount 0];        };        FME_SetAttribute $countAttr [lindex $nameCount end];        incr spot;    } }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListHistogrammer }    INPUT  FEATURE_TYPE ListElementCounter_OUTPUT    OUTPUT { FEATURE_TYPE ListHistogrammer_OUTPUT         @Tcl2("ListHistogrammer_histo")          }
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {ListConcatenator_a4c1a945_6f75_4108_aafd_79c62f9591f00} ]
+Tcl2 set $(FME_UUID_SAFE)__separator [FME_DecodeText {<comma><space>}];      regsub -all \"{}\" [FME_DecodeText {remontee_mecanique<opencurly><closecurly>.type}] [FME_DecodeText {<opencurly><backslash>d+<closecurly>}] $(FME_UUID_SAFE)__listPattern;      set $(FME_UUID_SAFE)__listPattern ^$$(FME_UUID_SAFE)__listPattern$;
+Tcl2 proc $(FME_UUID_SAFE)__Concatenate {} {   upvar \#0 $(FME_UUID_SAFE)__separator separator             $(FME_UUID_SAFE)__listPattern listPattern;   set allAttrs [lsort -dictionary [FME_AttributeNames]];   set keepEmptyParts [string equal {Yes} {No}];   set result {};   foreach attrName $allAttrs {     if {[regexp $listPattern $attrName]} {       set attrValue [FME_GetAttribute $attrName];       if {$keepEmptyParts || $attrValue != {}} {         lappend result $attrValue;       };     };   };   FME_SetAttribute [FME_DecodeText {"liste_type_rm"}] [join $result $separator]; }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListConcatenator }    INPUT  FEATURE_TYPE ListHistogrammer_OUTPUT    OUTPUT { FEATURE_TYPE ListConcatenator_OUTPUT         @Tcl2($(FME_UUID_SAFE)__Concatenate)          }
+# -------------------------------------------------------------------------
+Tcl2 proc ListSorter_sort {} {    set COMMENT {    = NOTE: algorithm below does not support nested lists.    };    regsub \"{}.*$\" {remontee_mecanique{}.capacite_horaire} \"\{\" listBase;    regsub \"{}.*$\" {remontee_mecanique{}.capacite_horaire} \"\" listName;    set listBaseLen [string length $listBase];    set listNameLen [expr $listBaseLen - 1];    set listValueExtension [string replace {remontee_mecanique{}.capacite_horaire} 0 $listBaseLen {}];    set kCloseBrace \"\}\";    set kAnyOtherCharacters {*};    set kPlaceholderMissingVal 1;    set kPlaceholderNullVal 2;    set kPlaceholderEmptyVal 3;    set COMMENT {    = To resolve PR 46315 (and friends), lets make a first pass to determine the full list of    = possible index numbers. Then we'll go through and make sure we have a KEY value for each    = of those.  We'll track what "keys" we added so that at the end we can REMOVE them so they stay MISSING.    };    set maxElementCount 0;    foreach attr [FME_AttributeNames] {       set COMMENT {       =    For each attribute "listattr{<index>}.count" and all related attributes       =    "listattr{<index>}<extension>", create a list of the form       =       {$listattr{<index>}.count <index>}, and keep a list of the extensions       =    for each index in the associative array listExtensions(<index>).       };       set attrStart [string range $attr 0 $listNameLen];       if { $attrStart == $listBase } {          set braceEnd [string first \} $attr $listBaseLen];          set index [string range $attr $listBaseLen [expr $braceEnd - 1]];          set extension [string range $attr [expr $braceEnd + 1] end];          if { [regexp {^[0-9]+$} $index] == 1 } {             lappend listExtensions($index) $extension;             set attrsToRename($attr) 1;             set COMMENT {Keep track of the maximum index value};             if { [expr $index > $maxElementCount] } {                set maxElementCount $index;             }          };       }    };    set curElement 0;    set COMMENT {    = Now that we have a list of the actual element numbers included in the list. Lets whip through and make sure    = we have an actual element for each of the "key" parts of the list we want to sort. If we don't, we'll    = make an element there with an empty value.  Note that we can't easily separate and sort NULL < missing < empty,    = but we'll live with that shortcoming in here as long as it is documented.    };    catch {unset emptyPlaceholder};    set toSort {};    set placeholdersToSort {};    foreach curElement [lsort -integer -unique [array names listExtensions]] {       set COMMENT {       =    We found that there is at least some kind of element at this index in the list       =    so we need to ensure there is a key element at this index. If it is missing,       =    NULL or an empty string, then we save it to a separate array of placehoder values of 1, 2 or       =    3, respectively, so that can be deterministically sorted separately from the other       =    elements, and then tacked on at either the beginning of the end later on.       };       set COMMENT {Minimum float is taken from std::numeric_limits<T>::lowest() cppreference web page.};       set indexKeyElementAttr $listBase$curElement$kCloseBrace$listValueExtension;       if { ! [FME_AttributeExists $indexKeyElementAttr ] } {           set COMMENT {The key value attribute didn't exist, so put it on a separate placeholder list for sorting};           lappend placeholdersToSort [list $kPlaceholderMissingVal $curElement];           set emptyPlaceholder($curElement) $kPlaceholderMissingVal;       } elseif { [FME_IsAttributeNull $indexKeyElementAttr] } {           set COMMENT {Key attribute exists but is null, so put it on a separate placeholder list for sorting};           set emptyPlaceholder($curElement) $kPlaceholderNullVal;           lappend placeholdersToSort [list $kPlaceholderNullVal $curElement];       } elseif { [FME_GetAttribute $indexKeyElementAttr] == {} } {           set COMMENT {Key attribute exists but is empty, so put it on a separate placeholder list for sorting};           set emptyPlaceholder($curElement) $kPlaceholderEmptyVal;           lappend placeholdersToSort [list $kPlaceholderEmptyVal $curElement];       } else {           lappend toSort [list [FME_GetAttribute $indexKeyElementAttr] $curElement]       };    };    set COMMENT {    =    Sort the {$listattr{<index>} <index>} by index 0 (attr value). If we had (1,2,3) placeholders    =    for missing, NULL, or empty values, we sort those as well, and then tack them onto the    =    proper end of the resulting list.    };    set sortedAttrs [lsort -real -decreasing -index 0 $toSort];    set sortedPlaceholders [lsort -real -decreasing -index 0 $placeholdersToSort];    set COMMMENT {    =    If there were placeholders for null/missing/empty, put them at the beginning    =    or end of the sortedAttrs, depending on sort order    };    if { {-decreasing} != {} } {       set sortedAttrs [concat $sortedAttrs $sortedPlaceholders];    } else {       set sortedAttrs [concat $sortedPlaceholders $sortedAttrs];    };    set destIndex 0;    set COMMENT {    =    For each list within sortedAttrs, iterate over the list, renaming    =    "listattr{<index>}<extension>" to    =    "listattr{<newIndex>}<extension>"    };    catch {unset nullRemap};    set renameAttrsFrom {};    set renameAttrsTo {};    foreach pair $sortedAttrs {       set elementNum [lindex $pair 1];       set nullRemap($destIndex) $elementNum;       set newAttrBase "$listName\{$destIndex\}";       set oldAttrBase "$listName\{$elementNum\}";       foreach extension $listExtensions($elementNum) {          lappend renameAttrsFrom $oldAttrBase$extension;          lappend renameAttrsTo $newAttrBase$extension;          unset attrsToRename($oldAttrBase$extension);       };       incr destIndex    };    set COMMENT {    =    If any attributes were list attributes but did not contain the    =    structure extension on which we were sorting, they must be cleaned up.    };    set attrs [array names attrsToRename];    if {[llength $attrs]} { eval FME_UnsetAttributes $attrs };    FME_RenameAttribute -list $renameAttrsTo $renameAttrsFrom;    set COMMENT {    =    = Lastly, go through and any of the MISSING, EMPTY, or NULL key values and set appropriately.  We'll have preserved their    = parallel list structure friends, but we need to restore the moved key to its original state: missing, blank or NULL    =    };    set curElement 0;    while { $curElement <= $maxElementCount } {        if { [info exists nullRemap($curElement)] } {            set origIndex $nullRemap($curElement);            if { [info exists emptyPlaceholder($origIndex)] } {                set COMMENT {Get rid of the sidecar attribute and key attribute too};                set indexKeyElementAttr $listBase$curElement$kCloseBrace$listValueExtension;                set value $emptyPlaceholder($origIndex);                if {$value == $kPlaceholderNullVal} {                  FME_SetAttributeNull $indexKeyElementAttr;                } elseif { $value == $kPlaceholderMissingVal } {                    FME_UnsetAttributes $indexKeyElementAttr;                } else {                  FME_SetAttribute $indexKeyElementAttr {};                };             };        };        incr curElement;    }; }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListSorter }    INPUT  FEATURE_TYPE ListConcatenator_OUTPUT    OUTPUT { FEATURE_TYPE ListSorter_OUTPUT         @Tcl2("ListSorter_sort")          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager }    INPUT  FEATURE_TYPE ListSorter_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 4    DEF_VAL_COLUMN 2    NUM_OF_COLUMNS 5    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "remontee_mecanique<opencurly><closecurly>.id" "remontee_mecanique<opencurly><closecurly>.id" "" "buffer" "NO_OP" }      ATTR_ACTION { "remontee_mecanique<opencurly><closecurly>.nom" "remontee_mecanique<opencurly><closecurly>.nom" "" "buffer" "NO_OP" }      ATTR_ACTION { "remontee_mecanique<opencurly><closecurly>.type" "remontee_mecanique<opencurly><closecurly>.type" "" "buffer" "NO_OP" }      ATTR_ACTION { "remontee_mecanique<opencurly><closecurly>.capacite_horaire" "remontee_mecanique<opencurly><closecurly>.capacite_horaire" "" "buffer" "NO_OP" }      ATTR_ACTION { "remontee_mecanique<opencurly><closecurly>.capacite_vehicule" "remontee_mecanique<opencurly><closecurly>.capacite_vehicule" "" "buffer" "NO_OP" }      ATTR_ACTION { "remontee_mecanique<opencurly><closecurly>.id_0" "remontee_mecanique<opencurly><closecurly>.id_0" "" "int64" "NO_OP" }      ATTR_ACTION { "id" "id" "" "buffer" "NO_OP" }      ATTR_ACTION { "nom" "nom" "" "buffer" "NO_OP" }      ATTR_ACTION { "population" "population" "" "buffer" "NO_OP" }      ATTR_ACTION { "code_postal" "code_postal" "" "buffer" "NO_OP" }      ATTR_ACTION { "code_insee" "code_insee" "" "buffer" "NO_OP" }      ATTR_ACTION { "id_0" "id_0" "" "int64" "NO_OP" }      ATTR_ACTION { "nb_remontee" "nb_remontee" "" "uint32" "NO_OP" }      ATTR_ACTION { "" "capacite_max" "<at>Value<openparen>remontee_mecanique<opencurly>0<closecurly>.capacite_horaire<closeparen>" "varchar<openparen>200<closeparen>" "SET_TO" }      ATTR_ACTION { "rm_histogram<opencurly><closecurly>.count" "rm_histogram<opencurly><closecurly>.count" "" "uint32" "NO_OP" }      ATTR_ACTION { "rm_histogram<opencurly><closecurly>.value" "rm_histogram<opencurly><closecurly>.value" "" "buffer" "NO_OP" }      ATTR_ACTION { "liste_type_rm" "liste_type_rm" "" "buffer" "NO_OP" }      ATTR_ACTION { "" "capacite_min" "" "varchar<openparen>200<closeparen>" "SET_TO" }      ATTR_ACTION { "" "" "<at>Value<openparen>remontee_mecanique<opencurly><at>evaluate<openparen><at>Value<openparen>nb_remontee<closeparen>-1<closeparen><closecurly>.capacite_horaire<closeparen>" "" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_OUTPUT        }
+# -------------------------------------------------------------------------
+TCL proc ListSummer_summer {} {    global FME_Attributes;    set sum 0;    regsub \"{}\" {remontee_mecanique{}.capacite_horaire} \"{*}\" listPattern;    foreach {name value} [array get FME_Attributes $listPattern] {        catch {set sum [expr $sum + $value] };    };    FME_SetAttribute {"rm_capacite_totale"} $sum; }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListSummer }    INPUT  FEATURE_TYPE AttributeManager_OUTPUT    OUTPUT { FEATURE_TYPE ListSummer_OUTPUT         @TCL("ListSummer_summer")          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager_2 }    INPUT  FEATURE_TYPE ListSummer_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 4    DEF_VAL_COLUMN 2    NUM_OF_COLUMNS 5    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "remontee_mecanique<opencurly><closecurly>.id" "remontee_mecanique<opencurly><closecurly>.id" "" "buffer" "NO_OP" }      ATTR_ACTION { "remontee_mecanique<opencurly><closecurly>.nom" "remontee_mecanique<opencurly><closecurly>.nom" "" "buffer" "NO_OP" }      ATTR_ACTION { "remontee_mecanique<opencurly><closecurly>.type" "remontee_mecanique<opencurly><closecurly>.type" "" "buffer" "NO_OP" }      ATTR_ACTION { "remontee_mecanique<opencurly><closecurly>.capacite_horaire" "remontee_mecanique<opencurly><closecurly>.capacite_horaire" "" "buffer" "NO_OP" }      ATTR_ACTION { "remontee_mecanique<opencurly><closecurly>.capacite_vehicule" "remontee_mecanique<opencurly><closecurly>.capacite_vehicule" "" "buffer" "NO_OP" }      ATTR_ACTION { "remontee_mecanique<opencurly><closecurly>.id_0" "remontee_mecanique<opencurly><closecurly>.id_0" "" "int64" "NO_OP" }      ATTR_ACTION { "id" "id" "" "buffer" "NO_OP" }      ATTR_ACTION { "nom" "nom" "" "buffer" "NO_OP" }      ATTR_ACTION { "population" "population" "" "buffer" "NO_OP" }      ATTR_ACTION { "code_postal" "code_postal" "" "buffer" "NO_OP" }      ATTR_ACTION { "code_insee" "code_insee" "" "buffer" "NO_OP" }      ATTR_ACTION { "id_0" "id_0" "" "int64" "NO_OP" }      ATTR_ACTION { "nb_remontee" "nb_remontee" "" "uint32" "NO_OP" }      ATTR_ACTION { "capacite_max" "capacite_max" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "rm_capacite_totale" "rm_capacite_totale" "" "real64" "NO_OP" }      ATTR_ACTION { "" "rm_capacite_moyenne" "<at>Evaluate<openparen><at>Value<openparen>rm_capacite_totale<closeparen><solidus><at>Value<openparen>nb_remontee<closeparen><closeparen>" "real64" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_2_OUTPUT        }
+# -------------------------------------------------------------------------
+Tcl2 proc ListRangeExtractor_minmaxer {} {    set firstTime 1;    set min {};    set max {};    foreach attr [FME_AttributeNames] {    		 regsub -all \"{\[0-9\]+}\" $attr \"{}\" flatAttr;        if {$flatAttr == \"remontee_mecanique{}.capacite_horaire\" }        {          set attrVal [FME_GetAttribute $attr];          set checkAttr 1;          if {$attrVal == {} && [FME_IsAttributeNull $attr]}          {    	       set checkAttr 0;          };          if {$checkAttr} { 		         if {$firstTime} { 		           set min $attrVal; 		           set max $attrVal; 		           set firstTime 0; 		         } else { 		           if {$attrVal < $min} {set min $attrVal}; 		           if {$attrVal > $max} {set max $attrVal};  		         }; 		     }; 	     };    };    FME_SetAttribute {"rm_capacite_min"} $min;    FME_SetAttribute {"rm_capacite_max"} $max; }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListRangeExtractor }    INPUT  FEATURE_TYPE AttributeManager_2_OUTPUT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+

@@ -1,29 +1,29 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command line to run this workspace:
-#        "C:\Program Files\FME\FME_2024.0.3\fme.exe" "C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Import média -- A finir\export_media_bdd.fmw"
-#          --param_source "$(FME_MF_DIR)media_db.sqlite"
-#          --param_dest "$(FME_MF_DIR)media_export"
+#        "C:\Program Files\FME\FME_2024.0.3\fme.exe" "C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Transfert de fichiers\Tuto - Export média depuis BDD.fmw"
+#          --param_source "$(FME_MF_DIR_USERTYPED)\media_db.sqlite"
+#          --param_dest "$(FME_MF_DIR_USERTYPED)\media_export"
 #          --FME_LAUNCH_VIEWER_APP "YES"
 #    
-#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAABrCAIAAADW/0P1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAem0lEQVR4nO2dfXAb553fv8+zuwRfQcoCRBKAsIBkhYDs2LEl8eKaEGrRsey7yqYzubwpUnNpO3lR0xl7OnO+XOubu8xlbjqN25nOncdzaZqRk6bN1Ykc925OPtN3FO3Ykaw0tmxjab2QgAiQMiGRAviGl92nfyxJUeTuggRBEis9n9FwIPzwfPF7dh/+uPs8v+e3ZNeuXZqmwQhRFIvF4mpNlFIAVaIpCIKmaYyxVWkSQgRBsPBTVdUN0xQEgTFWcT8JIaqqcs311gQgSVKhUOCaFdGkhlocDodThfCAxeFwbAMPWBwOxzaI+rSLIZRSM6u1yeL7Nl4TgMV8kyGEEGtNxthGahq+v0ZNQoihiWtWVhOlxifXXJWmSAghhBgqlm1a+GlTTTLPLaxpZuWaldVcSUOuuXJNUVVVs9U3Yj75b2HS42KVaOqtDEO1haZ+pKz93DBNXbbifpodNK5ZWU0AlFKuWSlNPofF4XBsAw9YHA7HNvCAxeFwbAMPWBwOxzbwgMXhcGwDD1gcDsc28IDF4XBsgyhJkkUVBLPMLgtTycoKG6m5lmoNFn6aZZ+vh2bJag3l+UkIMUxB5pqV1QQgSZLh+1yzDE2xUCiYBQLGmFmpDQuTdXDZYE1N08oLWJqmWfhZXnmZ8jR1/yvup0XyJNesoKaOWYkVrsnLy3A4nFsWHrA4HI5tEDfbgZWi1ZDrnxCZZDj1QBkzjryEUMaMbyQBfarCrBCCtaZZoK+8JiH6fX6F/SSEMCasoiEDndG2XARMr/05nHXHNgFr9JGa2U/WG5qIeXULfQLVrJZIGabbWpMh//a0+x95xOJsGva4JSw6MHunY7O9uO0hmPWbLvpwOBuAPQIWqG08vcXhZ4GzqdhvAPb4Ioavw045vPAfX6RnlVIluaFfSvwmT1ZJybYrFpdDTgCAL3LMKa9QKuyUQysS53A2B1EURYuETItmZqaSSZ5laKoCIYRgvvYmIaRn92Eg4YU/TMiROvzxDLqB3myCAD2+iOJEZ/NXCBLeDHoz/SHfV4CE8mEi5POHnGiSQi9eVY44/amM/4+2FxSnpAz3h3yHlUyiW8M+d+gvBv865DsMJJQP+0O7DwPTXqQHC7iUTTzpiyhO7Ns9b/UdhtOPzBv76vDiDI7A/yIS3QC2R7qBJBJe+Hs//EnIF1Ey/SFnRAGOwH9mron/jORH5o19bv+ZXMKb8fcioffiSb13GX8Sb8DZpWQSR3R9p//NTCK4PRJapHwC+HP4X0QiNNyPBX/c/jO5RHcGvU54iRwmco8TCqAAR4A/BnqG+5VmubtZBhAa7ocvcgJzxxAWxV0BURQtcmcMG+oJmRbn3WwW8hbQxHzqL9esiKY9Ko5qGmWMLbgfcgKZhJJJwOkHgBl/jxPIJBa18N/0gUxCySQUxIEuZNCzVdHfTMIfwogy7A85ZWQAuDw0nazDjhtNEJp74e8Oui7dLK4AISSUTAIZ7KvTTQkF6J4Th5JJwAkFuPmyZaHJohdX5j7ZrX/kJucBADNz718CgnNWXXmu7/PfskTTD/iB6ZAzrTjhzUABoDdZyvJjaAADqqSSp100YZNKnnbRJLZ4kKrWQBPfdMJhtgxfgVXCHl/kxHB/yVar0lyhydr65Pb9J4b7q2KVEBBHCtv/R7aMDHJbPPR0PTRhkweU2kXTfnNY68RCtKo2qtYxDmfjsV/Aspp1np8ODy+aadZn1sPLJp5DN08wz0/Ay+Flt0uGCssFVzjTD6Bn93ee2R35t7u/88zuw9+77zvP7D5sdI9mwPJ+hYwm1JcsJhi4yuHYE2Hr1q1m1/+UUrM7OwuT9T1FeZqshlzf54BIAbjd3d3OaY/znpAvQhwtT++MOO9oIWPxLl+EOPG77kiTu6U5hy2OZo9TJiThckeIo/mIo7nJFwm5Wx52R7Jjma7d9zTXt9xfL2ed/qedcgoJl+MrPc6Ey9flcraQdKJr9+GjO/9FLXBXJgFfhDhajmxpbqqLEGfLF4jc7ZaZoznkizzsvsfjbiFjCf3b783Lx0KHB0T30z5XKpdI5/QVAPl7zkiqueUpX6TJ3UzGEi63P43rzkziuYv/t7s1/Kfv/yi87bMh50zI+cnQnJOHOt212Vyiyx0ZaJb/3BlJOZu7MomrTnmH3i8kXO4IqW054mhu8nXN9+tc1+7DxNHyu25/Stz1VHNL9+7HUpmzHc57Qk6Z+OSnHXKvU/6eL+Lc1oKxRNr89JlBJ7Xm3+bNzrvZvTkhxPq8W9zV2l0T8yVDuGZFNO13hQWM9aIrlOmfm40eSyjDidicyY9MYmA4cWnxxzPz1kxiYDgxnEnEEB8YRrDeZaCdSQwMJxQAmUTqmvK3c28CAKYBJGJwe5xQnPAByCSGM4mBG99+j8eJZF0aGEsOo2Puusbf4/Trk/FY+HAGA/B74A/7DnswFfYdDuEXJ+Y6pTv5Xu+cwlzzGJaRSShL+4WFYxLD2BnsdCSUjhuXV/45tUxCGU5gVZddKmNXZ7XRGTJuHK04nI3BlpPuYV8Ew/0d89PkFZl0X6GpyjUXLx2Et+/HcH9sweqL9Az3nyjr67TkNMsWBEbl1zV6vSoms+2iCZtMZttF0x57CYkGkgeb35wTG+5f+MlZzOIZemXJ8ZmPVuUwqwqMel8tSLMC30nI2UREs1KBACilZlZrk8X3lalZoA0fzE51NkCwep67GRbW8ky3m6aQJ77XitI0oSJljFn8VbSYG7I477ewJkqNea65Kk1Rn98yVCzbBPNfhrI12/vVSSWj1hpYBUGwyFvTGMNq79EIEcwT3gRBUDVtwzQtzuta/CSEGN+2G2nWfayJ0/PNLE+fodXChBUMCVtrrqQh11y5pj0y3XVNR9JsXsy0RPJaarqbz2WUWSK5PM2SNd3L89PsaJtpqvPWKskgt4smbJJBbhdNO64Scjic2xQesDgcjm3gAYvD4dgGHrA4HI5t4AGLw+HYBh6wOByObeABi8Ph2AZRkiSLfX9mmV0WppJ7CTdScy15WBZ+mm00Xw/NknlY5flJCDFMQV6LZp7Ujde0a2TZfi9CCAHTTPZRUsIYDBNcrRqWpUmY1qxdaSCTFe+72fEEIEmmjxrimqvVFAuFgmlRF2aakGlhsg4uG6ypaVp5AUvTNAs/y0scLU9T97/iflokT5atmaq9J1fnNdRE1Wwmny64fVNvQTXYkbsex1PHbAMw11ytJr8l5FQGDUJB2rLZXpRGlZpztHGzveCUCQ9YnMphcr1TXVjuFedUOTxgcSpPz9Ennzka6Qm4w4FltmjYuJC04fvRkNGHl8r2RMMAwgH3wjuhgFF1Ro79sUc9LI7NiCt/0Rf73rNPYkjpltGbUEJySGE4ArwowxsIPyNDAQZkHIHrDEl74+j1o/NoBMj7kOk9FYsNoScaHpCxL6o3dL2I9NxP2YV7u1LvpYBMb18sNgTIrnA0/KefDv3J20pHX2wgEH7mMe+JqZyXYRjpgeMxg3qtHHvCr7A464ErHI14xpSBU+nhpSa/V4YiwwcALsTTyql0cv71wKlLvafQIS9cKy1cKKVjCz/j6dRbqd7Fn4wDADLZGAC4O2QkXfDG08Px9MCpNI9WtxL2KJFctub6lJexKu1acc01lJfZ0DLBoFKi8Z9rUoOhJpat2YUD4Y79GDgeUza65DTarvc7ClcNW/ESyVWuyW8JOZtDbCgWGwIAPgfOWTmiRaac/rd9tSb9KqN6NInZ84LMNfW/tBaaMPnrvRZNBsyyOkaW3qQLVGCMadTkCovSIoz/uGmCoBKTq0tCCSEqUQFQaA42vXI/YXZdQwWzKpE90dCJPsXAFA319CkLz8UIBVzKUHpJKxgdz8WmUDQUmhdZQjjoxlBaWfo2I4TqHVnCWs672eDUrYZfxzXL0BRNy+8CZZvM/NgsTbOqhtWjqUIYrrk3X9u+CdcbTK2bHmrLx4A538rr++Kchp6jXUDaG3f1Ih3qUyC7QtHQEdl1Bmlv3AV3vmksowCKjH1zn0RvXDnyWNeZKYJ4DHFFQahnt/dEX7onCsAF2QWkvfAj/pskXAtfoRxXAHijoRBwRHal4kjK7gWFf/2Y9wfP95p1xKKDq+279Xkv+XVcc+Waop4LbqhYnmnhA9WgqecuWxxNs7khYlby3DJ7vmzNDLbm672Gmuszj7PIRMSZ+p3T+Xitli3pp2XftYXxx4bSA/E0kxEDOhgj8bQCYCitxNNM9ne68qfr4ItDYS7E00oiDdkFxsCyylAScXTApU+ch5A+ga4/HOpXWFgXPIHQM/F+RQ6TeFqJp2OMhRd8GUoPAwNDacQRIq6QjEsu7GBsyaQ7IWDMeMCs5byXbMg1K6LJJ92rYtI965CvNd2/OQELANi28VP12nhJPys46V6WnwhHw+iLxfik++2qydMaqo6eZ5/sQbgnivB8SmRPNAS4wzc+or92hwIAEF70Zk80rDcBcOxznaEFzbk3F4usI8szOZf8N2yWPlqKWB9Pqrqt4auE1UdfGlF/T9SlROHsS78MAM6eaHoA4e8Bp4ETcTyxf0d3PNMbuP9H+6djMjr+rP9EwPXEftdkHMNATzQy0NfvcTch+siP/ImvxtEJnIC756hr4NQYhta/C7IrHA0fceO0HBpAujuBJhkxho79IR8wjHQhjgGgJxqB7CIJZd+9rtPjPMOTUxp+hVWFpE9giw/pl/uUFFwhAGjxya4O2XUarhDSPTIUALKrR0YS6Zf7lAG4596EyweXby7NsikkT6fg6pFdgCuMsYFTeGL/hlxj6ZmcYwDSMTg9C5mi88mcl+Z7OhBXlDiQ4hmenBXB57DsNIcVjoY7+mL6En44GukJpE8cV2K30xxWJTT5HJaNNfktYZVguua4mMUzOLG+fuVUhZIgmEZNkrlWhy0KIazoSHOqFNGsVCAASqmZ1dpk8X0brwnLJE9D9GqHFppm+SNlazazq9nZjwu1brPEb4vcPAvTihoy5phN1mGSzGe9ltt3iOpkwegKqzJ+VkiTFrK1mCYmFUfLPu9m+ckoNT655qo0RbPsZMynpZRhgvlIsoUmmWfDNEVS9M2+MznbArr0A4QQPbfJsCGlVNO0cceuosNVM5NqLsSXmAxb6T7qA4KwYoM2seDYGvqO1sLANXWSCYZVcYn5tY2pSYWUr20X8uM1WrYymprqLI5IRFUrfd7X4/eIay43iaqqWmRdmt2aWpj0X4Mq0cR8ieFVaepHytrPimsyVa1nV5abVrL5eVJwFWq2Epavz48uWFc+R7BYei19r9Em3Gol54ZmhS1XHK01havbZs5VSpNSqppv/Ea5fbcYhJRSrlkpTb5KeCtQU7wOgNxy0zO1bJIUpwnMrhM5tx08YN0K1KrXCNOI+W4hm0KhiuoMYZVYEODcEvCAdStQq00LhWu35AKYqE3xKyzOAjyt4daA1RQzqEhqQpUhatPgV1icefgV1i2CVJywQxLUqpG0GcL4FRZnDh6wbhHqiuNmj0G2NTVsCjxgcebhAesWwcGyKOY224vK49Cy2q0YiDnlIUqSZJbfZF092cxkve+vbM0tNaytprjYTAmplyjmMiRNG5pl0xJKABhelehJa5aa1FBzeJampk3zsCwKvwqCgFo3ExxGX0fAYLgCSEAIhTDfBacqCELghpUSQQMzmomnhIAAhn2HKubGLPzUD6mRn1Tvo4EmIZRKrN6DZQWgS/opEDTmRUEMLG11c99NNDVamEQhsxo/rc6RRd/b6uCvpYb7FARBMEsTtBhLhBIComnGlxRr1MxrLF+8aZQWGBmcMZ3RLu+8AxDFCmuKhULBLLgwxswS8yxM1gGrPM0GiT7ozKmi4877HhBEYer6xOC50zNFPOxrAgCrVSQLk8XfbWZpXapJRUkrFgAUNO3759RMYdWbn5nYNFvvYarxNtESzJ9WQcQsag1N1g1vQqB1GivOLns6FwCAMVbek3hok29WajI9qpZ+0lrMom7VDSkYmOhw06sfQJ1ZoZ9W58i874019GhQqK8RmGYYRSwWDazHp8UgXJPm2Y8LMzMzvtA9W9v9AMYuD6aHPiyyRmXcNHO7vM3PAMw2P5enaY9bQpESULLv977ICE0Nnr/DG+j49MMqA4B6lwdAvctr2njv1+76zIEl7+zyAECTJ9i0Zt8EqWbfv/vPzXIIgESXb61ZGURg7O7nnt3DwHYG2h8KtO8EY2A7o3sOHj2kv9ZN+uuDz37jWwHGot94LjpnqtQ/aGz5gzDWDiPk4JGvP/fsoX8Z3WP21QePfuO5o4e+Zdij6KFvBVbfF0BjGiHGD0GoIAJBDcX2rkPhz35TrKsHQAShbmtrTWOLWLtoc6XnwK69B9r3HmhCcNehA8CBXXuDANoPfe2mcbj3QPtqPVg0yNv3HrD+LACNYVswJN/dOf7x6PVr6Z17uppbZYnY4NbbNmkNNbV110YuJz86V1PXcFl5t2WbR3+fCMKOg1/OJAam08n2Q99t9KAphezIf5xs/1ojICFY8MCRRavngPdQ4PwLP2w89N1GD5BCk+eLn/z6g6MvfBs4sOtQ4PwLPzTcrlYSQqir474H/+iFS6/+ZHIkcdCnTReYJEmqqjIwAjLw0XlFGSgt9EDbhSHxWMBzcf9Dn2rJdnq92eefvyh72uDdefTwsZaBp96943NyLR5HdgJNQ57W/XsfDXgu9OHOwN5jRz3vDnkbAsmp46l7517jzonkhQk0BbzZ48//5VBZfassAQ+QbJM9Xz36zRuuwttw/GXs91yEpw3Jvzz+zrHvf+OYnGqC97enXsb+J4Dkp1q82RbgOB49+vhObE6PBEHYsSPY3ta2ZUuL/o5+aSBKYj6Xr5fIdi91he5v39fdJHec/q9PMVXddm8XITT++ksA4Dmwaw/UkcAk0NgO7B0cRaB9L4op3P/1hyZSW7YeOvD+CHa3BwqANDI0fui7uzyDUio4jkGc/SH23BjY59/BwjiHZzCbWjbIzw61ew5gDyZfed1iSNfU1iXPv399bETTVEKoo74RSJt/vFqwTcACMHb5otPd1nSH+8qlgcmJuT1rU1cuX3n3zalRfdPv4GQKk2fR6AEQxMgHdI/+qS3uPcgCQLBxLtAF2/bUX5/RXwTKC1U6DGx86MPY/3l+/MJ7AF59T53IaZgf0ISQu+/a/aUvff6tt349PJy00PkDL06ewsH9uBDPtk2jDcmTQ7hzv27MXsG+Y9HkaB/aWryInxmVz/wW+3b2nQE8B/d7LgBA8mTf7LH9ngto2h7ANQDwIn5mFHhjaA3dqyBDqQsEd7ZgdGLBVWAoeXIodUF+4r/g5ZPyEwePAtcJ4qlReeGSuanVi+yU/nqjeyRJUjQaaWpsVDX1cmL4vXPvT0xMLL6L0Se8mh307rsFqaExlx0//8oP9AcIJd86KTpqmb7EmRoc9Tzk2oLG8aHJkQBSg9nUQ/cdmh5p18fe+DQe2rVnEKkgRv5xFgAGR88ObW8Pzn/P4oF947/tHsNBjlpgdmTQelTnZqbGR4e3hz8Fxi4r7zY2NVfomK0v9ijg1yjRR1pzjW2y2xcEGBiLf/CbqxPXH1ndLV2wcU+gcWRoNDW4mlaloVKNVsgzoKDh+++rmZxB37/whd8/efIfJiYmDBXEevdMg9dkBmTV3BndezDqufhnv/z71bclhNbmx9VMwtBa9tOkiXNHTmwwnFkHcOfRx+88Xo63JaFUksY/YsXJFfq5eA5r3749wUDgtd7Xr10bh2Xfmxz06bsEhySQUmewcc9DpUegJ9iYGpw0MKxoADd6gpOlRvg7H+c10MA9nWJNDYDC7Mzw+2c+yEix8WovXmiPgEUpba1lntqbNAmB0yEAIJQy00IOlJlk8RAQwHhxqoSmiYkxcnmKXZo07ntdXe1jjx78+S9eNtSsbMBaC+sWsIIFRoyPNiEw2wVJAFhYS5uI4BCzCVacWqGfCwHr4YcPjI6Ovv/+hwtW677LTTRYrxmuElIqaCZn1mqYgYAQs9G7Rs3ZIsstXSXEwHRNLscrjlaIK7NkZHr5cNAAiCItFo3PkCAQTbMqtmdetgVmmqJIVXXVBfxmZ3OMsfr6+unp6eVWQoTGre0mq0J6r1ddTKqUyVSTfTxd8cApOOprWjvqa6Xp2XyltS3RkPvo8mob7dy5Y2ZmZnG0Kklikg1eNx4wkiQUjBaOUWosEQJVXT/Npb9NkmEdsyrDNgHrFuDkq6997nNP/vKXf2t4Y0il+u7OjtMfDmYmNzn/s4JrRaIo1tTUEELEulpnS+N//5OvPPc/Xz/1zkdaFReWIIQ88MDv/PjHP91sRzgGiNaZnGaVTy1MdL7SbpVoEpNaqxaa+q2BhSYsyy6baaqq+rOfvRTp+mfNzc1FtQhganJyfCJTKBSE2jtEj/fLv9f57S8deO7H/9B39vwO766gV0AyDa9rMKkv32wJflYY/G/KpeXqFYVQQe/jcsz6LgjCzp07QqFPkEV/txljoiBez1wHQJu217v9ra7m//CvHntqInvufGpZB7d8+nDL2//pTMV7JwgC0250xyI1VD/vDz74wFtv/Xr5EbA+72aamH8SipmJa65KUzRLBNe1yjOZ+bFZmhbVQTdYs1Ao9L7+T/p/KaUtLc13bNmiqqpYdIgzOVXV0hOTo1cXLe94t8CLIIJAFkgP/hzrHa2gL2qsuO8NDQ2PPfpIPp8fHBo6efK12dnZ5a0IIaLrrrrtM7/zq+Bf/azvytVFqeeLO/jexHr0bonD1udIkqS2trb+/jfNdKpnLN2emraZdC9P0y6P+ZIa2sQdD969yxO7NFq8aa7RtcOLS8kNTZDRkufy184bmpb0vbV122c+0/03f/NSLpe3nswW3XcJrR2UYNnN4Dp3UEPuo1dZYUWrhJTSL37x91955e+yWYOUgOqZeL6dNfkcVrWQv576zenlG2KSAxNzz7YxaEMAQgy3BAIAJfP53ssbWmgSurLqCHV1dY8++sjx4z8x+xN6EwzIT6kG3kxdGixz1mxFyw1spTsP6uvrn3zy8TffeMswWnGqBB6wqgXJ2W7yiK+NQBDowoKUNmXwIIkltLZue+zRgz/9X/97RdEKAEFTI77a8fN6V8fZS/S1+N6bjWVi2JBSeqAz9E9nBoqqWrJYKSEkGAzc96l7i8XiSy/9oljc/MwSjgU8YFURHndLamzC625Jjhnnl64ff/D4g7P5ws9efSdfML5pBUAIaW9vC4U6GhsaMtns8Rd/Yv4YMQMO7/zp57/0bUKE9g/ir8e1hzq39SaDX8bg29gS/GxL66+zb1dobUES6b8/8vDhxzp/+venL6euFYRPsOKMJElUEByOmvq6OkdtrSBQAJRQSunFi5dOvPyKqqr6bXu5X8vZCHjAqiK2Njc81Nlx+twggO5OV2/S1Z1MD3r15bPBYOc6rqY5G2v/zSMP7t+z68Tr/49day5O7QLgqHXk83ks2mb08cdjv/rV21NTUyXkjFBRU1fv/HhksJgv6DdqO7wAXEGkB38OdAoVXFtgDNmpmez0bK5QzOfyrJgrFotTU9O5fC6Xy+fzecPFAU71wwNWFXHuQjIzNRsfmbsj2+HFYBJBr6AvnwXXczVtNlf4wS/e/PHf/Xo2V1iYdF9+u6dPlJahT8FeVD5f98IfCs6Oty/LjLX2nk4D6RsdOY1LSWUtXVigUFCfff7ls7HLmqZBQ/7ikLZsa05Fvoiz8fBVwqpYJRTrmsUdj4BYxIKtchvio6Vnl8pDFIS51UkNavJ04bpxPayyt+YIDid1hZhROSNCCWPGKwCEEBDjIosghJiZ5jUJ07TcZHHsg8Wz82XXw6qelbLbWVO02E1CKTWzWpvMBDdFE5ZJnobo1Q4tNM3yR8rXVGeKl16DUcVRQqmesnJxaJkJIIKgmT10VxCYqposEhIQsnjH2Y3fUU2jxYny+m6Wo0sIodqMOnrWcM1OFEXNcuAadpAQQgVBNQ8umqqqYNBUSsni2fkSfpZ73s00UWp8cs1VaYp6OWBDxbJNCz9tqknm2UhNFLIsn1luooLAGDPezkoIFQRm8ktLzAMBsQwExHzzQ8nDYtF3MGaSh6ABmmWKguGVNTE3zWkSxrDMn5J+VrbvK2nINVeuKaqqanarRcyv9CxM+m9IlWjqrSyyac1u3wBY+7lhmrpsxf00O2hcs7KaACilXLNSmvYokczhcDjgAYvD4dgIHrA4HI5t4AGLw+HYBh6wOByObeABi8Ph2AYesDgcjm0QJUmyqGFqltllYbLeRrPxmuVtzbHYcSYIgp6kuzGaerHmivupt+Wa660JQBRNd+xyzdVqioVCwSwQMMbM9lVZmKyDywZrappW8b2EjLGK7yW00NT9r7ifFsmTXLOCmjpm++m45mo1+S0hh8OxDTxgcTgc28ADFofDsQ08YHE4HNvAAxaHw7ENPGBxOBzbwAMWh8OxDf8fMtiMqokkZ8sAAAAASUVORK5CYII="
 #!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
 #!   BEGIN_TCL=""
 #!   CATEGORY=""
-#!   DESCRIPTION=""
+#!   DESCRIPTION="&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le but de ce workspace est de montrer comment exporter un média stocké en binaire dans une BDD vers un fichier physique.&lt;/p&gt;"
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="3100 371"
+#!   DOC_EXTENTS="3100 626.001"
 #!   DOC_TOP_LEFT="700 -871"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="24220"
 #!   FME_BULK_MODE_THRESHOLD="2000"
-#!   FME_DOCUMENT_GUID="058f41ed-cc40-4211-be08-c7a8e74c66af"
-#!   FME_DOCUMENT_PRIORGUID="4f75e80b-d749-4266-a6aa-2e8830f84295,bf6d3d62-d5ff-4adb-a959-fe52b23aff94,5b75e9ce-60a8-4043-aaab-c33005a3971e,60748840-5e2d-46b0-855f-acce3c3324a3"
+#!   FME_DOCUMENT_GUID="3cd94be1-9ab3-4016-9f8b-fb1dd230ce42"
+#!   FME_DOCUMENT_PRIORGUID="4f75e80b-d749-4266-a6aa-2e8830f84295,bf6d3d62-d5ff-4adb-a959-fe52b23aff94,5b75e9ce-60a8-4043-aaab-c33005a3971e,60748840-5e2d-46b0-855f-acce3c3324a3,058f41ed-cc40-4211-be08-c7a8e74c66af,6c3103f7-6833-4340-82ef-83622d37f520"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_NAMES_ENCODING="UTF-8"
@@ -33,7 +33,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2024.0.3.0 (20240603 - Build 24220 - WIN64)"
-#!   LAST_SAVE_DATE="2024-08-26T23:18:51"
+#!   LAST_SAVE_DATE="2024-08-28T15:16:37"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="1"
 #!   MARKDOWN_DESCRIPTION=""
@@ -49,10 +49,10 @@
 #!   SOURCE="NONE"
 #!   SOURCE_ROUTING_FILE=""
 #!   TERMINATE_REJECTED="NO"
-#!   TITLE=""
+#!   TITLE="Tuto - Export média depuis BDD"
 #!   USAGE=""
-#!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-141.449 1009.88"
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-542.769 1506.59"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="95"
@@ -151,7 +151,7 @@
 #!   GENERATE_FME_BUILD_NUM="24220"
 #!   NAME="Répertoire destination [DATAFILE]"
 #!   COORDSYS=""
-#!   FANOUT_EXPRESSION=""
+#!   FANOUT_EXPRESSION="&lt;Unused&gt;"
 #!   FANOUT_GROUP="NO"
 #! >
 #! <METAFILE_PARAMETER
@@ -727,27 +727,27 @@
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI MULTIFILE param_source INCLUDE_WEB_BROWSER%SQLite_Database_Files(*.sqlite;*.db;*.sl3;*.gpkg)|*.sqlite;*.db;*.sl3;*.gpkg|SQLite_Database_Files(*.sqlite)|*.sqlite|SQLite_Database_Files(*.db)|*.db|SQLite_Database_Files(*.sl3)|*.sl3|SQLite_Database_Files(*.gpkg)|*.gpkg|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* SQLite Database"
-#!   DEFAULT_VALUE="$(FME_MF_DIR)media_db.sqlite"
+#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)\media_db.sqlite"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI DIRNAME param_dest Emplacement des fichiers finaux"
-#!   DEFAULT_VALUE="$(FME_MF_DIR)media_export"
+#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)\media_export"
 #!   IS_STAND_ALONE="false"
 #! />
 #! </GLOBAL_PARAMETERS>
 #! <USER_PARAMETERS
-#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUiltZWRpYV9kYi5zcWxpdGUiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IlNRTGl0ZSBEYXRhYmFzZSBGaWxlcyIsImZpbHRlciI6WyIqLnNxbGl0ZSIsIiouZGIiLCIqLnNsMyIsIiouZ3BrZyJdfSx7ImRlc2NyaXB0aW9uIjoiU1FMaXRlIERhdGFiYXNlIEZpbGVzIiwiZmlsdGVyIjpbIiouc3FsaXRlIl19LHsiZGVzY3JpcHRpb24iOiJTUUxpdGUgRGF0YWJhc2UgRmlsZXMiLCJmaWx0ZXIiOlsiKi5kYiJdfSx7ImRlc2NyaXB0aW9uIjoiU1FMaXRlIERhdGFiYXNlIEZpbGVzIiwiZmlsdGVyIjpbIiouc2wzIl19LHsiZGVzY3JpcHRpb24iOiJTUUxpdGUgRGF0YWJhc2UgRmlsZXMiLCJmaWx0ZXIiOlsiKi5ncGtnIl19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoicGFyYW1fc291cmNlIiwicHJvbXB0IjoiU1FMaXRlIERhdGFiYXNlIiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiIkKEZNRV9NRl9ESVIpbWVkaWFfZXhwb3J0IiwiaXRlbXNUb1NlbGVjdCI6ImZvbGRlcnMiLCJuYW1lIjoicGFyYW1fZGVzdCIsInByb21wdCI6IkVtcGxhY2VtZW50IGRlcyBmaWNoaWVycyBmaW5hdXgiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJzaG93UHJvbXB0Ijp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn1dfQ=="
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUl9VU0VSVFlQRUQpXFxtZWRpYV9kYi5zcWxpdGUiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IlNRTGl0ZSBEYXRhYmFzZSBGaWxlcyIsImZpbHRlciI6WyIqLnNxbGl0ZSIsIiouZGIiLCIqLnNsMyIsIiouZ3BrZyJdfSx7ImRlc2NyaXB0aW9uIjoiU1FMaXRlIERhdGFiYXNlIEZpbGVzIiwiZmlsdGVyIjpbIiouc3FsaXRlIl19LHsiZGVzY3JpcHRpb24iOiJTUUxpdGUgRGF0YWJhc2UgRmlsZXMiLCJmaWx0ZXIiOlsiKi5kYiJdfSx7ImRlc2NyaXB0aW9uIjoiU1FMaXRlIERhdGFiYXNlIEZpbGVzIiwiZmlsdGVyIjpbIiouc2wzIl19LHsiZGVzY3JpcHRpb24iOiJTUUxpdGUgRGF0YWJhc2UgRmlsZXMiLCJmaWx0ZXIiOlsiKi5ncGtnIl19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoicGFyYW1fc291cmNlIiwicHJvbXB0IjoiU1FMaXRlIERhdGFiYXNlIiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiIkKEZNRV9NRl9ESVJfVVNFUlRZUEVEKVxcbWVkaWFfZXhwb3J0IiwiaXRlbXNUb1NlbGVjdCI6ImZvbGRlcnMiLCJuYW1lIjoicGFyYW1fZGVzdCIsInByb21wdCI6IkVtcGxhY2VtZW50IGRlcyBmaWNoaWVycyBmaW5hdXgiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJzaG93UHJvbXB0Ijp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn1dfQ=="
 #! >
 #! <PARAMETER_INFO>
 #!     <INFO NAME="param_source" 
-#!   DEFAULT_VALUE="$(FME_MF_DIR)media_db.sqlite"
+#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)\media_db.sqlite"
 #!   SCOPE="DEPENDENT"
 #!   GENERATED_GUI_LINE="true"
 #!   GUI_LINE="GUI MULTIFILE param_source INCLUDE_WEB_BROWSER%SQLite_Database_Files(*.sqlite;*.db;*.sl3;*.gpkg)|*.sqlite;*.db;*.sl3;*.gpkg|SQLite_Database_Files(*.sqlite)|*.sqlite|SQLite_Database_Files(*.db)|*.db|SQLite_Database_Files(*.sl3)|*.sl3|SQLite_Database_Files(*.gpkg)|*.gpkg|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* SQLite Database"
 #! />
 #!     <INFO NAME="param_dest" 
-#!   DEFAULT_VALUE="$(FME_MF_DIR)media_export"
+#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)\media_export"
 #!   SCOPE="DEPENDENT"
 #!   GENERATED_GUI_LINE="true"
 #!   GUI_LINE="GUI DIRNAME param_dest Emplacement des fichiers finaux"
@@ -767,7 +767,7 @@
 #!   INFO_NODE="false"
 #!   CUSTOM_USER_COLOR="false"
 #!   UUID="{9565bb80-9ffe-46a3-af76-2593c8cde236}"
-#!   COLOUR="0.59999999999999998,0.47058823529411764,0,0.90196078431372551"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="3"
 #! />
@@ -783,9 +783,25 @@
 #!   INFO_NODE="false"
 #!   CUSTOM_USER_COLOR="false"
 #!   UUID="{b167e54a-11e3-4e8f-9f03-edfe58d617d2}"
-#!   COLOUR="0.59999999999999998,0.47058823529411764,0,0.90196078431372551"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="25"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="10"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le but de ce workspace est de montrer comment exporter un média ou tout type de fichier stocké en binaire dans une BDD vers un fichier physique.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="700 -244.99874998749988"
+#!   TOP_LEFT="700 -244.99874998749988"
+#!   BOTTOM_RIGHT="2100.9900724007239 -450.00050000500005"
+#!   BOUNDING_RECT="700 -244.99874998749988 1400.9900724007239 205.00175001750017"
+#!   ORDER="500000000000027"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="true"
+#!   UUID="{8c8a6f22-b262-4f5c-b977-5381de368511}"
+#!   COLOUR="0,0.67450980392156867,0.22352941176470589,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
 #! />
 #! </COMMENTS>
 #! <CONSTANTS>
@@ -796,14 +812,13 @@
 #! <TRANSFORMER
 #!   IDENTIFIER="3"
 #!   TYPE="AttributeManager"
-#!   VERSION="4"
+#!   VERSION="5"
 #!   POSITION="1500 -800"
 #!   BOUNDING_RECT="1500 -800 501 71"
 #!   ORDER="500000000000001"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   LAST_PARM_EDIT="24220"
-#!   SHOW_BLANK_INPUT_FT="false"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -813,7 +828,7 @@
 #!     <XFORM_ATTR ATTR_NAME="media_binaire" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="miniature miniature  REMOVE type_media type_media  NO_OP chemin chemin  REMOVE titre titre  REMOVE nom_media nom_media  NO_OP extension extension  NO_OP taille taille  REMOVE date_maj date_maj  REMOVE date_creation date_creation  REMOVE media_binaire media_binaire  NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="miniature miniature  varchar&lt;openparen&gt;200&lt;closeparen&gt; REMOVE type_media type_media  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP chemin chemin  buffer REMOVE titre titre  buffer REMOVE nom_media nom_media  buffer NO_OP extension extension  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP taille taille  buffer REMOVE date_maj date_maj  buffer REMOVE date_creation date_creation  buffer REMOVE media_binaire media_binaire  buffer NO_OP"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -821,6 +836,7 @@
 #!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="USER_EXPOSED_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
@@ -911,9 +927,9 @@ FME_PYTHON_VERSION 37
 ARCGIS_COMPATIBILITY ARCGIS_AUTO
 GUI IGNORE SourceDataset_SQLITE3_1,SQLITE3_IN_FME_CONNECTION_GROUP_SQLITE3_1,SQLITE3_IN_FME_GROUP_NAMED1_SQLITE3_1,SQLITE3_IN_ADVANCED_SQLITE3_1,SQLITE3_IN_BEGIN_SQL_SQLITE3_1,SQLITE3_IN_END_SQL_SQLITE3_1,SQLITE3_IN_NETWORK_AUTHENTICATION_SQLITE3_1,DestDataset_DATAFILE_1,DATAFILE_OUT_FME_GROUP_NAMED3_DATAFILE_1,DATAFILE_OUT_MIME_TYPE_DATAFILE_1
 # ============================================================================
-DEFAULT_MACRO param_source $(FME_MF_DIR)media_db.sqlite
+DEFAULT_MACRO param_source $(FME_MF_DIR_USERTYPED)\media_db.sqlite
 
-DEFAULT_MACRO param_dest $(FME_MF_DIR)media_export
+DEFAULT_MACRO param_dest $(FME_MF_DIR_USERTYPED)\media_export
 
 # ============================================================================
 INCLUDE [ if {{$(param_source$encode)} == {}} { puts_real {Parameter 'param_source' must be given a value.}; exit 1; }; ]
@@ -1047,7 +1063,7 @@ DATAFILE_1_DATASET "$(DestDataset_DATAFILE_1)"
 #! END_WB_HEADER
 #! END_HEADER
 
-LOG_FILENAME "$(FME_MF_DIR)export_media_bdd.log"
+LOG_FILENAME "$(FME_MF_DIR)Tuto - Export média depuis BDD.log"
 LOG_APPEND NO
 LOG_TIMINGS YES
 LOG_FILTER_MASK -1
@@ -1060,6 +1076,7 @@ FME_STROKE_MAX_DEVIATION 0
 FME_NAMES_ENCODING UTF-8
 FME_BULK_MODE_THRESHOLD 2000
 LAST_SAVE_BUILD "FME 2024.0.3.0 (20240603 - Build 24220 - WIN64)"
+MAPPING_FILE_ID Tuto<space>-<space>Export<space>m<u00e9>dia<space>depuis<space>BDD
 DEFAULT_MACRO DATASET_KEYWORD_SQLITE3_1 SQLITE3_1
 DEFAULT_MACRO DATASET_KEYWORD_DATAFILE_1 DATAFILE_1
 # -------------------------------------------------------------------------
@@ -1072,7 +1089,7 @@ MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
 
-MACRO WORKSPACE_NAME export_media_bdd
+MACRO WORKSPACE_NAME Tuto - Export média depuis BDD
 MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
 
@@ -1083,7 +1100,7 @@ SQLITE3_1_MERGE_DEF SQLITE3_1::media_data EXACT media_data DEFLINE sqlite3_sql_s
 FACTORY_DEF * TeeFactory    FACTORY_NAME "media_data_SQLITE3_1 Splitter"    INPUT FEATURE_TYPE media_data    OUTPUT FEATURE_TYPE media_data_SQLITE3_1
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager }    INPUT  FEATURE_TYPE media_data_SQLITE3_1    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "miniature" "miniature" "" "REMOVE" }      ATTR_ACTION { "chemin" "chemin" "" "REMOVE" }      ATTR_ACTION { "titre" "titre" "" "REMOVE" }      ATTR_ACTION { "taille" "taille" "" "REMOVE" }      ATTR_ACTION { "date_maj" "date_maj" "" "REMOVE" }      ATTR_ACTION { "date_creation" "date_creation" "" "REMOVE" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_OUTPUT        }
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager }    INPUT  FEATURE_TYPE media_data_SQLITE3_1    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 4    DEF_VAL_COLUMN 2    NUM_OF_COLUMNS 5    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "miniature" "miniature" "" "varchar<openparen>200<closeparen>" "REMOVE" }      ATTR_ACTION { "type_media" "type_media" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "chemin" "chemin" "" "buffer" "REMOVE" }      ATTR_ACTION { "titre" "titre" "" "buffer" "REMOVE" }      ATTR_ACTION { "nom_media" "nom_media" "" "buffer" "NO_OP" }      ATTR_ACTION { "extension" "extension" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "taille" "taille" "" "buffer" "REMOVE" }      ATTR_ACTION { "date_maj" "date_maj" "" "buffer" "REMOVE" }      ATTR_ACTION { "date_creation" "date_creation" "" "buffer" "REMOVE" }      ATTR_ACTION { "media_binaire" "media_binaire" "" "buffer" "NO_OP" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_OUTPUT        }
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} TextEncoderFactory    FACTORY_NAME { BinaryDecoder }    INPUT  FEATURE_TYPE AttributeManager_OUTPUT    ACTION { HEX_DECODE }    RESULT_ATTR_ENCODING { fme-binary }    ATTR { media_binaire data_file_data }    OUTPUT { OUTPUT FEATURE_TYPE BinaryDecoder_OUTPUT        }
 # -------------------------------------------------------------------------

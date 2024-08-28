@@ -1,0 +1,1532 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\FME_2024.0.3\fme.exe" "C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Attributs de listes\Tuto - Comptage oiseaux.fmw"
+#          --SourceDataset_OGCGEOPACKAGE "$(FME_MF_DIR_USERTYPED)\data_liste.gpkg"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION="&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le but de ce workspace est de récupérer des statistiques à partir de deux relevés faunistiques sur des oiseaux observés.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Les deux relevés présentent des structures différentes.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Les données sont issues d&apos;un geopackage.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Aucune sortie n&apos;est prévue dans le script.&lt;/p&gt;"
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="6000 1871"
+#!   DOC_TOP_LEFT="0 -2671"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24220"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="3e3cc156-c0a4-46c4-8183-91153342f64e"
+#!   FME_DOCUMENT_PRIORGUID="2e4bddd3-3685-4f9d-93de-96f23d119292,caa42b36-a0f3-414e-8d9f-749e6db26df1,5df10c2d-c6c0-4fd9-b2ec-c86ad771f82b,453cdc93-4f8d-4769-9d6f-170fc6dab64a"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.0.3.0 (20240603 - Build 24220 - WIN64)"
+#!   LAST_SAVE_DATE="2024-08-28T15:03:27"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="2"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="2"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="312"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE="Tuto - Comptage oiseaux"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-627.772 -586.289"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="113"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="OGCGEOPACKAGE"
+#!   DATASET="$(SourceDataset_OGCGEOPACKAGE)"
+#!   KEYWORD="OGCGEOPACKAGE_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="geopackage_type {FME_GEN_GEOMETRY}"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename text(50) fme_color text(50) fme_dataset text(50) fme_feature_type text(50) fme_fill_color text(50) fme_geometry text(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string text(50) fme_type text(50) geopackage_type text(255) multi_reader_full_id mediumint multi_reader_id mediumint multi_reader_keyword text(50) multi_reader_type text(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP geopackage_reader_table_group geopackage_where_clause Table&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_ENCODED geopackage_where_clause WHERE Clause&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES="Indexed PrimaryKey"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24220"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="OGCGEOPACKAGE_OUT_TRANSACTION_SIZE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the GeoPackage file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the GeoPackage file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="blob(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="blob(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="tinyint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mediumint"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mediumint"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multipoint"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multicurve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multilinestring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_curve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_linestring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_compoundcurve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_circularstring"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multisurface"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_surface"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multilinestring"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multisurface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multilinestring"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multipolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_multisurface"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_surface"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_curvepolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_curvepolygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_curvepolygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_geometrycollection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_geometry"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="observation_oiseaux"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="32"
+#!   FEAT_GEOMTYPE="geopackage_none"
+#!   POSITION="0 -1700"
+#!   BOUNDING_RECT="0 -1700 700 65"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCGEOPACKAGE_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="lieu" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="date" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="temp_moy" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="espece_vue" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="int,PrimaryKey" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_reader_table_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_where_clause" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="observation_oiseaux_02"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="71"
+#!   FEAT_GEOMTYPE="geopackage_none"
+#!   POSITION="0 -2600"
+#!   BOUNDING_RECT="0 -2600 638 65"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCGEOPACKAGE_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="lieu" ATTR_TYPE="text(9)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="jour_1_temp_moy" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="jour_1_espece_vue" ATTR_TYPE="text(37)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="jour_2_temp_moy" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="jour_2_espece_vue" ATTR_TYPE="text(37)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="jour_3_temp_moy" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="jour_3_espece_vue" ATTR_TYPE="text(37)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="jour_4_temp_moy" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="jour_4_espece_vue" ATTR_TYPE="text(37)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="jour_5_temp_moy" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="jour_5_espece_vue" ATTR_TYPE="text(37)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="int,PrimaryKey" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_reader_table_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_where_clause" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="OGCGEOPACKAGE_1"
+#!   OVERRIDE="-OGCGEOPACKAGE_1_DATASET"
+#!   DATASET="OGCGEOPACKAGE_1/data_liste.gpkg"
+#! />
+#! </READER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_OGCGEOPACKAGE INCLUDE_WEB_BROWSER%GeoPackage_Files(*.gpkg)|*.gpkg|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* GeoPackage File:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)\data_liste.gpkg"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUl9VU0VSVFlQRUQpXFxkYXRhX2xpc3RlLmdwa2ciLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6Ikdlb1BhY2thZ2UgRmlsZXMiLCJmaWx0ZXIiOlsiKi5ncGtnIl19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9PR0NHRU9QQUNLQUdFIiwicHJvbXB0IjoiR2VvUGFja2FnZSBGaWxlOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_OGCGEOPACKAGE" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)\data_liste.gpkg"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_OGCGEOPACKAGE INCLUDE_WEB_BROWSER%GeoPackage_Files(*.gpkg)|*.gpkg|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* GeoPackage File:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="52"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Créer une liste à partir d&apos;un attribut avec valeurs délimitées&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1100 -1400"
+#!   TOP_LEFT="1100 -1400"
+#!   BOTTOM_RIGHT="1553.9591177161772 -1401"
+#!   BOUNDING_RECT="1100 -1400 453.95911771617716 1"
+#!   ORDER="500000000000038"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{7acb473e-2f45-4100-b372-687d67202d73}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="44"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="53"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Grouper les objets en listes selon un attribut&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1800 -1400"
+#!   TOP_LEFT="1800 -1400"
+#!   BOTTOM_RIGHT="2253.9591177161774 -1401"
+#!   BOUNDING_RECT="1800 -1400 453.95911771617716 1"
+#!   ORDER="500000000000039"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{692bd38c-6fbb-4cf1-9a12-e332cc7ea54a}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="45"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="54"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Extraire les données min et max&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2500 -1400"
+#!   TOP_LEFT="2500 -1400"
+#!   BOTTOM_RIGHT="3099.9566714417142 -1401"
+#!   BOUNDING_RECT="2500 -1400 599.95667144171443 1"
+#!   ORDER="500000000000040"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{aa838a1a-fa66-4ded-a158-f26e05a56ff5}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="46"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="56"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Renommer des attributs de liste&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="3400 -1400"
+#!   TOP_LEFT="3400 -1400"
+#!   BOTTOM_RIGHT="3853.9591177161774 -1401"
+#!   BOUNDING_RECT="3400 -1400 453.95911771617716 1"
+#!   ORDER="500000000000041"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{96667878-2492-41b9-aaeb-05d6eb64ad14}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="43"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="57"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Rechercher des objets contenant une valeur dans un élément de liste&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="4500 -1400"
+#!   TOP_LEFT="4500 -1400"
+#!   BOTTOM_RIGHT="4953.9591177161774 -1401"
+#!   BOUNDING_RECT="4500 -1400 453.95911771617716 1"
+#!   ORDER="500000000000042"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{eb771f9f-2be6-4520-8150-30d48b387afc}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="47"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="69"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;;&quot;&gt;Création d&apos;une liste pour chaque objets à partir d&apos;une série d&apos;attributs&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;;&quot;&gt;=&amp;gt; Température&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1100 -2300"
+#!   TOP_LEFT="1100 -2300"
+#!   BOTTOM_RIGHT="1806.9401631516316 -2442.5011250112502"
+#!   BOUNDING_RECT="1100 -2300 706.94016315163151 142.50112501125011"
+#!   ORDER="500000000000025"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{2fca5a91-6dee-4ccf-93ef-8f8caf8eaa07}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="61"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="70"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Suppression des attributs non utiles&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="4100 -2300"
+#!   TOP_LEFT="4100 -2300"
+#!   BOTTOM_RIGHT="4600.981072310723 -2442.5011250112502"
+#!   BOUNDING_RECT="4100 -2300 500.98107231072311 142.50112501125011"
+#!   ORDER="500000000000026"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{cb4dc14a-5e33-463d-a81f-843c95426ba2}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="63"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="60"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Suppression des éléments en doublon dans les listes&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="5400.0433285582858 -2300"
+#!   TOP_LEFT="5400.0433285582858 -2300"
+#!   BOTTOM_RIGHT="6000 -2301"
+#!   BOUNDING_RECT="5400.0433285582858 -2300 599.95667144171443 1"
+#!   ORDER="500000000000044"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{e335750a-c38f-4d65-829a-a64cb8525299}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="59"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="68"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Créer une liste à partir d&apos;un attribut avec valeurs délimitées : liste d&apos;espèces vues&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="3500 -2300"
+#!   TOP_LEFT="3500 -2300"
+#!   BOTTOM_RIGHT="3953.9591177161774 -2301"
+#!   BOUNDING_RECT="3500 -2300 453.95911771617716 1"
+#!   ORDER="500000000000038"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{b7863486-a608-4803-9316-54393512b7e4}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="64"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="76"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Nombre d&apos;observations par espèce&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="4800 -2300"
+#!   TOP_LEFT="4800 -2300"
+#!   BOTTOM_RIGHT="5235.9901880268799 -2301"
+#!   BOUNDING_RECT="4800 -2300 435.99018802688028 1"
+#!   ORDER="500000000000012"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{e1d37849-ebce-4f1c-bba0-692e801d76bc}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="75"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="87"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;;&quot;&gt;Création d&apos;une liste pour chaque objets à partir d&apos;une série d&apos;attributs&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;;&quot;&gt;=&amp;gt; Espèce vue&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1999.9999999999998 -2300"
+#!   TOP_LEFT="1999.9999999999998 -2300"
+#!   BOTTOM_RIGHT="2706.9401631516312 -2442.5011250112502"
+#!   BOUNDING_RECT="1999.9999999999998 -2300 706.94016315163151 142.50112501125011"
+#!   ORDER="500000000000025"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{e694176a-7d76-41e4-a744-05373cd2b300}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="86"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="73"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Concaténer tous les éléments d&apos;une liste dans un attribut&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2900 -2300"
+#!   TOP_LEFT="2900 -2300"
+#!   BOTTOM_RIGHT="3335.9901880268803 -2301"
+#!   BOUNDING_RECT="2900 -2300 435.99018802688028 1"
+#!   ORDER="500000000000051"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{824905cd-676e-4529-814a-6a8b9e073fdf}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="85"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="74"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le but de ce workspace est de récupérer des statistiques à partir de deux relevés faunistiques sur des oiseaux observés.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Les deux relevés présentent des structures différentes.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le but est ici de montrer les capacités des transformers sur les attributs de liste.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Les données sont issues d&apos;un geopackage.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Aucune sortie n&apos;est prévue dans le script.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="0 -800"
+#!   TOP_LEFT="0 -800"
+#!   BOTTOM_RIGHT="1400.9900724007239 -1005.0017500175002"
+#!   BOUNDING_RECT="0 -800 1400.9900724007239 205.00175001750017"
+#!   ORDER="500000000000027"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="true"
+#!   UUID="{8c8a6f22-b262-4f5c-b977-5381de368511}"
+#!   COLOUR="0,0.67450980392156867,0.22352941176470589,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="43"
+#!   TYPE="ListRenamer"
+#!   VERSION="1"
+#!   POSITION="3400 -1700"
+#!   BOUNDING_RECT="3400 -1700 454 71"
+#!   ORDER="500000000000010"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#!   SHOW_BLANK_INPUT_FT="false"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lieu" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.espece_observee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.espece{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="temp_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="temp_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="LEAVE_ORIG" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ACTION" PARM_VALUE="Rename"/>
+#!     <XFORM_PARM PARM_NAME="LIST_COMPONENT_NAMES" PARM_VALUE="data&lt;opencurly&gt;&lt;closecurly&gt;,data&lt;opencurly&gt;&lt;closecurly&gt;,espece_vue,espece_observee"/>
+#!     <XFORM_PARM PARM_NAME="LIST_COMPONENT_NAMES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="data&lt;opencurly&gt;&lt;closecurly&gt;.espece_vue"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListRenamer_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="44"
+#!   TYPE="AttributeSplitter"
+#!   VERSION="5"
+#!   POSITION="1100 -1700"
+#!   BOUNDING_RECT="1100 -1700 454 71"
+#!   ORDER="500000000000032"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lieu" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="espece_vue"/>
+#!     <XFORM_PARM PARM_NAME="DELIMITER" PARM_VALUE="&lt;comma&gt;"/>
+#!     <XFORM_PARM PARM_NAME="DROP_EMPTY_PARTS" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="FIELD_QUALIFIER" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="espece"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRIM_TYPE" PARM_VALUE="BOTH"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeSplitter_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="45"
+#!   TYPE="ListBuilder"
+#!   VERSION="3"
+#!   POSITION="1800 -1700"
+#!   BOUNDING_RECT="1800 -1700 454 71"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#!   SHOW_BLANK_INPUT_FT="false"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lieu" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.espece{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="lieu"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="date temp_moy espece_vue espece&lt;opencurly&gt;&lt;closecurly&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="Selected Attributes"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="data"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListBuilder_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="46"
+#!   TYPE="ListRangeExtractor"
+#!   VERSION="0"
+#!   POSITION="2500 -1700"
+#!   BOUNDING_RECT="2500 -1700 600 71"
+#!   ORDER="500000000000009"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20596"
+#!   SHOW_BLANK_INPUT_FT="false"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lieu" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.espece{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="temp_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="temp_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="MAX" PARM_VALUE="temp_max"/>
+#!     <XFORM_PARM PARM_NAME="MIN" PARM_VALUE="temp_min"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SRC_LIST" PARM_VALUE="data{}.temp_moy"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListRangeExtractor_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="47"
+#!   TYPE="ListSearcher"
+#!   VERSION="8"
+#!   POSITION="4500 -1700"
+#!   BOUNDING_RECT="4500 -1700 454 71"
+#!   ORDER="500000000000011"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="FOUND"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lieu" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.espece_observee" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.espece{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="temp_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="temp_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="index_presence" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="NOT_FOUND"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="lieu" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.temp_moy" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.espece_observee" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="data{}.espece{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="temp_min" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="temp_max" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUE" PARM_VALUE="m&lt;u00e9&gt;sange"/>
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="CASE_SENSITIVE"/>
+#!     <XFORM_PARM PARM_NAME="INDEX_ATTR" PARM_VALUE="index_presence"/>
+#!     <XFORM_PARM PARM_NAME="INDEX_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTR" PARM_VALUE="data&lt;opencurly&gt;&lt;closecurly&gt;.espece_observee"/>
+#!     <XFORM_PARM PARM_NAME="MATCHTYPE" PARM_VALUE="REGULAR_EXPRESSION_ENCODED"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_STRING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListSearcher_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="59"
+#!   TYPE="ListDuplicateRemover"
+#!   VERSION="1"
+#!   POSITION="5400 -2600"
+#!   BOUNDING_RECT="5400 -2600 600 71"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#!   SHOW_BLANK_INPUT_FT="false"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lieu" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="temp_moy{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue_total{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_histogram{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_histogram{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SRC_LIST" PARM_VALUE="espece_vue_total{}"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListDuplicateRemover"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="61"
+#!   TYPE="ListExpressionPopulator"
+#!   VERSION="1"
+#!   POSITION="1100 -2600"
+#!   BOUNDING_RECT="1100 -2600 700 71"
+#!   ORDER="500000000000023"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20596"
+#!   SHOW_BLANK_INPUT_FT="false"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lieu" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_1_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_1_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_2_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_2_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_3_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_3_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_4_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_4_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_5_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_5_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="temp_moy{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="EXPRESSION" PARM_VALUE="jour_&lt;openparen&gt;&lt;openbracket&gt;0-9&lt;closebracket&gt;&lt;closeparen&gt;_temp_moy"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="temp_moy"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_STRING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListExpressionPopulator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="63"
+#!   TYPE="BulkAttributeRemover"
+#!   VERSION="3"
+#!   POSITION="4100 -2600"
+#!   BOUNDING_RECT="4100 -2600 500 71"
+#!   ORDER="500000000000024"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lieu" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="temp_moy{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue_total{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_EXP" PARM_VALUE="jour_"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_STRING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="BulkAttributeRemover"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="64"
+#!   TYPE="AttributeSplitter"
+#!   VERSION="5"
+#!   POSITION="3500 -2600"
+#!   BOUNDING_RECT="3500 -2600 454 71"
+#!   ORDER="500000000000032"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lieu" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_1_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_1_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_2_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_2_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_3_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_3_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_4_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_4_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_5_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_5_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="temp_moy{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue_total{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="espece_vue"/>
+#!     <XFORM_PARM PARM_NAME="DELIMITER" PARM_VALUE="&lt;comma&gt;"/>
+#!     <XFORM_PARM PARM_NAME="DROP_EMPTY_PARTS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="FIELD_QUALIFIER" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="espece_vue_total"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRIM_TYPE" PARM_VALUE="BOTH"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeSplitter_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="75"
+#!   TYPE="ListHistogrammer"
+#!   VERSION="0"
+#!   POSITION="4800 -2600"
+#!   BOUNDING_RECT="4800 -2600 436 65"
+#!   ORDER="500000000000010"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lieu" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="temp_moy{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue_total{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_histogram{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_histogram{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="espece_histogram"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SRC_LIST" PARM_VALUE="espece_vue_total{}"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListHistogrammer_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="85"
+#!   TYPE="ListConcatenator"
+#!   VERSION="4"
+#!   POSITION="2900 -2600"
+#!   BOUNDING_RECT="2900 -2600 436 65"
+#!   ORDER="500000000000050"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lieu" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_1_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_1_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_2_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_2_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_3_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_3_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_4_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_4_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_5_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_5_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="temp_moy{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="DROP_EMPTY_PARTS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTR" PARM_VALUE="espece_vue&lt;opencurly&gt;&lt;closecurly&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SEP" PARM_VALUE="&lt;comma&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="espece_vue"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListConcatenator_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="86"
+#!   TYPE="ListExpressionPopulator"
+#!   VERSION="1"
+#!   POSITION="1999.9999999999998 -2600"
+#!   BOUNDING_RECT="1999.9999999999998 -2600 700 71"
+#!   ORDER="500000000000023"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lieu" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_1_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_1_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_2_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_2_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_3_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_3_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_4_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_4_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_5_temp_moy" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jour_5_espece_vue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="temp_moy{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="espece_vue{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="EXPRESSION" PARM_VALUE="jour_&lt;openparen&gt;&lt;openbracket&gt;0-9&lt;closebracket&gt;&lt;closeparen&gt;_espece_vue"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="espece_vue"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_STRING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListExpressionPopulator_2"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="55"
+#!   SOURCE_NODE="32"
+#!   TARGET_NODE="44"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="72"
+#!   SOURCE_NODE="71"
+#!   TARGET_NODE="61"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="83"
+#!   SOURCE_NODE="43"
+#!   TARGET_NODE="47"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="49"
+#!   SOURCE_NODE="44"
+#!   TARGET_NODE="45"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="48"
+#!   SOURCE_NODE="45"
+#!   TARGET_NODE="46"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="51"
+#!   SOURCE_NODE="46"
+#!   TARGET_NODE="43"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="88"
+#!   SOURCE_NODE="61"
+#!   TARGET_NODE="86"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="77"
+#!   SOURCE_NODE="63"
+#!   TARGET_NODE="75"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="66"
+#!   SOURCE_NODE="64"
+#!   TARGET_NODE="63"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="78"
+#!   SOURCE_NODE="75"
+#!   TARGET_NODE="59"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="90"
+#!   SOURCE_NODE="85"
+#!   TARGET_NODE="64"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="89"
+#!   SOURCE_NODE="86"
+#!   TARGET_NODE="85"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 312
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_FME_CONNECTION_GROUP_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_ADVANCED_GROUP_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_ENFORCE_FOREIGN_KEY_INTEGRITY_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_USE_SEARCH_ENVELOPE_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINX_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINY_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXX_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXY_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_CLIP_TO_ENVELOPE_OGCGEOPACKAGE_1,OGCGEOPACKAGE_IN_NETWORK_AUTHENTICATION_OGCGEOPACKAGE_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_OGCGEOPACKAGE $(FME_MF_DIR_USERTYPED)\data_liste.gpkg
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_OGCGEOPACKAGE$encode)} == {}} { puts_real {Parameter 'SourceDataset_OGCGEOPACKAGE' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} OGCGEOPACKAGE
+MULTI_READER_KEYWORD{0} OGCGEOPACKAGE_1
+MULTI_READER_GEN_DIRECTIVES{0} ENFORCE_FOREIGN_KEY_INTEGRITY,YES,USE_SEARCH_ENVELOPE,NO,ADVANCED_GROUP,FME_DISCLOSURE_OPEN,EXPOSE_PRIMARY_KEY_ATTRIBUTE,YES,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,_MERGE_SCHEMAS,YES,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_OPEN,READ_NULLS,YES,ENCODE_FEATURE_TYPE_AND_ATTR_NAMES,YES,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,SEARCH_ENVELOPE_MINY,0,OPEN_SINGLE_RASTER_AS_SUBDATASET,YES,OGCGEOPACKAGE_EXPOSE_FORMAT_ATTRS,,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,READ_BOOLEANS_AS_YES_NO,YES,CLIP_TO_ENVELOPE,NO,TABLELIST,communes<space>remontees_mecaniques,READER_REPLACE_INVALID_CHARS,NO,SEARCH_ENVELOPE_MINX,0
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD MULTI_DEST
+MULTI_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "OGCGEOPACKAGE_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER OGCGEOPACKAGE OGCGEOPACKAGE_1
+# ============================================================================
+# The following GUI line prompts for a folder to be used as the
+# source of the GEOPACKAGE Files.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_OGCGEOPACKAGE_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER OGCGEOPACKAGE OGCGEOPACKAGE_1
+DEFAULT_MACRO SourceDataset_OGCGEOPACKAGE_1 $(SourceDataset_OGCGEOPACKAGE)
+GUI MULTIFILE SourceDataset_OGCGEOPACKAGE_1 GeoPackage_Files(*.gpkg)|*.gpkg|All_files(*)|* GeoPackage File:
+DEFAULT_MACRO OGCGEOPACKAGE_IN_FME_CONNECTION_GROUP_OGCGEOPACKAGE_1 
+GUI OPTIONAL DISCLOSUREGROUP OGCGEOPACKAGE_IN_FME_CONNECTION_GROUP_OGCGEOPACKAGE_1 OGCGEOPACKAGE_IN_NAMED_CONNECTION Database Connection
+DEFAULT_MACRO OGCGEOPACKAGE_IN_TABLELIST_OGCGEOPACKAGE_1 
+OGCGEOPACKAGE_1_TABLELIST "$(OGCGEOPACKAGE_IN_TABLELIST_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_IN_ADVANCED_GROUP_OGCGEOPACKAGE_1 
+GUI OPTIONAL DISCLOSUREGROUP OGCGEOPACKAGE_IN_ADVANCED_GROUP_OGCGEOPACKAGE_1 FME_DISCLOSURE_CLOSED%OGCGEOPACKAGE_IN_ENFORCE_FOREIGN_KEY_INTEGRITY_OGCGEOPACKAGE_1 Advanced
+DEFAULT_MACRO OGCGEOPACKAGE_IN_ENFORCE_FOREIGN_KEY_INTEGRITY_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_ENFORCE_FOREIGN_KEY_INTEGRITY "$(OGCGEOPACKAGE_IN_ENFORCE_FOREIGN_KEY_INTEGRITY_OGCGEOPACKAGE_1)"
+GUI LOOKUP_CHOICE OGCGEOPACKAGE_IN_ENFORCE_FOREIGN_KEY_INTEGRITY_OGCGEOPACKAGE_1 Yes,YES%No,NO Enforce Foreign Key Integrity:
+DEFAULT_MACRO OGCGEOPACKAGE_IN_EXPOSE_ATTRS_GROUP_OGCGEOPACKAGE_1 FME_DISCLOSURE_OPEN
+OGCGEOPACKAGE_1_EXPOSE_ATTRS_GROUP "$(OGCGEOPACKAGE_IN_EXPOSE_ATTRS_GROUP_OGCGEOPACKAGE_1)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO OGCGEOPACKAGE_IN_USE_SEARCH_ENVELOPE_OGCGEOPACKAGE_1 NO
+OGCGEOPACKAGE_1_USE_SEARCH_ENVELOPE "$(OGCGEOPACKAGE_IN_USE_SEARCH_ENVELOPE_OGCGEOPACKAGE_1)"
+GUI ACTIVEDISCLOSUREGROUP OGCGEOPACKAGE_IN_USE_SEARCH_ENVELOPE_OGCGEOPACKAGE_1 OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINX_OGCGEOPACKAGE_1%OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINY_OGCGEOPACKAGE_1%OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXX_OGCGEOPACKAGE_1%OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXY_OGCGEOPACKAGE_1%OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCGEOPACKAGE_1%OGCGEOPACKAGE_IN_CLIP_TO_ENVELOPE_OGCGEOPACKAGE_1%OGCGEOPACKAGE_IN_SEARCH_METHOD%OGCGEOPACKAGE_IN_SEARCH_METHOD_FILTER%OGCGEOPACKAGE_IN_SEARCH_ORDER%OGCGEOPACKAGE_IN_SEARCH_FEATURE%OGCGEOPACKAGE_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINX_OGCGEOPACKAGE_1 <Unused>,0 
+DEFAULT_MACRO OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINX_OGCGEOPACKAGE_1 0
+OGCGEOPACKAGE_1_SEARCH_ENVELOPE "$(OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINX_OGCGEOPACKAGE_1)"
+GUI OPTIONAL FLOAT OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINX_OGCGEOPACKAGE_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINY_OGCGEOPACKAGE_1 <Unused>,0 
+DEFAULT_MACRO OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINY_OGCGEOPACKAGE_1 0
+OGCGEOPACKAGE_1_SEARCH_ENVELOPE "$(OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINY_OGCGEOPACKAGE_1)"
+GUI OPTIONAL FLOAT OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MINY_OGCGEOPACKAGE_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXX_OGCGEOPACKAGE_1 <Unused>,0 
+DEFAULT_MACRO OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXX_OGCGEOPACKAGE_1 0
+OGCGEOPACKAGE_1_SEARCH_ENVELOPE "$(OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXX_OGCGEOPACKAGE_1)"
+GUI OPTIONAL FLOAT OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXX_OGCGEOPACKAGE_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXY_OGCGEOPACKAGE_1 <Unused>,0 
+DEFAULT_MACRO OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXY_OGCGEOPACKAGE_1 0
+OGCGEOPACKAGE_1_SEARCH_ENVELOPE "$(OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXY_OGCGEOPACKAGE_1)"
+GUI OPTIONAL FLOAT OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_MAXY_OGCGEOPACKAGE_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCGEOPACKAGE_1 <Unused>, 
+DEFAULT_MACRO OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCGEOPACKAGE_1 
+OGCGEOPACKAGE_1_SEARCH_ENVELOPE "$(OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCGEOPACKAGE_1)"
+GUI OPTIONAL COORDSYS OGCGEOPACKAGE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OGCGEOPACKAGE_1 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP OGCGEOPACKAGE_IN_CLIP_TO_ENVELOPE_OGCGEOPACKAGE_1 <Unused>,NO 
+DEFAULT_MACRO OGCGEOPACKAGE_IN_CLIP_TO_ENVELOPE_OGCGEOPACKAGE_1 NO
+OGCGEOPACKAGE_1_CLIP_TO_ENVELOPE "$(OGCGEOPACKAGE_IN_CLIP_TO_ENVELOPE_OGCGEOPACKAGE_1)"
+GUI OPTIONAL CHECKBOX OGCGEOPACKAGE_IN_CLIP_TO_ENVELOPE_OGCGEOPACKAGE_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO OGCGEOPACKAGE_IN_READ_BOOLEANS_AS_YES_NO_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_READ_BOOLEANS_AS_YES_NO "$(OGCGEOPACKAGE_IN_READ_BOOLEANS_AS_YES_NO_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_IN_READ_NULLS_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_READ_NULLS "$(OGCGEOPACKAGE_IN_READ_NULLS_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_OGCGEOPACKAGE_1 Yes
+OGCGEOPACKAGE_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(OGCGEOPACKAGE_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_IN_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES "$(OGCGEOPACKAGE_IN_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_IN_OPEN_SINGLE_RASTER_AS_SUBDATASET_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_OPEN_SINGLE_RASTER_AS_SUBDATASET "$(OGCGEOPACKAGE_IN_OPEN_SINGLE_RASTER_AS_SUBDATASET_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_IN_READER_REPLACE_INVALID_CHARS_OGCGEOPACKAGE_1 NO
+OGCGEOPACKAGE_1_READER_REPLACE_INVALID_CHARS "$(OGCGEOPACKAGE_IN_READER_REPLACE_INVALID_CHARS_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_IN_EXPOSE_PRIMARY_KEY_ATTRIBUTE_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_EXPOSE_PRIMARY_KEY_ATTRIBUTE "$(OGCGEOPACKAGE_IN_EXPOSE_PRIMARY_KEY_ATTRIBUTE_OGCGEOPACKAGE_1)"
+# ===========================================================================
+DEFAULT_MACRO OGCGEOPACKAGE_IN_NETWORK_AUTHENTICATION_OGCGEOPACKAGE_1 
+OGCGEOPACKAGE_1_NETWORK_AUTHENTICATION "$(OGCGEOPACKAGE_IN_NETWORK_AUTHENTICATION_OGCGEOPACKAGE_1)"
+GUI OPTIONAL AUTHENTICATOR OGCGEOPACKAGE_IN_NETWORK_AUTHENTICATION_OGCGEOPACKAGE_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO OGCGEOPACKAGE_IN_ATTRIBUTE_READING_OGCGEOPACKAGE_1 DEFLINE
+OGCGEOPACKAGE_1_ATTRIBUTE_READING "$(OGCGEOPACKAGE_IN_ATTRIBUTE_READING_OGCGEOPACKAGE_1)"
+# ============================================================================
+OGCGEOPACKAGE_1_GENERATE_FME_BUILD_NUM 24220
+OGCGEOPACKAGE_1_DATASET "$(SourceDataset_OGCGEOPACKAGE_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)Tuto - Comptage oiseaux.log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 2
+LOG_MAX_RECORDED_FEATURES 2
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.0.3.0 (20240603 - Build 24220 - WIN64)"
+MAPPING_FILE_ID Tuto<space>-<space>Comptage<space>oiseaux
+DEFAULT_MACRO DATASET_KEYWORD_OGCGEOPACKAGE_1 OGCGEOPACKAGE_1
+# -------------------------------------------------------------------------
+
+OGCGEOPACKAGE_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME Tuto - Comptage oiseaux
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_OGCGEOPACKAGE_1)   INPUT FEATURE_TYPE *    ROUTE OGCGEOPACKAGE OGCGEOPACKAGE_1::observation_oiseaux_02 multi_reader_keyword,$(DATASET_KEYWORD_OGCGEOPACKAGE_1) TO FME_GENERIC ::observation_oiseaux_02 ALIAS_GEOMETRY    ROUTE OGCGEOPACKAGE OGCGEOPACKAGE_1::observation_oiseaux multi_reader_keyword,$(DATASET_KEYWORD_OGCGEOPACKAGE_1) TO FME_GENERIC ::observation_oiseaux ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+OGCGEOPACKAGE_1_MERGE_DEF OGCGEOPACKAGE_1::observation_oiseaux_02 EXACT observation_oiseaux_02 DEFLINE geopackage_type,geopackage_none,geopackage_where_clause,,fme_attribute_reading,defined,lieu,text<openparen>9<closeparen>,jour_1_temp_moy,float,jour_1_espece_vue,text<openparen>37<closeparen>,jour_2_temp_moy,float,jour_2_espece_vue,text<openparen>37<closeparen>,jour_3_temp_moy,float,jour_3_espece_vue,text<openparen>37<closeparen>,jour_4_temp_moy,float,jour_4_espece_vue,text<openparen>37<closeparen>,jour_5_temp_moy,float,jour_5_espece_vue,text<openparen>37<closeparen>,id,int<comma>PrimaryKey
+OGCGEOPACKAGE_1_MERGE_DEF OGCGEOPACKAGE_1::observation_oiseaux EXACT observation_oiseaux DEFLINE geopackage_type,geopackage_none,geopackage_where_clause,,fme_attribute_reading,defined,lieu,text,date,text,temp_moy,float,espece_vue,text,id,int<comma>PrimaryKey
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "observation_oiseaux_OGCGEOPACKAGE_1 Splitter"    INPUT FEATURE_TYPE observation_oiseaux    OUTPUT FEATURE_TYPE observation_oiseaux_OGCGEOPACKAGE_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "observation_oiseaux_02_OGCGEOPACKAGE_1 Splitter"    INPUT FEATURE_TYPE observation_oiseaux_02    OUTPUT FEATURE_TYPE observation_oiseaux_02_OGCGEOPACKAGE_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+Tcl2 proc ListExpressionPopulator_builder {} {    set attrExp "jour_<openparen><openbracket>0-9<closebracket><closeparen>_temp_moy";    set count 0;    set subMatches 0;    set case "-nocase";    foreach name [lsort [FME_AttributeNames]] {        if {[llength [lindex [FME_GetRegex $case [FME_DecodeText $attrExp] [FME_DecodeText $name]] 0]] > 0} {          set rootName "temp_moy{$count}";          set attrVal [FME_GetAttribute $name];          if {$attrVal == {} && [FME_IsAttributeNull $name]}          {          		FME_SetAttributeNull $rootName;          } else {          		FME_SetAttribute $rootName $attrVal;          };          incr count;        };    }; }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListExpressionPopulator }    INPUT  FEATURE_TYPE observation_oiseaux_02_OGCGEOPACKAGE_1    OUTPUT { FEATURE_TYPE ListExpressionPopulator_OUTPUT         @Tcl2("ListExpressionPopulator_builder")          }
+# -------------------------------------------------------------------------
+Tcl2 proc ListExpressionPopulator_2_builder {} {    set attrExp "jour_<openparen><openbracket>0-9<closebracket><closeparen>_espece_vue";    set count 0;    set subMatches 0;    set case "-nocase";    foreach name [lsort [FME_AttributeNames]] {        if {[llength [lindex [FME_GetRegex $case [FME_DecodeText $attrExp] [FME_DecodeText $name]] 0]] > 0} {          set rootName "espece_vue{$count}";          set attrVal [FME_GetAttribute $name];          if {$attrVal == {} && [FME_IsAttributeNull $name]}          {          		FME_SetAttributeNull $rootName;          } else {          		FME_SetAttribute $rootName $attrVal;          };          incr count;        };    }; }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListExpressionPopulator_2 }    INPUT  FEATURE_TYPE ListExpressionPopulator_OUTPUT    OUTPUT { FEATURE_TYPE ListExpressionPopulator_2_OUTPUT         @Tcl2("ListExpressionPopulator_2_builder")          }
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {ListConcatenator_2_11c99dd3_beac_4e83_ad7d_157e55a915260} ]
+Tcl2 set $(FME_UUID_SAFE)__separator [FME_DecodeText {<comma>}];      regsub -all \"{}\" [FME_DecodeText {espece_vue<opencurly><closecurly>}] [FME_DecodeText {<opencurly><backslash>d+<closecurly>}] $(FME_UUID_SAFE)__listPattern;      set $(FME_UUID_SAFE)__listPattern ^$$(FME_UUID_SAFE)__listPattern$;
+Tcl2 proc $(FME_UUID_SAFE)__Concatenate {} {   upvar \#0 $(FME_UUID_SAFE)__separator separator             $(FME_UUID_SAFE)__listPattern listPattern;   set allAttrs [lsort -dictionary [FME_AttributeNames]];   set keepEmptyParts [string equal {No} {No}];   set result {};   foreach attrName $allAttrs {     if {[regexp $listPattern $attrName]} {       set attrValue [FME_GetAttribute $attrName];       if {$keepEmptyParts || $attrValue != {}} {         lappend result $attrValue;       };     };   };   FME_SetAttribute [FME_DecodeText {"espece_vue"}] [join $result $separator]; }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListConcatenator_2 }    INPUT  FEATURE_TYPE ListExpressionPopulator_2_OUTPUT    OUTPUT { FEATURE_TYPE ListConcatenator_2_OUTPUT         @Tcl2($(FME_UUID_SAFE)__Concatenate)          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} StringValueFactory    FACTORY_NAME { AttributeSplitter_3 }    INPUT  FEATURE_TYPE ListConcatenator_2_OUTPUT    FACTORY_MODE ATTRIBUTE_SPLITTER    ATTR_NAME { espece_vue }       DELIMITER { <comma> }       FIELD_QUALIFIER { "" }       TRIM_TYPE { BOTH }       LIST_NAME { espece_vue_total }       DROP_EMPTY_PARTS { NO }    OUTPUT { OUTPUT FEATURE_TYPE AttributeSplitter_3_OUTPUT          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { BulkAttributeRemover }    INPUT  FEATURE_TYPE AttributeSplitter_3_OUTPUT    OUTPUT { FEATURE_TYPE BulkAttributeRemover_OUTPUT        @RemoveAttributes(fme_pcre_match,fme_encoded,"jour_", NONPROTECTEDFME)         }
+# -------------------------------------------------------------------------
+Tcl2 proc ListHistogrammer_2_histo {} {    foreach attr [FME_AttributeNames] {    		 regsub -all \"{\[0-9\]+}\" $attr \"{}\" flatAttr;        if {$flatAttr == \"espece_vue_total{}\" }        {          set attrVal [FME_GetAttribute $attr];          if {$attrVal == {} && [FME_IsAttributeNull $attr]}          {    	         set attrVal {FME_NULL_VALUE};          }; 	       if {[info exists histogram($attrVal)]} { 	           incr histogram($attrVal); 	       } else { 	           set histogram($attrVal) 1; 	       };        };    };    set toSort {};    foreach {name value} [array get histogram] {        lappend s $name $value;        lappend toSort $s;        unset s;    };    set sortedHisto [lsort -integer -decreasing -index end $toSort];    set spot 0;    foreach nameCount $sortedHisto {        set rootName "espece_histogram{$spot}";        set valueAttr "$rootName.value";        set countAttr "$rootName.count";        if {[lindex $nameCount 0] == {FME_NULL_VALUE}} { 	       FME_SetAttributeNull $valueAttr; 	     } else { 	       FME_SetAttribute $valueAttr [lindex $nameCount 0];        };        FME_SetAttribute $countAttr [lindex $nameCount end];        incr spot;    } }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListHistogrammer_2 }    INPUT  FEATURE_TYPE BulkAttributeRemover_OUTPUT    OUTPUT { FEATURE_TYPE ListHistogrammer_2_OUTPUT         @Tcl2("ListHistogrammer_2_histo")          }
+# -------------------------------------------------------------------------
+Tcl2 proc ListDuplicateRemover_removeDups {} {    set srcIndex 0;    regsub \"{}\" {espece_vue_total{}} \"{$srcIndex}\"    listKeyAttrName;    regsub \"{}.*$\" {espece_vue_total{}} \"\{\"          listBase;    regsub \"{}.*$\" {espece_vue_total{}} \"\{*\"         listBasePattern;    regsub \"{(}.*)$\" {espece_vue_total{}} {\1}          listSuffix;    regsub \"{}\" {espece_vue_total{}} \"\\{\[0-9\]*\\}\" listPatternRegExp;    set listPatternRegExp \"^$listPatternRegExp\$\";    set listIndexRegExp   \"^$listBase\(\[0-9\]+\)\}.*\";    set attributeNames [FME_AttributeNames];    set COMMENT {      = Iterate over all attributes. For any that look like src_list{n}.something,      = keep a list in the associative array "listAttributesByIndex(n)". If they      = actually match the key on which we're comparing, store a "true" in the      = associative array "listKeyAttrNameExists()"    };    foreach attrname $attributeNames {       if [regsub $listIndexRegExp $attrname {\1} listIndex] {         lappend listAttributesByIndex($listIndex) $attrname;         if {$attrname ==  \"$listBase$listIndex$listSuffix\"} {           set listKeyAttrNameExists($attrname) true;         };       };    };    set destIndex 0;    set listElementsPattern {};    set haveMissingLast true;    if [catch { set haveNextKey $listKeyAttrNameExists($listKeyAttrName); }] { set haveNextKey false; };    while {[array size listKeyAttrNameExists] > 0 || $haveMissingLast } {        set keyVal [FME_GetAttribute $listKeyAttrName];        if {![info exists dups($keyVal)] && [info exists listAttributesByIndex($srcIndex)]} {            set listElementsPattern \"$listBase$srcIndex\}*\"; 				   set foundSibling 0;            set COMMENT {              = We already have the list of attributes associated with this index. Deal              = with each one of these.            };            foreach listAttrName $listAttributesByIndex($srcIndex)            {               set destAttrName [string replace $listAttrName 0                                 [expr [string length $listElementsPattern] - 3]                                 \"$listBase$destIndex\""];               set destAttrVal [FME_GetAttribute $listAttrName];               if {$destAttrVal == {} && [FME_IsAttributeNull $listAttrName]} {               	   set destAttrVal {FME_NULL_VALUE};               };               set holder($destAttrName) $destAttrVal;               if {$foundSibling == 0  } {                   set dups($keyVal) {};                   set foundSibling 1;               };            };            if {$foundSibling && $keyVal == {} && ![FME_AttributeExists $listKeyAttrName]}            {               set dups($keyVal) {};               set missingAttrName [string replace $listKeyAttrName 0                                 [expr [string length $listElementsPattern] - 3]                                 \"$listBase$destIndex\""];               set holder($missingAttrName) {FME_MISSING_VAL};            };            if {$foundSibling} {                incr destIndex;            };        };        if $haveNextKey {          unset listKeyAttrNameExists($listKeyAttrName);        };        incr srcIndex;        regsub \"{}\" {espece_vue_total{}} \"{$srcIndex}\" listKeyAttrName;        if [catch { set haveNextKey $listKeyAttrNameExists($listKeyAttrName); }] { set haveNextKey false; };        if {[array size listKeyAttrNameExists] == 0} {            set COMMENT {              = Once we've exhausted all of the actual sort keys, keep looking for structured              = elements within the list that don't have an accompanying sort key.            };            set haveMissingLast [info exists listAttributesByIndex($srcIndex)];        };    };    foreach attrname $attributeNames { 		 if {[string match $listBasePattern $attrname]} { 		   FME_UnsetAttributes $attrname; 		 };    };    foreach newListAttrName [array names holder] {        if {$holder($newListAttrName) == {FME_NULL_VALUE}} {           FME_SetAttributeNull $newListAttrName        } elseif { $holder($newListAttrName) != {FME_MISSING_VAL} } {           FME_SetAttribute $newListAttrName $holder($newListAttrName);        };    }; };
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListDuplicateRemover }    INPUT  FEATURE_TYPE ListHistogrammer_2_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} StringValueFactory    FACTORY_NAME { AttributeSplitter_2 }    INPUT  FEATURE_TYPE observation_oiseaux_OGCGEOPACKAGE_1    FACTORY_MODE ATTRIBUTE_SPLITTER    ATTR_NAME { espece_vue }       DELIMITER { <comma> }       FIELD_QUALIFIER { "" }       TRIM_TYPE { BOTH }       LIST_NAME { espece }       DROP_EMPTY_PARTS { YES }    OUTPUT { OUTPUT FEATURE_TYPE AttributeSplitter_2_OUTPUT          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListBuilder_3_fme_type_remover }    INPUT  FEATURE_TYPE AttributeSplitter_2_OUTPUT    OUTPUT { FEATURE_TYPE ListBuilder_3_no_fme_type       @RemoveAttributes(fme_type,fme_geometry) }
+FACTORY_DEF {*} ListFactory    FACTORY_NAME { ListBuilder_3 }    INPUT { FEATURE_TYPE ListBuilder_3_no_fme_type }    LIST_NAME { "data{}" }    LIST_ATTRS_TO_INCLUDE { date temp_moy espece_vue espece<opencurly><closecurly> }    LIST_ATTRS_TO_INCLUDE_MODE { SELECTED }    GROUP_BY { lieu }    FLUSH_WHEN_GROUPS_CHANGE { No }    OUTPUT { LIST FEATURE_TYPE ListBuilder_3_OUTPUT          }
+# -------------------------------------------------------------------------
+Tcl2 proc ListRangeExtractor_3_minmaxer {} {    set firstTime 1;    set min {};    set max {};    foreach attr [FME_AttributeNames] {    		 regsub -all \"{\[0-9\]+}\" $attr \"{}\" flatAttr;        if {$flatAttr == \"data{}.temp_moy\" }        {          set attrVal [FME_GetAttribute $attr];          set checkAttr 1;          if {$attrVal == {} && [FME_IsAttributeNull $attr]}          {    	       set checkAttr 0;          };          if {$checkAttr} { 		         if {$firstTime} { 		           set min $attrVal; 		           set max $attrVal; 		           set firstTime 0; 		         } else { 		           if {$attrVal < $min} {set min $attrVal}; 		           if {$attrVal > $max} {set max $attrVal};  		         }; 		     }; 	     };    };    FME_SetAttribute {"temp_min"} $min;    FME_SetAttribute {"temp_max"} $max; }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListRangeExtractor_3 }    INPUT  FEATURE_TYPE ListBuilder_3_OUTPUT    OUTPUT { FEATURE_TYPE ListRangeExtractor_3_OUTPUT         @Tcl2("ListRangeExtractor_3_minmaxer")          }
+# -------------------------------------------------------------------------
+# see logic in ListRenamerTransformerCfg::transformAllAttrs()
+# this pretty much copies it but in TCL
+Tcl2 proc ListRenamer_2_renamer {} {    set componentActions [split {data<opencurly><closecurly>,data<opencurly><closecurly>,espece_vue,espece_observee} {,}];    set idx 0;    while {$idx < [llength $componentActions]}    {       lset componentActions $idx [FME_DecodeText [lindex $componentActions $idx]];       incr idx;    };    set selectedList [FME_DecodeText {data<opencurly><closecurly>.espece_vue}];    set listActionLu [FME_DecodeText {__FME_RENAME__}];    if { [string length $selectedList] == 0 || [string length $listActionLu] == 0 } {       return;    };    foreach attr [FME_AttributeNames] {       regsub -all \"{\[0-9\]+}\" $attr \"{}\" flatAttr;       if {[string first $selectedList $flatAttr] != 0} { continue; };       set myParts [split $attr {.}];       set nameChanged false;       if { $listActionLu == {__FME_RENAME__} } {           set idx 0;           foreach {partName newName} $componentActions {              if {[llength $myParts] < $idx}  { break; };              regsub -all \"{\[0-9\]+}\" [lindex $myParts $idx] \"{}\" flatPart;              if {$flatPart != $partName} { break; };              if {[string first \"{}\" $partName] != -1} {                set baseName [string range $partName 0 [expr [string length $partName]-2]];                set baseNewName [string range $newName 0 [expr [string length $newName]-2]];                set newName [string map [list $baseName $baseNewName] [lindex $myParts $idx]];              };              lset myParts $idx $newName;              incr idx;              set nameChanged true;           };       } elseif  { $listActionLu == {__PROMOTE_SUBELEMENTS__} } {           set selectedParts [split $selectedList {.}];           if {[expr [llength $selectedParts]+1] == [llength $myParts]} {             set lastIdx [expr [llength $myParts]-1];             set lastPart [lindex $myParts $lastIdx];             set newPartNameBase $lastPart;             foreach {partName newName} $componentActions {                if {$partName == $lastPart} {                   set newPartNameBase [string range $newName 0 [expr [string length $newName]-3]];                   break;                }             };             set me [lindex $myParts [expr $lastIdx-1]];             set startBrace [string last \"\{\" $me];             set mynewIdx [string range $me $startBrace [string length $me]];             lset myParts $lastIdx {};             lset myParts [expr $lastIdx-1] $newPartNameBase$mynewIdx;             set nameChanged true;           };       } elseif { $listActionLu  == {__FME_PROMOTE__} } {           set nameChanged true;           set lastIdx [expr [llength $myParts]-1];           set lastPart [lindex $myParts $lastIdx];           lset myParts $lastIdx {};           set me [lindex $myParts [expr $lastIdx-1]];           set startBrace [string last \"\{\" $me];           set mynewIdx [string range $me $startBrace [string length $me]];           append lastPart $mynewIdx;           lset myParts [expr $lastIdx-1] $lastPart;           set partIdx 0;           while {$partIdx < [llength $myParts]}           {              if {[llength $componentActions] < [expr $partIdx*2]} { break; };              set flatPart [lindex $myParts $partIdx];              regsub -all \"{\[0-9\]+}\" [lindex $myParts $partIdx] \"{}\" flatPart;              set compName [lindex $componentActions [expr $partIdx*2]];              set newCompName [lindex $componentActions [expr $partIdx*2+1]];              if { $flatPart != $compName } { break; };              set compName [string range $compName 0 [expr [string length $compName]-2]];              set newCompName [string range $newCompName 0 [expr [string length $newCompName]-2]];              set newName [string map [list $compName $newCompName] [lindex $myParts $partIdx]];              lset myParts $partIdx $newName;              incr partIdx;           };       } else {           set nameChanged true;           set selectedParts [split $selectedList {.}];           if { $listActionLu != [lindex $myParts [expr [llength $selectedParts]-1]] } {             set idx 0;             while {[llength $myParts] > $idx } {               lset myParts $idx {};               incr idx;             };           } else {             set idx 0;             foreach {compName newCompName} $componentActions {                if { $idx >= [llength $myParts] } { break; };                set startBrace [string last \"\{\" $compName];                if { $startBrace != -1 } {                  set compName [string range $compName 0 [expr [string length $compName]-2]];                  set newCompName [string range $newCompName 0 [expr [string length $newCompName]-2]];                  set newName [string map [list $compName $newCompName] [lindex $myParts $idx]];                } else {                  set newName $newCompName;                };                lset myParts $idx $newName;                incr idx;             };             set replIdx [expr [llength $selectedParts]-1];             if { [llength $myParts] == [llength $selectedParts] } {                 set lastPart [lindex $myParts $replIdx];                 lset myParts $replIdx $lastPart;             }             else { lset myParts $replIdx {}; };          };       };       if {$nameChanged == true}       {         set myNewName {};         foreach part $myParts {            if {[string length $part] > 0} {                if {[string length $myNewName] > 0} {                  append myNewName "." $part;                } else {                  append myNewName $part;                };            };         };         set newNameLen [string length $myNewName];         if {$newNameLen > 0 && {NO} == {NO}} {           FME_RenameAttribute $myNewName $attr;         } elseif { $newNameLen > 0} {           FME_CopyAttribute $myNewName $attr;         }         elseif { $newNameLen == 0 && {NO} == {NO} } {              FME_UnsetAttributes $attr;         };       };    }; };
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListRenamer_2 }    INPUT  FEATURE_TYPE ListRangeExtractor_3_OUTPUT    OUTPUT { FEATURE_TYPE ListRenamer_2_OUTPUT         @Tcl2("ListRenamer_2_renamer ")          }
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {ListSearcher_3_7a36061d_1473_41ab_b257_2060dc4a10860} ]
+# most of this is close to the code from listindexer but not exact beucase
+# we have a type LIST_ATTR rather than type LIST_NAME so need
+# to figure out the list name
+Tcl2 proc $(FME_UUID_SAFE)_indexer {index prefix} {    set fullListAttrName [FME_DecodeText data<opencurly><closecurly>.espece_observee];    set lastBrace [string last  \"{}\" $fullListAttrName];    set listAttr [string range $fullListAttrName 0 [expr $lastBrace+1]];    regsub \"{}\" $listAttr \"{$index}\" listWithIndex;    regsub \"{}\" $listAttr {} listBase;    set complexListExp "$listWithIndex\.";    set prefixLength [expr [string length $complexListExp]-1];    set prefix [FME_DecodeText $prefix];    foreach attr [FME_AttributeNames] {      set newAttr {};      if {$attr == $listWithIndex} {        set newAttr $listBase;      } elseif {[string first $complexListExp $attr] == 0} {        set newAttr [string replace $attr 0 $prefixLength];      };      if {$newAttr != {}} {          if {$prefix != {} } {            set newAttr $prefix$newAttr;          };          if {[string first {fme_} $newAttr] != 0} {              set first [string first {fme_} $newAttr];              lappend attrsToCopy $newAttr $attr;          };      };    };    if {[info exists attrsToCopy] && [llength $attrsToCopy] > 0} {      eval FME_Execute CopyAttributes $attrsToCopy;    }; }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListSearcher_3 }    INPUT  FEATURE_TYPE ListRenamer_2_OUTPUT    OUTPUT { FEATURE_TYPE ListSearcher_3__IndexedFeatures___         "$(FME_UUID_SAFE)" @SearchList(fme_encoded,"data<opencurly><closecurly>.espece_observee","m<u00e9>sange",REGULAR_EXPRESSION_ENCODED,CASE_SENSITIVE) }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { ListSearcher_3__Tester }    INPUT { FEATURE_TYPE ListSearcher_3__IndexedFeatures___ }    TEST { @Value($(FME_UUID_SAFE)) == "-1" }    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { FAILED FEATURE_TYPE  ListSearcher_3__IndexFound__  }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { ListSearcher_3__Tester2 }    INPUT { FEATURE_TYPE ListSearcher_3__IndexFound__ }    TEST { NO == "NO" }    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+

@@ -1,33 +1,39 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
-#    Command-line to run this workspace:
-#        "C:\Program Files\FME\fme.exe" "C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutos\Tuto - Géocodage et JSON\Tuto - Geocodage et JSON.fmw"
-#              --SourceDataset_CSV2 "C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutos\Tuto - Géocodage et JSON\base_adresse.csv"
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\FME_2024.0.3\fme.exe" "C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - API Web et JSON\Tuto - Geocodage.fmw"
+#          --SourceDataset_CSV2 "$(FME_MF_DIR_USERTYPED)\base_adresse.csv"
+#          --DestDataset_OGCGEOPACKAGE "$(FME_MF_DIR_USERTYPED)\adresse.gpkg"
+#          --FME_LAUNCH_VIEWER_APP "YES"
 #    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
 #!   BEGIN_TCL=""
 #!   CATEGORY=""
-#!   DESCRIPTION=""
+#!   DESCRIPTION="&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le but de ce workspace est de geocoder différentes adresses en utilisant l&apos;API d&apos;OpenStreetMap.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Les données sont issues d&apos;un tableau Excel.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;La sortie se fait dans un geopackage.&lt;/p&gt;"
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="10100.1 3753.31"
-#!   DOC_TOP_LEFT="-700 -2253.31"
+#!   DOC_EXTENTS="10915 3700"
+#!   DOC_TOP_LEFT="-700 -2200"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
-#!   FME_BUILD_NUM="20596"
-#!   FME_DOCUMENT_GUID="c6606642-8098-41c7-93e7-d5a14454a37a"
-#!   FME_DOCUMENT_PRIORGUID="6bd31826-9a28-4206-9841-07655ff30e75,df9e1db0-a21c-4fdf-a37c-8d97a843c8bd"
+#!   FME_BUILD_NUM="24220"
+#!   FME_BULK_MODE_THRESHOLD=""
+#!   FME_DOCUMENT_GUID="fb544dab-b353-405b-8e7f-629efc7f9ae7"
+#!   FME_DOCUMENT_PRIORGUID="6bd31826-9a28-4206-9841-07655ff30e75,df9e1db0-a21c-4fdf-a37c-8d97a843c8bd,c6606642-8098-41c7-93e7-d5a14454a37a,24f441df-583a-4253-843f-9fae993b3f4c,875e189a-9387-49f4-96b8-1b1765d296ae"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="windows-1252"
 #!   FME_REPROJECTION_ENGINE="FME"
 #!   FME_SERVER_SERVICES=""
 #!   FME_STROKE_MAX_DEVIATION="0"
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
-#!   LAST_SAVE_BUILD="FME(R) 2020.1.0.1 (20200710 - Build 20596 - WIN64)"
-#!   LAST_SAVE_DATE="2021-01-19T10:20:11"
+#!   LAST_SAVE_BUILD="FME(R) 2024.0.3.0 (20240603 - Build 24220 - WIN64)"
+#!   LAST_SAVE_DATE="2024-08-28T15:01:22"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="20"
 #!   MARKDOWN_DESCRIPTION=""
@@ -35,7 +41,7 @@
 #!   MAX_LOG_FEATURES="2"
 #!   MULTI_WRITER_DATASET_ORDER="BY_ID"
 #!   PASSWORD=""
-#!   PYTHON_COMPATIBILITY="37"
+#!   PYTHON_COMPATIBILITY="312"
 #!   REDIRECT_TERMINATORS="NONE"
 #!   SAVE_ON_PROMPT_AND_RUN="Yes"
 #!   SHOW_ANNOTATIONS="true"
@@ -43,13 +49,13 @@
 #!   SOURCE="NONE"
 #!   SOURCE_ROUTING_FILE=""
 #!   TERMINATE_REJECTED="NO"
-#!   TITLE=""
+#!   TITLE="Tuto - Geocodage"
 #!   USAGE=""
-#!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-170.456 441.924"
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-1012.51 312.503"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
-#!   ZOOM_SCALE="99"
+#!   ZOOM_SCALE="100"
 #! >
 #! <DATASETS>
 #! <DATASET
@@ -65,7 +71,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="csv_number_of_fields uint32 fme_dataset string fme_feature_type string fme_primary_axis string fme_text_size string fme_fill_color string multi_reader_keyword string fme_basename string fme_text_string string fme_sweep_angle string fme_type string csv_type string csv_total_number_of_columns uint32 fme_secondary_axis string fme_geometry string fme_color string multi_reader_id string csv_line_number uint64 csv_skipped_line string multi_reader_type string fme_start_angle string fme_rotation string multi_reader_full_id string"
+#!   EXPOSABLE_ATTRS="csv_line_number uint64 csv_number_of_fields uint32 csv_skipped_line string csv_total_number_of_columns uint32 csv_type string fme_basename string fme_color string fme_dataset string fme_feature_type string fme_fill_color string fme_geometry string fme_primary_axis string fme_rotation string fme_secondary_axis string fme_start_angle string fme_sweep_angle string fme_text_size string fme_text_string string fme_type string multi_reader_full_id string multi_reader_id string multi_reader_keyword string multi_reader_type string"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -111,6 +117,62 @@
 #!   VALUE="Specify a folder for the CSV file"
 #! />
 #! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="OGCGEOPACKAGE"
+#!   DATASET="$(DestDataset_OGCGEOPACKAGE)"
+#!   KEYWORD="OGCGEOPACKAGE_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="256"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="geopackage_type {FME_GEN_GEOMETRY} fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_ID fme_match_id_attribute &quot;&quot; geopackage_geometry_column geom geopackage_primary_index_column &quot;&quot; geopackage_create_spatial_index YES geopackage_z_capability OPTIONAL geopackage_m_capability OPTIONAL"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename text(50) fme_color text(50) fme_dataset text(50) fme_feature_type text(50) fme_fill_color text(50) fme_geometry text(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string text(50) fme_type text(50) geopackage_type text(255)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%mie_pack%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Upsert,UPSERT,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE Table Handling&quot; CREATE_IF_MISSING &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group geopackage_geometry_column%geopackage_create_spatial_index%geopackage_z_capability%geopackage_m_capability Table Creation&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_ENCODED geopackage_geometry_column Spatial Column&quot; geom &quot;GUI CHOICE geopackage_create_spatial_index Yes%No Create Spatial Index&quot; Yes &quot;GUI LOOKUP_CHOICE_ENCODED geopackage_z_capability Not&lt;space&gt;Allowed,NOT_ALLOWED%Required,REQUIRED%Optional,OPTIONAL Z&quot; OPTIONAL &quot;GUI LOOKUP_CHOICE_ENCODED geopackage_m_capability Not&lt;space&gt;Allowed,NOT_ALLOWED%Required,REQUIRED%Optional,OPTIONAL M&quot; OPTIONAL "
+#!   ATTR_INDEX_TYPES="Indexed PrimaryKey"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="24220"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION="&lt;Unused&gt;"
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="OGCGEOPACKAGE_OUT_TRANSACTION_SIZE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the GeoPackage file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the GeoPackage file"
+#! />
+#! </DATASET>
 #! </DATASETS>
 #! <DATA_TYPES>
 #! <DATA_TYPE
@@ -139,43 +201,43 @@
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
+#!   FORMAT_TYPE="varchar(width)"
 #!   FME_TYPE="fme_varchar(width)"
 #!   FORMAT="CSV2"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
+#!   FORMAT_TYPE="varchar(width)"
 #!   FME_TYPE="fme_varbinary(width)"
 #!   FORMAT="CSV2"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
+#!   FORMAT_TYPE="varchar(width)"
 #!   FME_TYPE="fme_char(width)"
 #!   FORMAT="CSV2"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
+#!   FORMAT_TYPE="varchar(width)"
 #!   FME_TYPE="fme_binary(width)"
 #!   FORMAT="CSV2"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
+#!   FORMAT_TYPE="datetime"
 #!   FME_TYPE="fme_datetime"
 #!   FORMAT="CSV2"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
+#!   FORMAT_TYPE="time"
 #!   FME_TYPE="fme_time"
 #!   FORMAT="CSV2"
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="true"
-#!   FORMAT_TYPE="string"
+#!   FORMAT_TYPE="date"
 #!   FME_TYPE="fme_date"
 #!   FORMAT="CSV2"
 #! />
@@ -331,9 +393,195 @@
 #! />
 #! <DATA_TYPE
 #!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
 #!   FORMAT_TYPE="string"
 #!   FME_TYPE="fme_decimal(width,decimal)"
 #!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="tinyint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="mediumint"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="mediumint"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="OGCGEOPACKAGE"
 #! />
 #! </DATA_TYPES>
 #! <GEOM_TYPES>
@@ -439,6 +687,180 @@
 #!   FME_TYPE="fme_point_cloud"
 #!   FORMAT="CSV2"
 #! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multipoint"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multicurve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multilinestring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_curve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_linestring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_compoundcurve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_circularstring"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multisurface"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_surface"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multilinestring"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multisurface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multilinestring"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multipolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multisurface"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_surface"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_curvepolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_curvepolygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_curvepolygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_geometrycollection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_geometry"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
 #! </GEOM_TYPES>
 #! <FEATURE_TYPES>
 #! <FEATURE_TYPE
@@ -469,6 +891,44 @@
 #!     <FEAT_ATTRIBUTE ATTR_NAME="City" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="Country" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="adresse_geocode"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="61"
+#!   FEAT_GEOMTYPE="geopackage_point"
+#!   POSITION="9700 -600"
+#!   BOUNDING_RECT="9700 -600 515 65"
+#!   ORDER="500000000000029"
+#!   COLLAPSED="true"
+#!   KEYWORD="OGCGEOPACKAGE_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Number" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Street" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Postcode" ATTR_TYPE="int" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="City" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Country" ATTR_TYPE="text" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="int" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="latitude" ATTR_TYPE="text(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="longitude" ATTR_TYPE="text(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="adresse_osm" ATTR_TYPE="text(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="osm_id" ATTR_TYPE="text(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="adresse_osm_json" ATTR_TYPE="text(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_feature_operation" PARM_VALUE="INSERT"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_creation_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_handling" PARM_VALUE="DROP_CREATE"/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_create_spatial_index" PARM_VALUE="Yes"/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_geometry_column" PARM_VALUE="geom"/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_m_capability" PARM_VALUE="OPTIONAL"/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_z_capability" PARM_VALUE="OPTIONAL"/>
+#! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
 #! <READER_DATASETS>
@@ -478,27 +938,66 @@
 #!   DATASET="CSV2_1/base_adresse.csv"
 #! />
 #! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="OGCGEOPACKAGE_1"
+#!   OVERRIDE="-OGCGEOPACKAGE_1_DATASET"
+#!   DATASET="OGCGEOPACKAGE_1/adresse.gpkg"
+#! />
+#! </WRITER_DATASETS>
+#! <DEPENDENCIES>
+#! <PACKAGES>
+#! <PACKAGE
+#!   NAME="safe.geocoder"
+#!   VERSION="3.2.1"
+#! />
+#! </PACKAGES>
+#! </DEPENDENCIES>
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI MULTIFILE SourceDataset_CSV2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CSV (Comma Separated Value) File(s):"
-#!   DEFAULT_VALUE="$(FME_MF_DIR)base_adresse.csv"
+#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)\base_adresse.csv"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_OGCGEOPACKAGE GeoPackage_Files(*.gpkg)|*.gpkg|All_files(*)|* GeoPackage File:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)\adresse.gpkg"
 #!   IS_STAND_ALONE="false"
 #! />
 #! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUl9VU0VSVFlQRUQpXFxiYXNlX2FkcmVzc2UuY3N2IiwiZGVwcmVjYXRlZEZsYWdzIjpbIm5vbmUiXSwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJDU1YvQ29tcHJlc3NlZCBDU1YvVEVYVCBGaWxlcyIsImZpbHRlciI6WyIqLmNzdiIsIiouZ3oiLCIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ1NWIEZpbGVzIiwiZmlsdGVyIjpbIiouY3N2Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIENTViBGaWxlcyIsImZpbHRlciI6WyIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9DU1YyIiwicHJvbXB0IjoiU291cmNlIENTViAoQ29tbWEgU2VwYXJhdGVkIFZhbHVlKSBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiJChGTUVfTUZfRElSX1VTRVJUWVBFRClcXGFkcmVzc2UuZ3BrZyIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiR2VvUGFja2FnZSBGaWxlcyIsImZpbHRlciI6WyIqLmdwa2ciXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3REYXRhc2V0X09HQ0dFT1BBQ0tBR0UiLCJwcm9tcHQiOiJHZW9QYWNrYWdlIEZpbGU6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_CSV2" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)\base_adresse.csv"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_CSV2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CSV (Comma Separated Value) File(s):"
+#! />
+#!     <INFO NAME="DestDataset_OGCGEOPACKAGE" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR_USERTYPED)\adresse.gpkg"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI FILENAME DestDataset_OGCGEOPACKAGE GeoPackage_Files(*.gpkg)|*.gpkg|All_files(*)|* GeoPackage File:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
 #! <COMMENTS>
 #! <COMMENT
 #!   IDENTIFIER="40"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Requête HTTP :&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;On intérroge l&apos;API OpenStreetMap de géocodage :&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;- URL : &lt;a href=&quot;https://nominatim.openstreetmap.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;https://nominatim.openstreetmap.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;- Paramètres :&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;&#9;- format : JSON&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;&#9;- q : adresse du point&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;&#9;- adressdetails : récupération des infos sur le point geocodé&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;La réponse est stockée dans le champ _reponse_body&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="600 0"
 #!   TOP_LEFT="600 0"
-#!   BOTTOM_RIGHT="1840.986632088543 -448.75418754187541"
-#!   BOUNDING_RECT="600 0 1240.986632088543 448.75418754187541"
+#!   BOTTOM_RIGHT="1840.9787066620665 -448.75418754187541"
+#!   BOUNDING_RECT="600 0 1240.9787066620665 448.75418754187541"
 #!   ORDER="500000000000016"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   CUSTOM_USER_COLOR="true"
-#!   COLOUR="0.86274509803921573,0.86274509803921573,0.86274509803921573,0.78431372549019607"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{8fff8b8f-495f-4455-9d2f-fda73bc625d3}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="5"
 #! />
@@ -507,13 +1006,14 @@
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Nettoyage des champs&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;_reponse_body =&amp;gt; JSON_data&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;_http_status_code : delete&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="1900 0"
 #!   TOP_LEFT="1900 0"
-#!   BOTTOM_RIGHT="2565.8202693138041 -186.25156251562515"
-#!   BOUNDING_RECT="1900 0 665.82026931380415 186.25156251562515"
+#!   BOTTOM_RIGHT="2565.7776421514213 -186.25156251562515"
+#!   BOUNDING_RECT="1900 0 665.77764215142145 186.25156251562515"
 #!   ORDER="500000000000017"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   CUSTOM_USER_COLOR="true"
-#!   COLOUR="0.86274509803921573,0.86274509803921573,0.86274509803921573,0.78431372549019607"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{a1eed21f-3508-4e96-84ad-65f743d8c001}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="13"
 #! />
@@ -522,28 +1022,30 @@
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;JSONFragmenter&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le but est d&apos;exploser un feature en plusieurs selon la valeur d&apos;un attribut JSON.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;L&apos;attribut JSON doit être de type objet ou array pour que le transformer produise plusieurs fragments.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Dans notre cas, chaque réponse contient 0, 1 ou plusieurs objets, une adresse pouvant correspondre à plusieurs éléments (un batiment + une rue + un commerce...)&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;On sépare donc tous les objets de premier niveau de chaque feature :&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;&lt;span style=&quot; font-style:italic;&quot;&gt;json[*]&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Voici un exemple d&apos;objet récupéré (fragmenté) :&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;    &amp;quot;place_id&amp;quot;: 109530386,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;    &amp;quot;licence&amp;quot;: &amp;quot;Data © OpenStreetMap contributors, ODbL 1.0. &lt;/span&gt;&lt;a href=&quot;https://osm.org/copyright&amp;quot;,&quot;&gt;&lt;span style=&quot; font-style:italic; text-decoration: underline;&quot;&gt;https://osm.org/copyright&amp;quot;,&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;    &amp;quot;osm_type&amp;quot;: &amp;quot;way&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;    &amp;quot;osm_id&amp;quot;: 83797499,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;    &amp;quot;boundingbox&amp;quot;: [&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;        &amp;quot;46.1899015&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;        &amp;quot;46.1901095&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;        &amp;quot;6.3181443&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;        &amp;quot;6.3184118&amp;quot;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;    ],&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;    &amp;quot;lat&amp;quot;: &amp;quot;46.19000455&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;    &amp;quot;lon&amp;quot;: &amp;quot;6.318287986430487&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;    &amp;quot;display_name&amp;quot;: &amp;quot;90, Place de l&apos;Église, Le Faubourg, Lucinges, Saint-Julien-en-Genevois, Haute-Savoie, Auvergne-Rhône-Alpes, France métropolitaine, 74380, France&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;    &amp;quot;class&amp;quot;: &amp;quot;amenity&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;    &amp;quot;type&amp;quot;: &amp;quot;townhall&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;    &amp;quot;importance&amp;quot;: 0.7409999999999999,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;    &amp;quot;address&amp;quot;: {&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;        &amp;quot;house_number&amp;quot;: &amp;quot;90&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;        &amp;quot;road&amp;quot;: &amp;quot;Place de l&apos;Église&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;        &amp;quot;isolated_dwelling&amp;quot;: &amp;quot;Le Faubourg&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;        &amp;quot;village&amp;quot;: &amp;quot;Lucinges&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;        &amp;quot;municipality&amp;quot;: &amp;quot;Saint-Julien-en-Genevois&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;        &amp;quot;county&amp;quot;: &amp;quot;Haute-Savoie&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;        &amp;quot;state&amp;quot;: &amp;quot;Auvergne-Rhône-Alpes&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;        &amp;quot;country&amp;quot;: &amp;quot;France&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;        &amp;quot;postcode&amp;quot;: &amp;quot;74380&amp;quot;,&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;        &amp;quot;country_code&amp;quot;: &amp;quot;fr&amp;quot;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;    }&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;}&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="2600 1500"
 #!   TOP_LEFT="2600 1500"
-#!   BOTTOM_RIGHT="4443.7964379643799 -436.26906269062692"
-#!   BOUNDING_RECT="2600 1500 1843.7964379643799 1936.2690626906269"
+#!   BOTTOM_RIGHT="4443.7679376793767 -436.26906269062692"
+#!   BOUNDING_RECT="2600 1500 1843.7679376793767 1936.2690626906269"
 #!   ORDER="500000000000018"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   CUSTOM_USER_COLOR="true"
-#!   COLOUR="0.86274509803921573,0.86274509803921573,0.86274509803921573,0.78431372549019607"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{4038dbb6-fea8-4522-add5-b526a69bd69d}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="11"
 #! />
 #! <COMMENT
 #!   IDENTIFIER="45"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Même principe que le JSONFragmenter du dessus sauf qu&apos;ici, on fragmente les features plusieurs fois :&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;&lt;span style=&quot; font-style:italic;&quot;&gt;json[*][&amp;quot;address&amp;quot;][*]&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;&#9;=&amp;gt;&lt;span style=&quot; font-style:italic;&quot;&gt; json[*]&lt;/span&gt; : fragmentation entre chaque objet json de premier niveau (même nombre de fragment que le premier JSONFragmenter)&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;&#9;=&amp;gt; &lt;span style=&quot; font-style:italic;&quot;&gt;[&amp;quot;addresse&amp;quot;]&lt;/span&gt; : fragmentation de chaque objet de premier niveau selon l&apos;attribut &amp;quot;address&amp;quot; : il n&apos;y en a qu&apos;un seul donc pas de fragmentation supplémentaire.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;&#9;=&amp;gt; &lt;span style=&quot; font-style:italic;&quot;&gt;[*]&lt;/span&gt; : fragmentation de chaque objet &amp;quot;address&amp;quot; selon les attributs contenu dans l&apos;objet &amp;quot;address&amp;quot; (un fragment par attribut présent)&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le nombre d&apos;objet total est la multiplication du nombre de fragments produits à chaque étape de fragmentation.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;La fragmenetation utilisé ici n&apos;a pas d&apos;intérêt et est juste présente pour l&apos;exemple..&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="2600 -1200"
-#!   TOP_LEFT="2600 -1200"
-#!   BOTTOM_RIGHT="4421.9222192221923 -1823.7559375593755"
-#!   BOUNDING_RECT="2600 -1200 1821.9222192221923 623.75593755937552"
+#!   POSITION="2158.373521235213 -1300"
+#!   TOP_LEFT="2158.373521235213 -1300"
+#!   BOTTOM_RIGHT="4700 -1792.5046250462506"
+#!   BOUNDING_RECT="2158.373521235213 -1300 2541.6264787647874 492.50462504625045"
 #!   ORDER="500000000000019"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   CUSTOM_USER_COLOR="true"
-#!   COLOUR="0.86274509803921573,0.86274509803921573,0.86274509803921573,0.78431372549019607"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{0cc4eb38-4447-4433-8ac0-671fec9ad330}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="43"
 #! />
@@ -552,28 +1054,30 @@
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;JSONExtractor&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le but est d&apos;extraire les attributs JSON qui nous interessent dans des attributs FME.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Il est possible de concaténer des valeurs et d&apos;ajouter des chaines de caractères :&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;&lt;span style=&quot; font-style:italic;&quot;&gt;+&lt;/span&gt; : concaténation&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;&lt;span style=&quot; font-style:italic;&quot;&gt;&amp;quot;ma chaine de texte&amp;quot;&lt;/span&gt; : ajout de caractères&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Si l&apos;attribut JSON est lui-même un objet, alors la valeur renvoyée sera au format JSON et pourra être extraite via un autre transformer du même type.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Pour extraire le code postale, on utilise la requête JSON suivante :&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;&lt;span style=&quot; font-style:italic;&quot;&gt;json[&amp;quot;address&amp;quot;][&amp;quot;postcode&amp;quot;]&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;&#9;=&amp;gt;&lt;span style=&quot; font-style:italic;&quot;&gt; json[&amp;quot;address&amp;quot;]&lt;/span&gt; : on récupère la valeur de l&apos;attribut &amp;quot;address&amp;quot; dans la valeur JSON&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#9;&#9;=&amp;gt; &lt;span style=&quot; font-style:italic;&quot;&gt;[&amp;quot;postcode&amp;quot;]&lt;/span&gt; : on récupère la valeur de l&apos;attribut &amp;quot;postcode&amp;quot; dans la valeur de l&apos;attribut &amp;quot;address&amp;quot;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="4500 300"
 #!   TOP_LEFT="4500 300"
-#!   BOTTOM_RIGHT="6475.0667506675063 -411.25681256812572"
-#!   BOUNDING_RECT="4500 300 1975.0667506675063 711.25681256812572"
+#!   BOTTOM_RIGHT="6475.0192501925021 -411.25681256812572"
+#!   BOUNDING_RECT="4500 300 1975.0192501925019 711.25681256812572"
 #!   ORDER="500000000000020"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   CUSTOM_USER_COLOR="true"
-#!   COLOUR="0.86274509803921573,0.86274509803921573,0.86274509803921573,0.78431372549019607"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{5f5f9891-30e8-4016-95ae-52e82e530961}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="7"
 #! />
 #! <COMMENT
 #!   IDENTIFIER="47"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;JSONFlattener&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le but du transformer est de récupérer tous les attributs JSON et de les placer dans des attributs FME.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Tous les attributs sont récupérés. Pour nos objets, les attributs d&apos;adresse seront préfixé par l&apos;attribut parent (&lt;span style=&quot; font-style:italic;&quot;&gt;&amp;quot;address&amp;quot;&lt;/span&gt;) ce qui donnera par exemple &lt;span style=&quot; font-style:italic;&quot;&gt;adresse.postcode&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="4900 -1200"
-#!   TOP_LEFT="4900 -1200"
-#!   BOTTOM_RIGHT="6146.9384693846941 -1430.0020000200002"
-#!   BOUNDING_RECT="4900 -1200 1246.9384693846941 230.0020000200002"
+#!   POSITION="4900 -1300"
+#!   TOP_LEFT="4900 -1300"
+#!   BOTTOM_RIGHT="6146.9357974829745 -1530.0020000200002"
+#!   BOUNDING_RECT="4900 -1300 1246.9357974829747 230.0020000200002"
 #!   ORDER="500000000000021"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
-#!   CUSTOM_USER_COLOR="true"
-#!   COLOUR="0.86274509803921573,0.86274509803921573,0.86274509803921573,0.78431372549019607"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{d3c1c4ad-4dbe-474e-8f01-926e4fb57542}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="17"
 #! />
@@ -582,15 +1086,48 @@
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Pour chaque adresse géocodée, il peut y avoir plusieurs résultats de géocodage. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;On prend ici le premier qui arrive mais il est possible de pousser la détectition et de filtrer selon le type d&apos;objet OpenStreetMap.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Chaque objet ayant une géométrie propre, le résultat peut être différent (vérifiez les résultats sur les communes ayant remontées plusieurs points)&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le transformer &lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Geocoder&lt;/span&gt; ne récupère qu&apos;une seule géométrie.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #!   POSITION="6700 150"
 #!   TOP_LEFT="6700 150"
-#!   BOTTOM_RIGHT="9387.5958759587593 -80.002000020000196"
-#!   BOUNDING_RECT="6700 150 2687.5958759587593 230.0020000200002"
+#!   BOTTOM_RIGHT="9387.5752038770388 -80.002000020000196"
+#!   BOUNDING_RECT="6700 150 2687.5752038770388 230.0020000200002"
 #!   ORDER="500000000000024"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
 #!   CUSTOM_USER_COLOR="false"
+#!   UUID="{1dae7340-7bb1-48f5-bd0a-8fe4821947db}"
 #!   COLOUR="0.47058823529411764,0.47058823529411764,0.47058823529411764,0.78431372549019607"
 #!   SIZE_POLICY="10"
 #!   ANCHORED_NODE="48"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="59"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le but de ce workspace est de geocoder différentes adresses en utilisant l&apos;API d&apos;OpenStreetMap.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Les données sont issues d&apos;un tableau Excel.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;La sortie se fait dans un geopackage.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-700 505.00275002750027"
+#!   TOP_LEFT="-700 505.00275002750027"
+#!   BOTTOM_RIGHT="700.99007240072388 300.0010000100001"
+#!   BOUNDING_RECT="-700 505.00275002750027 1400.9900724007239 205.00175001750017"
+#!   ORDER="500000000000027"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="true"
+#!   UUID="{8c8a6f22-b262-4f5c-b977-5381de368511}"
+#!   COLOUR="0,0.67450980392156867,0.22352941176470589,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="60"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Autre possibilité pour geocoder des adresses : le transformer Geocoder.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Attention, la BAN n&apos;est pas disponible&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="900 -1559"
+#!   TOP_LEFT="900 -1559"
+#!   BOTTOM_RIGHT="1600.9830723307232 -1764.0017500175002"
+#!   BOUNDING_RECT="900 -1559 700.9830723307233 205.00175001750017"
+#!   ORDER="500000000000028"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{24e6fca6-20e1-49eb-a822-d289f320a4db}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="3"
 #! />
 #! </COMMENTS>
 #! <CONSTANTS>
@@ -603,8 +1140,8 @@
 #!   TOP_LEFT="6700 -450"
 #!   ORDER="500000000000022"
 #!   PALETTE_COLOR=""
-#!   BOTTOM_RIGHT="9400.0960009600094 -1200.0120001200012"
-#!   BOUNDING_RECT="6700 -450 2700.0960009600094 750.01200012000118"
+#!   BOTTOM_RIGHT="9400.0960009600094 -900"
+#!   BOUNDING_RECT="6700 -450 2700.0960009600094 450"
 #!   STICKY="false"
 #!   COLOUR="0.47058823529411764,0.47058823529411764,0.47058823529411764,1"
 #!   CONTENTS=""
@@ -612,15 +1149,15 @@
 #! </BOOKMARK>
 #! <BOOKMARK
 #!   IDENTIFIER="49"
-#!   NAME="Résultats"
+#!   NAME="Autres possibilités non utiles au workspace"
 #!   DESCRIPTION=""
-#!   TOP_LEFT="8700 -300"
-#!   ORDER="500000000000023"
+#!   TOP_LEFT="600 -900"
+#!   ORDER="500000000000030"
 #!   PALETTE_COLOR=""
-#!   BOTTOM_RIGHT="9300.0950009500084 -2253.3120068042786"
-#!   BOUNDING_RECT="8700 -300 600.0950009500084 1953.3120068042786"
+#!   BOTTOM_RIGHT="7400 -2200"
+#!   BOUNDING_RECT="600 -900 6800 1300"
 #!   STICKY="false"
-#!   COLOUR="0.56862745098039214,0.56862745098039214,0.56862745098039214,1"
+#!   COLOUR="0.23529411764705882,0.24705882352941178,0.31764705882352939,0.92156862745098034"
 #!   CONTENTS=""
 #! >
 #! </BOOKMARK>
@@ -628,16 +1165,16 @@
 #! <TRANSFORMERS>
 #! <TRANSFORMER
 #!   IDENTIFIER="3"
-#!   TYPE="Geocoder"
+#!   TYPE="safe.geocoder.Geocoder"
 #!   VERSION="1"
-#!   POSITION="1000 -1950"
-#!   BOUNDING_RECT="1000 -1950 454 71"
+#!   POSITION="1000 -1909"
+#!   BOUNDING_RECT="1000 -1909 454 71"
 #!   ORDER="500000000000001"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
+#!   LAST_PARM_EDIT="24220"
 #! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <OUTPUT_FEAT NAME="Output"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -646,29 +1183,8 @@
 #!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_address" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_address_json" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_address_types" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_arcgis_wkid" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_arcgis_longlabel" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_arcgis_exinfo" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_elevation_meters" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_elevation_feet" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_elevation_resolution" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_postal_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_tamu_census_block" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_tamu_census_tract" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_tamu_census_county_fips" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_tamu_census_cbsa_fips" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_tamu_census_mcd_fips" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_tamu_census_place_fips" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_tamu_census_state_fips" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_tamu_census_year" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_timezone" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_timezone_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_timezone_offset" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_timezone_current_dst" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
 #!     <FEAT_COLLAPSED COLLAPSED="1"/>
 #!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -680,23 +1196,25 @@
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
 #!     <XFORM_PARM PARM_NAME="GEOCODING_SERVICE" PARM_VALUE="OpenStreetMap"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS" PARM_VALUE="URL;https:&lt;solidus&gt;&lt;solidus&gt;nominatim.openstreetmap.org&lt;solidus&gt;;METHOD;geocode;ADDRESS;&lt;at&gt;Value&lt;openparen&gt;Number&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Street&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Postcode&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;City&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Country&lt;closeparen&gt;;LATITUDE;&lt;Unused&gt;;LONGITUDE;&lt;Unused&gt;;FME_CONTROLLER_QUERY_FILE;transformers&lt;solidus&gt;dependencies&lt;solidus&gt;geocoder1&lt;solidus&gt;OpenStreetMap.fme"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS" PARM_VALUE="URL;https:&lt;solidus&gt;&lt;solidus&gt;nominatim.openstreetmap.org&lt;solidus&gt;;METHOD;geocode;ADDRESS;&lt;at&gt;Value&lt;openparen&gt;Number&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Street&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Postcode&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;City&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Country&lt;closeparen&gt;;LATITUDE;&lt;Unused&gt;;LONGITUDE;&lt;Unused&gt;;FME_CONTROLLER_QUERY_FILE;transformers&lt;solidus&gt;dependencies&lt;solidus&gt;geocoder1&lt;solidus&gt;OpenStreetMap.fme;FME_CONTROLLER_CHOICE;OpenStreetMap"/>
+#!     <XFORM_PARM PARM_NAME="RETURN_JSON_RESPONSE" PARM_VALUE="no"/>
 #!     <XFORM_PARM PARM_NAME="SERVICE_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="THREADS" PARM_VALUE="4"/>
 #!     <XFORM_PARM PARM_NAME="TIMEOUT" PARM_VALUE="60"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VERIFY_HTTPS" PARM_VALUE="yes"/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Geocoder"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="5"
 #!   TYPE="HTTPCaller"
-#!   VERSION="2"
+#!   VERSION="6"
 #!   POSITION="1000 -600"
 #!   BOUNDING_RECT="1000 -600 454 71"
 #!   ORDER="500000000000002"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
+#!   LAST_PARM_EDIT="24220"
 #! >
 #!     <OUTPUT_FEAT NAME="Output"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -722,42 +1240,62 @@
 #!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="ADDITIONAL_PARAMETERS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
 #!     <XFORM_PARM PARM_NAME="ADDITIONAL_URL_PARAMETERS" PARM_VALUE="format;json q;&lt;at&gt;Value&lt;openparen&gt;Number&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Street&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Postcode&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;City&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Country&lt;closeparen&gt; addressdetails;1"/>
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
 #!     <XFORM_PARM PARM_NAME="ADVANCED_REQUEST_PARAMETERS" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <XFORM_PARM PARM_NAME="ADVANCED_RESPONSE_PARAMETERS" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
 #!     <XFORM_PARM PARM_NAME="AUTH_METHOD" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="AUTH_NAMED_CONNECTION" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="AUTH_PASSWORD" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="AUTH_USERNAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CONCURRENCY_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="CONNECTION_TIMEOUT_LENGTH" PARM_VALUE="60"/>
 #!     <XFORM_PARM PARM_NAME="CUSTOM_HEADERS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="CUSTOM_HEADERS_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="CUSTOM_HEADERS_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
 #!     <XFORM_PARM PARM_NAME="ERROR_ATTR" PARM_VALUE="_error"/>
 #!     <XFORM_PARM PARM_NAME="FILE_PATH_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="FILE_PATH_ATTR2" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="FILE_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="FOLLOW_REDIRECTS" PARM_VALUE="FOLLOW_WITH_GET"/>
 #!     <XFORM_PARM PARM_NAME="HTTPURL_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="HTTP_AUTH_GROUP" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="HTTP_METHOD" PARM_VALUE="GET"/>
 #!     <XFORM_PARM PARM_NAME="HTTP_RESPONSE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LOOP_MESSAGE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MAX_HTTP_VERSION" PARM_VALUE="HTTP_2"/>
+#!     <XFORM_PARM PARM_NAME="MAX_TRANSFERS_IN_PROGRESS" PARM_VALUE="25"/>
+#!     <XFORM_PARM PARM_NAME="MINIMUM_ENCRYPTION_LEVEL" PARM_VALUE="OS_DEFAULT"/>
 #!     <XFORM_PARM PARM_NAME="MULTIPARTS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MULTIPART_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MULTIPART_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTIPART_RESPONSE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MULTIPART_RESPONSE_HEADER_LIST_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="OUTPUT_DIRNAME" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="OUTPUT_FILENAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RATE_LIMIT_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="RATE_LIMIT_INTERVAL_IN_SECONDS" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="RATE_LIMIT_MAX_REQUESTS" PARM_VALUE="10"/>
+#!     <XFORM_PARM PARM_NAME="RATE_LIMIT_REQUEST_TIMING" PARM_VALUE="BURST"/>
 #!     <XFORM_PARM PARM_NAME="REDIRECT_AUTH" PARM_VALUE="ORIGINAL_DOMAIN_ONLY"/>
-#!     <XFORM_PARM PARM_NAME="RESPONSE_FILE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_ATTRS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_ATTR_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_DIR_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_FILE_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="RESPONSE_HEADER_LIST_ATTR" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="SAVE_FILE" PARM_VALUE="Attribute"/>
-#!     <XFORM_PARM PARM_NAME="SAVE_MULTI" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_TYPE" PARM_VALUE="Attribute"/>
+#!     <XFORM_PARM PARM_NAME="RETRY_FAILED_TRANSFERS" PARM_VALUE="CONNECTION 429 500 501 502 503 504 505 506 507 508 509 510 511"/>
+#!     <XFORM_PARM PARM_NAME="RETRY_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="RETRY_INITIAL_BACKOFF" PARM_VALUE="1000"/>
+#!     <XFORM_PARM PARM_NAME="RETRY_MAX_RETRIES" PARM_VALUE="2"/>
+#!     <XFORM_PARM PARM_NAME="SPLIT_MULTIPART_DOWNLOADS" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="STATUS_CODE_ATTR" PARM_VALUE="_http_status_code"/>
 #!     <XFORM_PARM PARM_NAME="TARGET_ATTR" PARM_VALUE="_response_body"/>
 #!     <XFORM_PARM PARM_NAME="TARGET_ATTR_ENCODING" PARM_VALUE="auto-detect"/>
 #!     <XFORM_PARM PARM_NAME="TARGET_URL" PARM_VALUE="https:&lt;solidus&gt;&lt;solidus&gt;nominatim.openstreetmap.org&lt;solidus&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TLS_PARAMETERS" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="TRANSFER_TIMEOUT_LENGTH" PARM_VALUE="90"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="UPLOAD_BODY" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="UPLOAD_CONTENT_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="UPLOAD_FILE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="UPLOAD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="UPLOAD_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="UPLOAD_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="USE_COOKIES" PARM_VALUE="No"/>
 #!     <XFORM_PARM PARM_NAME="VERIFY_SSL_CERTIFICATES" PARM_VALUE="Yes"/>
@@ -766,13 +1304,13 @@
 #! <TRANSFORMER
 #!   IDENTIFIER="7"
 #!   TYPE="JSONExtractor"
-#!   VERSION="5"
+#!   VERSION="6"
 #!   POSITION="5300 -600"
 #!   BOUNDING_RECT="5300 -600 454 71"
 #!   ORDER="500000000000004"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
+#!   LAST_PARM_EDIT="24220"
 #! >
 #!     <OUTPUT_FEAT NAME="EVALUATED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -823,13 +1361,13 @@
 #! <TRANSFORMER
 #!   IDENTIFIER="11"
 #!   TYPE="JSONFragmenter"
-#!   VERSION="8"
+#!   VERSION="9"
 #!   POSITION="3300 -600"
 #!   BOUNDING_RECT="3300 -600 454 71"
 #!   ORDER="500000000000007"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
+#!   LAST_PARM_EDIT="24220"
 #! >
 #!     <OUTPUT_FEAT NAME="FRAGMENTS"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -872,13 +1410,13 @@
 #! <TRANSFORMER
 #!   IDENTIFIER="13"
 #!   TYPE="AttributeManager"
-#!   VERSION="2"
+#!   VERSION="5"
 #!   POSITION="2000 -600"
 #!   BOUNDING_RECT="2000 -600 454 71"
 #!   ORDER="500000000000008"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
+#!   LAST_PARM_EDIT="24220"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -891,25 +1429,27 @@
 #!     <XFORM_ATTR ATTR_NAME="JSON_data" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="id id  NO_OP Number Number  NO_OP Street Street  NO_OP Postcode Postcode  NO_OP City City  NO_OP Country Country  NO_OP _response_body JSON_data  RENAME_SET_VALUE _http_status_code _http_status_code  REMOVE"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="id id  int64 NO_OP Number Number  uint8 NO_OP Street Street  buffer NO_OP Postcode Postcode  uint32 NO_OP City City  buffer NO_OP Country Country  buffer NO_OP _response_body JSON_data  varchar&lt;openparen&gt;200&lt;closeparen&gt; RENAME_SET_VALUE _http_status_code _http_status_code  buffer REMOVE"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_EXPOSED_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="17"
 #!   TYPE="JSONFlattener"
-#!   VERSION="6"
-#!   POSITION="5300 -900"
-#!   BOUNDING_RECT="5300 -900 431 71"
+#!   VERSION="7"
+#!   POSITION="5300 -1000"
+#!   BOUNDING_RECT="5300 -1000 431 71"
 #!   ORDER="500000000000005"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
+#!   LAST_PARM_EDIT="24220"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -944,11 +1484,6 @@
 #!     <XFORM_ATTR ATTR_NAME="JSON_data" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="json_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="json_index" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_json_error{}.message" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_json_error{}.line" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_json_error{}.column" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="_json_error{}.severity" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="lat" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="lon" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="address.house_number" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -960,29 +1495,34 @@
 #!     <XFORM_ATTR ATTR_NAME="place_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="class" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_json_error{}.message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_json_error{}.line" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_json_error{}.column" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_json_error{}.severity" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="ERROR_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ERROR_LIST_ATTR" PARM_VALUE="_json_error"/>
 #!     <XFORM_PARM PARM_NAME="FILEPATH_OR_URL" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="FLATTEN_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="INPUT_SETTINGS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="JSON_DOCUMENT" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;JSON_data&lt;closeparen&gt;"/>
-#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="lat lon address.house_number address.road address.village address.city address.postcode address.country place_id class type"/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="lat buffer lon buffer address.house_number buffer address.road buffer address.village buffer address.city buffer address.postcode buffer address.country buffer place_id buffer class buffer type buffer"/>
 #!     <XFORM_PARM PARM_NAME="PREFIX_STRING" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="READ_FROM_FILE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="RECURSIVE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="RECURSIVE" PARM_VALUE="YES"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="JSONFlattener"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="19"
 #!   TYPE="AttributeManager"
-#!   VERSION="2"
-#!   POSITION="6800 -900"
-#!   BOUNDING_RECT="6800 -900 454 71"
+#!   VERSION="5"
+#!   POSITION="6800 -1000"
+#!   BOUNDING_RECT="6800 -1000 454 71"
 #!   ORDER="500000000000008"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
+#!   LAST_PARM_EDIT="24220"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -997,25 +1537,27 @@
 #!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="Number Number  NO_OP Street Street  NO_OP Postcode Postcode  NO_OP City City  NO_OP Country Country  NO_OP JSON_data JSON_data  REMOVE json_type json_type  REMOVE json_index json_index  REMOVE lat lat  NO_OP lon lon  NO_OP  adresse_osm &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;address.house_number&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.road&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.postcode&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.village&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.country&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST address.city ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;at&gt;Value&lt;openparen&gt;address.house_number&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.road&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.postcode&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.city&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.country&lt;closeparen&gt;&apos;FME_NUM_CONDITIONS2___&quot; SET_TO address.house_number address.house_number  REMOVE address.road address.road  REMOVE address.village address.village  REMOVE address.city address.city  REMOVE address.postcode address.postcode  REMOVE address.country address.country  REMOVE place_id place_id  REMOVE class class  REMOVE type type  REMOVE id id  NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="Number Number  uint8 NO_OP Street Street  buffer NO_OP Postcode Postcode  uint32 NO_OP City City  buffer NO_OP Country Country  buffer NO_OP JSON_data JSON_data  varchar&lt;openparen&gt;200&lt;closeparen&gt; REMOVE json_type json_type  buffer REMOVE json_index json_index  uint32 REMOVE lat lat  buffer NO_OP lon lon  buffer NO_OP  adresse_osm &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;address.house_number&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.road&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.postcode&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.village&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.country&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST address.city ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;at&gt;Value&lt;openparen&gt;address.house_number&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.road&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.postcode&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.city&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;address.country&lt;closeparen&gt;&apos;FME_NUM_CONDITIONS2___&quot; varchar&lt;openparen&gt;200&lt;closeparen&gt; SET_TO address.house_number address.house_number  buffer REMOVE address.road address.road  buffer REMOVE address.village address.village  buffer REMOVE address.city address.city  buffer REMOVE address.postcode address.postcode  buffer REMOVE address.country address.country  buffer REMOVE place_id place_id  buffer REMOVE class class  buffer REMOVE type type  buffer REMOVE id id  int64 NO_OP"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_EXPOSED_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_2"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="20"
 #!   TYPE="Counter"
-#!   VERSION="2"
+#!   VERSION="4"
 #!   POSITION="0 -600"
 #!   BOUNDING_RECT="0 -600 454 71"
 #!   ORDER="500000000000012"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
+#!   LAST_PARM_EDIT="24220"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -1025,17 +1567,14 @@
 #!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Postcode" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="CNT_ATTR" PARM_VALUE="id"/>
 #!     <XFORM_PARM PARM_NAME="DOMAIN" PARM_VALUE="counter"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GRP_CNT_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_ATTR_NAMES_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="SCOPE" PARM_VALUE="Global"/>
 #!     <XFORM_PARM PARM_NAME="START" PARM_VALUE="0"/>
@@ -1045,13 +1584,13 @@
 #! <TRANSFORMER
 #!   IDENTIFIER="28"
 #!   TYPE="AttributeManager"
-#!   VERSION="2"
+#!   VERSION="5"
 #!   POSITION="6800 -600"
 #!   BOUNDING_RECT="6800 -600 454 71"
 #!   ORDER="500000000000008"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
+#!   LAST_PARM_EDIT="24220"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -1068,25 +1607,27 @@
 #!     <XFORM_ATTR ATTR_NAME="adresse_osm_json" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="Number Number  NO_OP Street Street  NO_OP Postcode Postcode  NO_OP City City  NO_OP Country Country  NO_OP JSON_data JSON_data  REMOVE json_type json_type  REMOVE json_index json_index  REMOVE type type  REMOVE id id  NO_OP latitude latitude  NO_OP longitude longitude  NO_OP classe classe  REMOVE adresse_osm adresse_osm  NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="Number Number  uint8 NO_OP Street Street  buffer NO_OP Postcode Postcode  uint32 NO_OP City City  buffer NO_OP Country Country  buffer NO_OP JSON_data JSON_data  varchar&lt;openparen&gt;200&lt;closeparen&gt; REMOVE json_type json_type  buffer REMOVE json_index json_index  uint32 REMOVE type type  varchar&lt;openparen&gt;200&lt;closeparen&gt; REMOVE id id  int64 NO_OP latitude latitude  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP longitude longitude  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP classe classe  varchar&lt;openparen&gt;200&lt;closeparen&gt; REMOVE adresse_osm adresse_osm  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_EXPOSED_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_3"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="32"
 #!   TYPE="VertexCreator"
-#!   VERSION="3"
+#!   VERSION="5"
 #!   POSITION="7500 -600"
 #!   BOUNDING_RECT="7500 -600 454 71"
 #!   ORDER="500000000000014"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
+#!   LAST_PARM_EDIT="24220"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -1116,6 +1657,8 @@
 #!     <XFORM_ATTR ATTR_NAME="adresse_osm_json" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="ADVANCED_PARAMETERS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CLOSE_LINES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="IGNORE_DUPLICATES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="INDEX" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="MEASURE_TYPE" PARM_VALUE="Continuous"/>
 #!     <XFORM_PARM PARM_NAME="MISSING_VAL_MODE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -1128,61 +1671,16 @@
 #!     <XFORM_PARM PARM_NAME="ZVAL" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="30"
-#!   TYPE="VertexCreator"
-#!   VERSION="3"
-#!   POSITION="7500 -900"
-#!   BOUNDING_RECT="7500 -900 454 71"
-#!   ORDER="500000000000014"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Postcode" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="lat" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="lon" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="adresse_osm" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Postcode" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="lat" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="lon" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="adresse_osm" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="ADVANCED_PARAMETERS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="INDEX" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MEASURE_TYPE" PARM_VALUE="Continuous"/>
-#!     <XFORM_PARM PARM_NAME="MISSING_VAL_MODE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MODE_NAME" PARM_VALUE="Replace with Point"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="VertexCreator_2"/>
-#!     <XFORM_PARM PARM_NAME="XVAL" PARM_VALUE="@Value(lat)"/>
-#!     <XFORM_PARM PARM_NAME="YVAL" PARM_VALUE="@Value(lon)"/>
-#!     <XFORM_PARM PARM_NAME="ZVAL" PARM_VALUE=""/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
 #!   IDENTIFIER="33"
 #!   TYPE="CoordinateSystemSetter"
 #!   VERSION="0"
 #!   POSITION="8200 -600"
-#!   BOUNDING_RECT="8200 -600 480.00106825772946 71"
+#!   BOUNDING_RECT="8200 -600 559.95602061283716 71"
 #!   ORDER="500000000000015"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   LAST_PARM_EDIT="20596"
+#!   SHOW_BLANK_INPUT_FT="false"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -1203,42 +1701,15 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateSystemSetter"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="36"
-#!   TYPE="CoordinateSystemSetter"
-#!   VERSION="0"
-#!   POSITION="8200 -900"
-#!   BOUNDING_RECT="8200 -900 480.00106825772946 71"
-#!   ORDER="500000000000015"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Postcode" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="lat" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="lon" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="adresse_osm" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE="EPSG:4326"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateSystemSetter_2"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
 #!   IDENTIFIER="38"
 #!   TYPE="AttributeManager"
-#!   VERSION="2"
-#!   POSITION="8800 -1950"
-#!   BOUNDING_RECT="8800 -1950 454 71"
+#!   VERSION="5"
+#!   POSITION="6800 -1969"
+#!   BOUNDING_RECT="6800 -1969 454 71"
 #!   ORDER="500000000000008"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
+#!   LAST_PARM_EDIT="24220"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -1253,25 +1724,27 @@
 #!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="Number Number  NO_OP Street Street  NO_OP Postcode Postcode  NO_OP City City  NO_OP Country Country  NO_OP _address _address  NO_OP _address_json _address_json  REMOVE _address_types _address_types  REMOVE _arcgis_wkid _arcgis_wkid  REMOVE _arcgis_longlabel _arcgis_longlabel  REMOVE _arcgis_exinfo _arcgis_exinfo  REMOVE _elevation_meters _elevation_meters  REMOVE _elevation_feet _elevation_feet  REMOVE _elevation_resolution _elevation_resolution  REMOVE _latitude _latitude  NO_OP _longitude _longitude  NO_OP _postal_code _postal_code  REMOVE _tamu_census_block _tamu_census_block  REMOVE _tamu_census_tract _tamu_census_tract  REMOVE _tamu_census_county_fips _tamu_census_county_fips  REMOVE _tamu_census_cbsa_fips _tamu_census_cbsa_fips  REMOVE _tamu_census_mcd_fips _tamu_census_mcd_fips  REMOVE _tamu_census_place_fips _tamu_census_place_fips  REMOVE _tamu_census_state_fips _tamu_census_state_fips  REMOVE _tamu_census_year _tamu_census_year  REMOVE _timezone _timezone  REMOVE _timezone_name _timezone_name  REMOVE _timezone_offset _timezone_offset  REMOVE _timezone_current_dst _timezone_current_dst  REMOVE"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="Number Number  uint8 NO_OP Street Street  buffer NO_OP Postcode Postcode  uint32 NO_OP City City  buffer NO_OP Country Country  buffer NO_OP _address _address  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP _latitude _latitude  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP _longitude _longitude  buffer NO_OP id id  int64 NO_OP"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_EXPOSED_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_4"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="43"
 #!   TYPE="JSONFragmenter"
-#!   VERSION="8"
-#!   POSITION="3300 -900"
-#!   BOUNDING_RECT="3300 -900 454 71"
+#!   VERSION="9"
+#!   POSITION="3300 -1009"
+#!   BOUNDING_RECT="3300 -1009 454 71"
 #!   ORDER="500000000000007"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
+#!   LAST_PARM_EDIT="24220"
 #! >
 #!     <OUTPUT_FEAT NAME="FRAGMENTS"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -1312,57 +1785,16 @@
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="JSONFragmenter_2"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#!   IDENTIFIER="52"
-#!   TYPE="Sampler"
-#!   VERSION="5"
-#!   POSITION="8800 -900"
-#!   BOUNDING_RECT="8800 -900 454 71"
-#!   ORDER="500000000000011"
-#!   PARMS_EDITED="false"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="20596"
-#! >
-#!     <OUTPUT_FEAT NAME="SAMPLED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="0"/>
-#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Postcode" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="lat" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="lon" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="adresse_osm" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <OUTPUT_FEAT NAME="NOT_SAMPLED"/>
-#!     <FEAT_COLLAPSED COLLAPSED="1"/>
-#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Postcode" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="lat" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="lon" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="adresse_osm" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="id"/>
-#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="RATE" PARM_VALUE="1"/>
-#!     <XFORM_PARM PARM_NAME="SAMPLE_MODE" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="SAMPLE_TYPE_LONG" PARM_VALUE="First N Features"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sampler_2"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
 #!   IDENTIFIER="54"
 #!   TYPE="Sampler"
 #!   VERSION="5"
-#!   POSITION="8800 -600"
-#!   BOUNDING_RECT="8800 -600 454 71"
+#!   POSITION="8900 -600"
+#!   BOUNDING_RECT="8900 -600 454 71"
 #!   ORDER="500000000000011"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
 #!   LAST_PARM_EDIT="20596"
+#!   SHOW_BLANK_INPUT_FT="false"
 #! >
 #!     <OUTPUT_FEAT NAME="SAMPLED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
@@ -1392,6 +1824,7 @@
 #!     <XFORM_ATTR ATTR_NAME="adresse_osm_json" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="id"/>
 #!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="RATE" PARM_VALUE="1"/>
 #!     <XFORM_PARM PARM_NAME="SAMPLE_MODE" PARM_VALUE="No"/>
@@ -1410,22 +1843,22 @@
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="39"
+#!   IDENTIFIER="52"
 #!   SOURCE_NODE="3"
 #!   TARGET_NODE="38"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   SOURCE_PORT_DESC="fo 0 Output"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
@@ -1440,7 +1873,7 @@
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
@@ -1455,7 +1888,7 @@
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
@@ -1470,7 +1903,7 @@
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
@@ -1485,7 +1918,7 @@
 #!   ENABLED="true"
 #!   EXECUTION_IDX="1"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
@@ -1500,7 +1933,7 @@
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
@@ -1515,7 +1948,7 @@
 #!   ENABLED="true"
 #!   EXECUTION_IDX="1"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
@@ -1530,22 +1963,7 @@
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="31"
-#!   SOURCE_NODE="19"
-#!   TARGET_NODE="30"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
@@ -1560,7 +1978,7 @@
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
@@ -1575,7 +1993,7 @@
 #!   ENABLED="true"
 #!   EXECUTION_IDX="1"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
@@ -1590,22 +2008,7 @@
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#!   IDENTIFIER="56"
-#!   SOURCE_NODE="30"
-#!   TARGET_NODE="36"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="0"
-#!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
@@ -1620,7 +2023,7 @@
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
@@ -1635,22 +2038,22 @@
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="58"
-#!   SOURCE_NODE="36"
-#!   TARGET_NODE="52"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
+#!   IDENTIFIER="62"
+#!   SOURCE_NODE="54"
+#!   TARGET_NODE="61"
+#!   SOURCE_PORT_DESC="fo 0 SAMPLED"
+#!   TARGET_PORT_DESC="-1"
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
-#!   COLOUR="0,0,0,1"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
 #!   PEN_WIDTH="4"
 #!   PEN_STYLE="1"
 #!   LINK_STYLE_NAME="&lt;Default&gt;"
@@ -1667,20 +2070,30 @@
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 
-FME_PYTHON_VERSION 37
-GUI IGNORE SourceDataset_CSV2_1,CSV2_IN_FIELDS_GROUP_CSV2_1,CSV2_IN_DELIMITER_CSV2_1,CSV2_IN_FIELD_NAMES_LINE_CSV2_1,CSV2_IN_DATA_START_LINE_CSV2_1,CSV2_IN_ADVANCED_GROUP_CSV2_1,CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1,CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1,CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1,CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1,CSV2_IN_FIELD_NAMES_GROUP_CSV2_1,CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1,CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1,CSV2_IN_FIELD_VALUES_GROUP_CSV2_1,CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1,CSV2_IN_ENCODING_GROUP_CSV2_1,CSV2_IN_ENCODING_CSV2_1,CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1,CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1,CSV2_IN_READ_SKIPPED_LINES_CSV2_1,CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1
-DEFAULT_MACRO SourceDataset_CSV2 $(FME_MF_DIR)base_adresse.csv
-GUI MULTIFILE SourceDataset_CSV2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CSV (Comma Separated Value) File(s):
-INCLUDE [ if {{$(SourceDataset_CSV2)} == {}} { puts_real {Parameter 'SourceDataset_CSV2' must be given a value.}; exit 1; }; ]
+FME_PYTHON_VERSION 312
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_CSV2_1,CSV2_IN_FIELDS_GROUP_CSV2_1,CSV2_IN_DELIMITER_CSV2_1,CSV2_IN_FIELD_NAMES_LINE_CSV2_1,CSV2_IN_DATA_START_LINE_CSV2_1,CSV2_IN_ADVANCED_GROUP_CSV2_1,CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1,CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1,CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1,CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1,CSV2_IN_FIELD_NAMES_GROUP_CSV2_1,CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1,CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1,CSV2_IN_FIELD_VALUES_GROUP_CSV2_1,CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1,CSV2_IN_ENCODING_GROUP_CSV2_1,CSV2_IN_ENCODING_CSV2_1,CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1,CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1,CSV2_IN_READ_SKIPPED_LINES_CSV2_1,CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1,DestDataset_OGCGEOPACKAGE_1,OGCGEOPACKAGE_OUT_FME_CONNECTION_GROUP_OGCGEOPACKAGE_1,OGCGEOPACKAGE_OUT_OVERWRITE_DATASET_OGCGEOPACKAGE_1,OGCGEOPACKAGE_OUT_DATASET_TEMPLATE_OGCGEOPACKAGE_1,OGCGEOPACKAGE_OUT_FME_GROUP_NAMED1_OGCGEOPACKAGE_1,OGCGEOPACKAGE_OUT_VERSION_OGCGEOPACKAGE_1,OGCGEOPACKAGE_OUT_GEOPACKAGE_WRT_ADV_PARM_OGCGEOPACKAGE_1,OGCGEOPACKAGE_OUT_TRANSACTION_SIZE_OGCGEOPACKAGE_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_CSV2 $(FME_MF_DIR_USERTYPED)\base_adresse.csv
+
+DEFAULT_MACRO DestDataset_OGCGEOPACKAGE $(FME_MF_DIR_USERTYPED)\adresse.gpkg
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_CSV2$encode)} == {}} { puts_real {Parameter 'SourceDataset_CSV2' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_OGCGEOPACKAGE$encode)} == {}} { puts_real {Parameter 'DestDataset_OGCGEOPACKAGE' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE MULTI_READER
 MULTI_READER_TYPE{0} CSV2
 MULTI_READER_KEYWORD{0} CSV2_1
 MULTI_READER_GEN_DIRECTIVES{0} SKIP_DUPLICATE_DELIMITERS,No,DATASET_GROUP,,SCAN_ADDITIONAL_FIELDS,No,FIELD_NAMES_LINE,1,ADVANCED_GROUP,,SCHEMA,,TRIM_FIELD_VALUE_QUALIFIERS,Yes,PREVIEW_PLACEHOLDER,,SCAN_TYPES,Yes,CASE_SENSITIVE_FIELD_NAMES,Yes,ENCODING,windows-1252,FIELD_NAMES_GROUP,,READ_SKIPPED_LINES,No,FEATURE_TYPE_NAME,FILE_NAME,SCHEMA_GENERATION_GROUP,,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,DELIMITER,auto,TRIM_FIELD_NAME_QUALIFIERS,Yes,CHUNK_SIZE,100000,FIELD_SEPARATION_GROUP,,ENCODING_GROUP,,EXPOSE_ATTRS_GROUP,,DATA_START_LINE,2,FIELDS_GROUP,,ENFORCE_STRICT_SCHEMA,No,SCAN_MAX_ROWS,10000,FIELD_QUALIFIER_CHARACTER,<lt>quote<gt>,SKIPPED_LINES_GROUP,,FIELD_QUALIFIER_ESCAPE_CHARACTER,<lt>quote<gt>,PRESERVE_SOURCE_ENCODING,No,USE_CUSTOM_SCHEMA,NO,FIELD_VALUES_GROUP,,_MERGE_SCHEMAS,YES,CSV2_EXPOSE_FORMAT_ATTRS,
-WRITER_TYPE NULL
-WRITER_KEYWORD NULL_DEST
-NULL_DEST_DATASET null
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD PRIMARY_DEST
+PRIMARY_DEST_DATASET_ORDER BY_ID
+PRIMARY_DEST_FIRST_WRITER_ID 0
+PRIMARY_DEST_TYPE{0} OGCGEOPACKAGE
+PRIMARY_DEST_KEYWORD{0} OGCGEOPACKAGE_1
+PRIMARY_DEST_GEN_DIRECTIVES{0} DATASET_TEMPLATE,,WRITE_NULLS,YES,VERSION,1.2,GEOPACKAGE_WRT_ADV_PARM,,OVERWRITE_DATASET,NO,ENCODE_FEATURE_TYPE_AND_ATTR_NAMES,YES,EXPOSE_PRIMARY_KEY_ATTRIBUTE,YES,DESTINATION_DATASETTYPE_VALIDATION,Yes,COORDINATE_SYSTEM_GRANULARITY,FEATURE_TYPE,ADD_WRITER_NEXT_ACTION,automatic,ENFORCE_GEOMETRY_COLUMN_CONSTRAINTS,YES,TRANSACTION_SIZE,5000
 #! END_WB_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "CSV2_1"
@@ -1780,10 +2193,65 @@ CSV2_1_GENERATE_FME_BUILD_NUM 20596
 CSV2_1_DATASET "$(SourceDataset_CSV2_1)"
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
+MACRO WB_KEYWORD "OGCGEOPACKAGE_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER OGCGEOPACKAGE OGCGEOPACKAGE_1
+# ============================================================================
+# The following GUI line prompts for a file to be used as the
+# destination of the GEOPACKAGE File. The user input is stored
+# in a macro, which is then used to define the dataset to be written.
+GUI MULTIFILE DestDataset_OGCGEOPACKAGE_1 GeoPackage_Files(*.gpkg)|*.gpkg|All_files(*)|* GeoPackage File:
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_FME_CONNECTION_GROUP_OGCGEOPACKAGE_1 
+GUI OPTIONAL DISCLOSUREGROUP OGCGEOPACKAGE_OUT_FME_CONNECTION_GROUP_OGCGEOPACKAGE_1 OGCGEOPACKAGE_OUT_NAMED_CONNECTION%OGCGEOPACKAGE_OUT_OVERWRITE_DATASET_OGCGEOPACKAGE_1%OGCGEOPACKAGE_OUT_DATASET_TEMPLATE_OGCGEOPACKAGE_1 Database Connection
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_OVERWRITE_DATASET_OGCGEOPACKAGE_1 NO
+OGCGEOPACKAGE_1_OVERWRITE_DATASET "$(OGCGEOPACKAGE_OUT_OVERWRITE_DATASET_OGCGEOPACKAGE_1)"
+GUI OPTIONAL ACTIVECHECK OGCGEOPACKAGE_OUT_OVERWRITE_DATASET_OGCGEOPACKAGE_1 YES%NO,OGCGEOPACKAGE_OUT_DATASET_TEMPLATE_OGCGEOPACKAGE_1 Overwrite Existing Database:
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_DATASET_TEMPLATE_OGCGEOPACKAGE_1 
+OGCGEOPACKAGE_1_DATASET_TEMPLATE "$(OGCGEOPACKAGE_OUT_DATASET_TEMPLATE_OGCGEOPACKAGE_1)"
+GUI OPTIONAL FILENAME_MUSTEXIST OGCGEOPACKAGE_OUT_DATASET_TEMPLATE_OGCGEOPACKAGE_1 GeoPackage_Files(*.gpkg)|*.gpkg|All_files(*)|* Template File:
+GUI LOOKUP OGCGEOPACKAGE_OUT_DATASET_TEMPLATE_OGCGEOPACKAGE_1 <Unused>, 
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_FME_GROUP_NAMED1_OGCGEOPACKAGE_1 
+GUI OPTIONAL DISCLOSUREGROUP OGCGEOPACKAGE_OUT_FME_GROUP_NAMED1_OGCGEOPACKAGE_1 OGCGEOPACKAGE_OUT_VERSION_OGCGEOPACKAGE_1 Writer Parameters
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_VERSION_OGCGEOPACKAGE_1 1.2
+OGCGEOPACKAGE_1_VERSION "$(OGCGEOPACKAGE_OUT_VERSION_OGCGEOPACKAGE_1)"
+GUI CHOICE OGCGEOPACKAGE_OUT_VERSION_OGCGEOPACKAGE_1 1.0%1.1%1.2%1.3 Version:
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_GEOPACKAGE_WRT_ADV_PARM_OGCGEOPACKAGE_1 
+GUI OPTIONAL DISCLOSUREGROUP OGCGEOPACKAGE_OUT_GEOPACKAGE_WRT_ADV_PARM_OGCGEOPACKAGE_1 OGCGEOPACKAGE_OUT_TRANSACTION_SIZE_OGCGEOPACKAGE_1 Advanced
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_TRANSACTION_SIZE_OGCGEOPACKAGE_1 5000
+OGCGEOPACKAGE_1_TRANSACTION_SIZE "$(OGCGEOPACKAGE_OUT_TRANSACTION_SIZE_OGCGEOPACKAGE_1)"
+GUI INTEGER OGCGEOPACKAGE_OUT_TRANSACTION_SIZE_OGCGEOPACKAGE_1 Features Per Transaction:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_DESTINATION_DATASETTYPE_VALIDATION_OGCGEOPACKAGE_1 Yes
+OGCGEOPACKAGE_1_DESTINATION_DATASETTYPE_VALIDATION "$(OGCGEOPACKAGE_OUT_DESTINATION_DATASETTYPE_VALIDATION_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_COORDINATE_SYSTEM_GRANULARITY_OGCGEOPACKAGE_1 FEATURE_TYPE
+OGCGEOPACKAGE_1_COORDINATE_SYSTEM_GRANULARITY "$(OGCGEOPACKAGE_OUT_COORDINATE_SYSTEM_GRANULARITY_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES "$(OGCGEOPACKAGE_OUT_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_ENFORCE_GEOMETRY_COLUMN_CONSTRAINTS_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_ENFORCE_GEOMETRY_COLUMN_CONSTRAINTS "$(OGCGEOPACKAGE_OUT_ENFORCE_GEOMETRY_COLUMN_CONSTRAINTS_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_EXPOSE_PRIMARY_KEY_ATTRIBUTE_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_EXPOSE_PRIMARY_KEY_ATTRIBUTE "$(OGCGEOPACKAGE_OUT_EXPOSE_PRIMARY_KEY_ATTRIBUTE_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_WRITE_NULLS_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_WRITE_NULLS "$(OGCGEOPACKAGE_OUT_WRITE_NULLS_OGCGEOPACKAGE_1)"
+# ============================================================================
+OGCGEOPACKAGE_1_GENERATE_FME_BUILD_NUM 24220
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_OGCGEOPACKAGE_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER OGCGEOPACKAGE OGCGEOPACKAGE_1
+DEFAULT_MACRO DestDataset_OGCGEOPACKAGE_1 $(DestDataset_OGCGEOPACKAGE)
+OGCGEOPACKAGE_1_DATASET "$(DestDataset_OGCGEOPACKAGE_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
 #! END_WB_HEADER
 #! END_HEADER
 
-LOG_FILENAME "$(FME_MF_DIR)Tuto - Geocodage et JSON.log"
+LOG_FILENAME "$(FME_MF_DIR)Tuto - Geocodage.log"
 LOG_APPEND NO
 LOG_TIMINGS YES
 LOG_FILTER_MASK -1
@@ -1793,7 +2261,12 @@ FME_REPROJECTION_ENGINE FME
 FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING windows-1252
+FME_BULK_MODE_THRESHOLD 
+LAST_SAVE_BUILD "FME 2024.0.3.0 (20240603 - Build 24220 - WIN64)"
+MAPPING_FILE_ID Tuto<space>-<space>Geocodage
 DEFAULT_MACRO DATASET_KEYWORD_CSV2_1 CSV2_1
+DEFAULT_MACRO DATASET_KEYWORD_OGCGEOPACKAGE_1 OGCGEOPACKAGE_1
 # -------------------------------------------------------------------------
 
 CSV2_1_READER_META_ATTRIBUTES fme_feature_type
@@ -1804,7 +2277,7 @@ MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
 
-MACRO WORKSPACE_NAME Tuto - Geocodage et JSON
+MACRO WORKSPACE_NAME Tuto - Geocodage
 MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
 
@@ -1815,75 +2288,61 @@ CSV2_1_MERGE_DEF CSV2_1::base_adresse EXACT base_adresse DEFLINE fme_attribute_r
 FACTORY_DEF * TeeFactory    FACTORY_NAME "base_adresse_CSV2_1 Splitter"    INPUT FEATURE_TYPE base_adresse    OUTPUT FEATURE_TYPE base_adresse_CSV2_1
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
-# Create the DomainName that this transformer will use.
-# Because @Count itself will evalute the expression to calculate the
-# domain, we don't need to do anything in Tcl per feature going by
-INCLUDE [    set domainPrefix {};    if { {Global} == {Local} }    {       set domainPrefix [FME_EncodeText {Counter_}];    };    puts "MACRO Counter_FULL_DOMAIN ${domainPrefix}counter"; ]
-FACTORY_DEF * ExecuteFunctionFactory    FACTORY_NAME Counter_Rejector    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE base_adresse_CSV2_1    FUNCTION_DEFINITION @Count(REJECTABLE_WITH_FLAG,fme_encoded,$(Counter_FULL_DOMAIN),"0")    RESULT_ATTRIBUTE "id"    FEATURE_TABLE_SHIM_SUPPORT Yes    OUTPUT COMPLETE FEATURE_TYPE Counter_OUTPUT    OUTPUT REJECTED FEATURE_TYPE Counter_<REJECTED>
-FACTORY_DEF * TeeFactory   FACTORY_NAME "Counter OUTPUT Splitter"   INPUT FEATURE_TYPE Counter_OUTPUT   OUTPUT FEATURE_TYPE Counter_OUTPUT_0_/sTFA1dnbN8=   OUTPUT FEATURE_TYPE Counter_OUTPUT_1_bU15iCfwGHA=
-FACTORY_DEF * TeeFactory   FACTORY_NAME "Counter <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE Counter_<REJECTED>
+FACTORY_DEF {*} CounterFactory    FACTORY_NAME { Counter }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    START { "0" }    SCOPE { Global }    DOMAIN { "counter" }    COUNT_ATTR { "id" }    GROUP_ID_ATTR { "" }    INPUT  FEATURE_TYPE base_adresse_CSV2_1    OUTPUT { OUTPUT FEATURE_TYPE Counter_OUTPUT        }    OUTPUT { REJECTED FEATURE_TYPE Counter_<REJECTED>        }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Counter OUTPUT Splitter"   INPUT FEATURE_TYPE Counter_OUTPUT   OUTPUT FEATURE_TYPE Counter_OUTPUT_0_WsdHelh5PzQ=   OUTPUT FEATURE_TYPE Counter_OUTPUT_1_YlMs5CJlyeU=
 # -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory    FACTORY_NAME Geocoder_CATCHER    INPUT  FEATURE_TYPE Counter_OUTPUT_1_bU15iCfwGHA=    OUTPUT FEATURE_TYPE Geocoder_READY       @RenameAttributes(FME_STRICT,___fme_rejection_code___,fme_rejection_code)       ___fmegeocoder_transformer_name "Geocoder"       ___fmegeocoder_geocoder_service "OpenStreetMap"       ___fmegeocoder_parameters "URL;https:<solidus><solidus>nominatim.openstreetmap.org<solidus>;METHOD;geocode;ADDRESS;@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Number<closeparen><comma><space><at>Value<openparen>Street<closeparen><comma><space><at>Value<openparen>Postcode<closeparen><comma><space><at>Value<openparen>City<closeparen><comma><space><at>Value<openparen>Country<closeparen>,Geocoder);LATITUDE;<Unused>;LONGITUDE;<Unused>"       ___fmegeocoder_timeout "60"       ___fmegeocoder_num_threads "4"
-FACTORY_DEF * PythonFactory    FACTORY_NAME Geocoder_CALLER    INPUT FEATURE_TYPE Geocoder_READY    PYTHON_NAMESPACE FMEOBJECTS    SYMBOL_NAME fmegeocoder.fmegeocoderMain.FMEGeocoder    OUTPUT PYOUTPUT FEATURE_TYPE Geocoder_PROCESSED
-FACTORY_DEF * TestFactory    FACTORY_NAME Geocoder_ROUTER    INPUT FEATURE_TYPE Geocoder_PROCESSED    TEST &fme_rejection_code == ""    OUTPUT PASSED FEATURE_TYPE Geocoder_OUTPUT       @RenameAttributes(FME_STRICT,fme_rejection_code,___fme_rejection_code___)
-# -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeManager_4    INPUT  FEATURE_TYPE Geocoder_OUTPUT    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "_address_json" "_address_json" "" "REMOVE" }      ATTR_ACTION { "_address_types" "_address_types" "" "REMOVE" }      ATTR_ACTION { "_arcgis_wkid" "_arcgis_wkid" "" "REMOVE" }      ATTR_ACTION { "_arcgis_longlabel" "_arcgis_longlabel" "" "REMOVE" }      ATTR_ACTION { "_arcgis_exinfo" "_arcgis_exinfo" "" "REMOVE" }      ATTR_ACTION { "_elevation_meters" "_elevation_meters" "" "REMOVE" }      ATTR_ACTION { "_elevation_feet" "_elevation_feet" "" "REMOVE" }      ATTR_ACTION { "_elevation_resolution" "_elevation_resolution" "" "REMOVE" }      ATTR_ACTION { "_postal_code" "_postal_code" "" "REMOVE" }      ATTR_ACTION { "_tamu_census_block" "_tamu_census_block" "" "REMOVE" }      ATTR_ACTION { "_tamu_census_tract" "_tamu_census_tract" "" "REMOVE" }      ATTR_ACTION { "_tamu_census_county_fips" "_tamu_census_county_fips" "" "REMOVE" }      ATTR_ACTION { "_tamu_census_cbsa_fips" "_tamu_census_cbsa_fips" "" "REMOVE" }      ATTR_ACTION { "_tamu_census_mcd_fips" "_tamu_census_mcd_fips" "" "REMOVE" }      ATTR_ACTION { "_tamu_census_place_fips" "_tamu_census_place_fips" "" "REMOVE" }      ATTR_ACTION { "_tamu_census_state_fips" "_tamu_census_state_fips" "" "REMOVE" }      ATTR_ACTION { "_tamu_census_year" "_tamu_census_year" "" "REMOVE" }      ATTR_ACTION { "_timezone" "_timezone" "" "REMOVE" }      ATTR_ACTION { "_timezone_name" "_timezone_name" "" "REMOVE" }      ATTR_ACTION { "_timezone_offset" "_timezone_offset" "" "REMOVE" }      ATTR_ACTION { "_timezone_current_dst" "_timezone_current_dst" "" "REMOVE" }
-# -------------------------------------------------------------------------
-FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPCaller       INPUT  FEATURE_TYPE Counter_OUTPUT_0_/sTFA1dnbN8=    TARGET_URL "https:<solidus><solidus>nominatim.openstreetmap.org<solidus>"    HTTP_METHOD GET    SAVE_FILE NO    OUTPUT_FILENAME "<Unused>"    OUTPUT_DIRECTORY "<Unused>"    FILE_EXTENSION "<Unused>"    TARGET_ATTR "_response_body"    FILE_PATH_ATTR "<Unused>"    UPLOAD_FILE "<Unused>"    UPLOAD_BODY "<Unused>"    MULTIPART_UPLOAD <Unused>    UPLOAD_CONTENT_TYPE "<Unused>"    COMBINED_MULTIPART_TABLE    REQUEST_HEADER_TABLE    ADDITIONAL_URL_PARAMETERS format;json q;@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Number<closeparen><comma><space><at>Value<openparen>Street<closeparen><comma><space><at>Value<openparen>Postcode<closeparen><comma><space><at>Value<openparen>City<closeparen><comma><space><at>Value<openparen>Country<closeparen>,HTTPCaller) addressdetails;1    AUTH_USERNAME "<Unused>"    AUTH_PASSWORD "<Unused>"    AUTH_METHOD "<Unused>"    TARGET_ATTRIBUTE_ENCODING auto-detect    RESPONSE_HEADER_LIST_ATTR ""    STATUS_CODE_ATTR "_http_status_code"    ERROR_ATTR "_error"    CONNECTION_TIMEOUT_LENGTH 60    TRANSFER_TIMEOUT_LENGTH 90    FOLLOW_REDIRECTS FOLLOW_WITH_GET    REDIRECT_AUTH ORIGINAL_DOMAIN_ONLY    VERIFY_SSL_CERTIFICATES Yes    NAMED_CONNECTION "<Unused>"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPCaller_Output    OUTPUT REJECTED FEATURE_TYPE HTTPCaller_<REJECTED>
+# Combine the two "file path attribute" parameters into one value.
+DEFAULT_MACRO HTTPCaller_FILE_PATH_ATTR
+INCLUDE [ 	if { {<Unused>} == {<Unused>} } { 		puts {MACRO HTTPCaller_FILE_PATH_ATTR "<Unused>"}; 	} else { 		puts {MACRO HTTPCaller_FILE_PATH_ATTR "<Unused>"}; 	} ]
+FACTORY_DEF {*} HTTPFactory    FACTORY_NAME { HTTPCaller }       INPUT  FEATURE_TYPE Counter_OUTPUT_0_WsdHelh5PzQ=    TARGET_URL { "https:<solidus><solidus>nominatim.openstreetmap.org<solidus>" }    HTTP_METHOD { GET }    SAVE_FILE { NO }    OUTPUT_FILENAME { "<Unused>" }    OUTPUT_DIRECTORY { "<Unused>" }    FILE_EXTENSION { "<Unused>" }    TARGET_ATTR { "_response_body" }    FILE_PATH_ATTR { $(HTTPCaller_FILE_PATH_ATTR) }    UPLOAD_FILE { "<Unused>" }    UPLOAD_BODY { "<Unused>" }    MULTIPART_UPLOAD { <Unused> }    UPLOAD_CONTENT_TYPE { "<Unused>" }    COMBINED_MULTIPART_TABLE {  }    REQUEST_HEADER_TABLE {  }    ADDITIONAL_URL_PARAMETERS { format;json q;@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Number<closeparen><comma><space><at>Value<openparen>Street<closeparen><comma><space><at>Value<openparen>Postcode<closeparen><comma><space><at>Value<openparen>City<closeparen><comma><space><at>Value<openparen>Country<closeparen>,HTTPCaller) addressdetails;1 }    AUTH_USERNAME { "<Unused>" }    AUTH_PASSWORD { "<Unused>" }    AUTH_METHOD { "<Unused>" }    TARGET_ATTRIBUTE_ENCODING { auto-detect }    RESPONSE_HEADER_LIST_ATTR { "" }    STATUS_CODE_ATTR { "_http_status_code" }    ERROR_ATTR { "_error" }    CONNECTION_TIMEOUT_LENGTH { 60 }    TRANSFER_TIMEOUT_LENGTH { 90 }    FOLLOW_REDIRECTS { FOLLOW_WITH_GET }    REDIRECT_AUTH { ORIGINAL_DOMAIN_ONLY }    VERIFY_SSL_CERTIFICATES { Yes }    NAMED_CONNECTION { "<Unused>" }    USE_COOKIES { No }    MAX_TRANSFERS_IN_PROGRESS { 25 }    MAX_HTTP_VERSION { HTTP_2 }    RATE_LIMIT_MAX_REQUESTS { 10 }    RATE_LIMIT_INTERVAL_IN_SECONDS { 1 }    RATE_LIMIT_REQUEST_TIMING { BURST }    RETRY_FAILED_TRANSFERS { CONNECTION 429 500 501 502 503 504 505 506 507 508 509 510 511 }    RETRY_MAX_RETRIES { 2 }    RETRY_INITIAL_BACKOFF { 1000 }    SPLIT_MULTIPART_RESPONSE { NO }    MULTIPART_RESPONSE_HEADER_LIST_ATTR { "<Unused>" }    MINIMUM_ENCRYPTION_LEVEL { "OS_DEFAULT" }    OUTPUT { OUTPUT FEATURE_TYPE HTTPCaller_Output          }    OUTPUT { REJECTED FEATURE_TYPE HTTPCaller_<REJECTED>          }
 FACTORY_DEF * TeeFactory   FACTORY_NAME "HTTPCaller <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE HTTPCaller_<REJECTED>
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeManager    INPUT  FEATURE_TYPE HTTPCaller_Output    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "_response_body" "JSON_data" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "_http_status_code" "_http_status_code" "" "REMOVE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_OUTPUT
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeManager OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeManager_OUTPUT   OUTPUT FEATURE_TYPE AttributeManager_OUTPUT_0_qkWxPTSviNs=   OUTPUT FEATURE_TYPE AttributeManager_OUTPUT_1_qYvk7jiZJpI=
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager }    INPUT  FEATURE_TYPE HTTPCaller_Output    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 4    DEF_VAL_COLUMN 2    NUM_OF_COLUMNS 5    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "id" "id" "" "int64" "NO_OP" }      ATTR_ACTION { "Number" "Number" "" "uint8" "NO_OP" }      ATTR_ACTION { "Street" "Street" "" "buffer" "NO_OP" }      ATTR_ACTION { "Postcode" "Postcode" "" "uint32" "NO_OP" }      ATTR_ACTION { "City" "City" "" "buffer" "NO_OP" }      ATTR_ACTION { "Country" "Country" "" "buffer" "NO_OP" }      ATTR_ACTION { "_response_body" "JSON_data" "" "varchar<openparen>200<closeparen>" "RENAME_SET_VALUE" }      ATTR_ACTION { "_http_status_code" "_http_status_code" "" "buffer" "REMOVE" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_OUTPUT        }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeManager OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeManager_OUTPUT   OUTPUT FEATURE_TYPE AttributeManager_OUTPUT_0_llG+vd7T7nc=   OUTPUT FEATURE_TYPE AttributeManager_OUTPUT_1_PxJ3LejZikY=
 # -------------------------------------------------------------------------
-FACTORY_DEF * JSONQueryFactory    FACTORY_NAME JSONFragmenter_2    INPUT  FEATURE_TYPE AttributeManager_OUTPUT_1_qYvk7jiZJpI=    MODE EXPLODE    EXPLODE_FORMAT JSON    REJECT_EMPTY_LISTS YES    EXTRACT_ATTR No    JSON_ATTR "JSON_data"    READ_FROM_FILE NO    FILEPATH_OR_URL "<Unused>"    OUTPUT_ATTRIBUTE "<Unused>"    EXPLODE_QUERY "json<openbracket>*<closebracket><openbracket><quote>address<quote><closebracket><openbracket>*<closebracket>"    RECURSIVE_FLATTEN <Unused>    OUTPUT EXPLODED FEATURE_TYPE JSONFragmenter_2_FRAGMENTS    OUTPUT REJECTED FEATURE_TYPE JSONFragmenter_2_<REJECTED>
+FACTORY_DEF {*} JSONQueryFactory    FACTORY_NAME { JSONFragmenter }    INPUT  FEATURE_TYPE AttributeManager_OUTPUT_0_llG+vd7T7nc=    MODE EXPLODE    EXPLODE_FORMAT { JSON }    REJECT_EMPTY_LISTS { YES }    EXTRACT_ATTR { No }    JSON_ATTR { "JSON_data" }    READ_FROM_FILE { NO }    FILEPATH_OR_URL { "<Unused>" }    OUTPUT_ATTRIBUTE { "<Unused>" }    EXPLODE_QUERY { "json<openbracket>*<closebracket>" }    RECURSIVE_FLATTEN { <Unused> }    OUTPUT { EXPLODED FEATURE_TYPE JSONFragmenter_FRAGMENTS        }    OUTPUT { REJECTED FEATURE_TYPE JSONFragmenter_<REJECTED>        }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "JSONFragmenter FRAGMENTS Splitter"   INPUT FEATURE_TYPE JSONFragmenter_FRAGMENTS   OUTPUT FEATURE_TYPE JSONFragmenter_FRAGMENTS_0_3GXXk/mw1jc=   OUTPUT FEATURE_TYPE JSONFragmenter_FRAGMENTS_1_EfaXYHJPtTs=
+FACTORY_DEF * TeeFactory   FACTORY_NAME "JSONFragmenter <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE JSONFragmenter_<REJECTED>
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} JSONQueryFactory    FACTORY_NAME { JSONExtractor }    INPUT  FEATURE_TYPE JSONFragmenter_FRAGMENTS_0_3GXXk/mw1jc=    MODE EXTRACT    JSON_DOCUMENT { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>JSON_data<closeparen>,JSONExtractor)" }    READ_FROM_FILE { NO }    FILEPATH_OR_URL { "<Unused>" }    QUERIES { osm_id json<openbracket><quote>place_id<quote><closebracket> latitude json<openbracket><quote>lat<quote><closebracket> longitude json<openbracket><quote>lon<quote><closebracket> classe json<openbracket><quote>class<quote><closebracket> type json<openbracket><quote>type<quote><closebracket> adresse_osm json<openbracket><quote>address<quote><closebracket><openbracket><quote>house_number<quote><closebracket><space>+<space><quote><comma><space><quote><space>+<space>json<openbracket><quote>address<quote><closebracket><openbracket><quote>road<quote><closebracket><space>+<space><quote><space><quote><space>+<space>json<openbracket><quote>address<quote><closebracket><openbracket><quote>postcode<quote><closebracket><space>+<space><quote><space><quote><space>+<space>json<openbracket><quote>address<quote><closebracket><openbracket><quote>village<quote><closebracket> adresse_osm_json json<openbracket><quote>address<quote><closebracket> }    OUTPUT { EVALUATED FEATURE_TYPE JSONExtractor_EVALUATED        }    OUTPUT { REJECTED FEATURE_TYPE JSONExtractor_<REJECTED>        }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "JSONExtractor <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE JSONExtractor_<REJECTED>
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager_3 }    INPUT  FEATURE_TYPE JSONExtractor_EVALUATED    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 4    DEF_VAL_COLUMN 2    NUM_OF_COLUMNS 5    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "Number" "Number" "" "uint8" "NO_OP" }      ATTR_ACTION { "Street" "Street" "" "buffer" "NO_OP" }      ATTR_ACTION { "Postcode" "Postcode" "" "uint32" "NO_OP" }      ATTR_ACTION { "City" "City" "" "buffer" "NO_OP" }      ATTR_ACTION { "Country" "Country" "" "buffer" "NO_OP" }      ATTR_ACTION { "JSON_data" "JSON_data" "" "varchar<openparen>200<closeparen>" "REMOVE" }      ATTR_ACTION { "json_type" "json_type" "" "buffer" "REMOVE" }      ATTR_ACTION { "json_index" "json_index" "" "uint32" "REMOVE" }      ATTR_ACTION { "type" "type" "" "varchar<openparen>200<closeparen>" "REMOVE" }      ATTR_ACTION { "id" "id" "" "int64" "NO_OP" }      ATTR_ACTION { "latitude" "latitude" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "longitude" "longitude" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "classe" "classe" "" "varchar<openparen>200<closeparen>" "REMOVE" }      ATTR_ACTION { "adresse_osm" "adresse_osm" "" "varchar<openparen>200<closeparen>" "NO_OP" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_3_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} VertexCreatorFactory    FACTORY_NAME { VertexCreator }    INPUT  FEATURE_TYPE AttributeManager_3_OUTPUT    MODE { REPLACE }    INDEX { "<Unused>" }    CONTINUE_ON_ERROR YES    XVAL { "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>longitude<closeparen>,VertexCreator)" }    YVAL { "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>latitude<closeparen>,VertexCreator)" }    ZVAL { "" }    USE_EXISTING_Z YES    ALLOW_DUPLICATES { "<Unused>" }    CLOSE_LINES { "<Unused>" }    ADD_MODE_VERSION 5    MISSING_VAL_MODE { <Unused> }    COMPUTE_MEASURES_MODE { CONTINUOUS }    COMMAND_PARM_EVALUATION SINGLE_PASS    OUTPUT { OUTPUT FEATURE_TYPE VertexCreator_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { CoordinateSystemSetter }    INPUT  FEATURE_TYPE VertexCreator_OUTPUT    OUTPUT { FEATURE_TYPE CoordinateSystemSetter_OUTPUT         @CoordSys("EPSG:4326")          }
+# -------------------------------------------------------------------------
+# If we're doing LAST N features, then the multiplier comes in as 0.
+# If we're doing First N, multiplier is -1.
+# For RANDOM, we need to treat LAST N as if it was first N (i.e. have a -1)
+# That is what the ? : does in the rate multiplier.
+INCLUDE [ if { {-1} == {0} && {ORIGINAL} == {ORIGINAL} } {              puts "MACRO REAL_MODE LAST"; 	         puts "MACRO REAL_RATE 1"; 	      } else {              puts "MACRO REAL_MODE ORIGINAL";              puts "MACRO REAL_RATE [expr 1 * ( -1 ? -1 : -1 ) ]"; 	      } ]
+FACTORY_DEF {*} SamplingFactory    FACTORY_NAME { Sampler }    COMMAND_PARM_EVALUATION SINGLE_PASS    SAMPLE_RATE { $(REAL_RATE) }    SAMPLE_ORDER { $(REAL_MODE) }    GROUP_BY { id }    FLUSH_WHEN_GROUPS_CHANGE { No }    INPUT  FEATURE_TYPE CoordinateSystemSetter_OUTPUT    OUTPUT { SAMPLED FEATURE_TYPE ___SAMPLED___ }
+# This TeeFactory is needed because Sampler will still output features if it has no OUTPUT clauses specified.
+# This way we behave nicely even if there are no output connections on the transformer. See PR#28886.
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Sampler_Sampled }    INPUT FEATURE_TYPE ___SAMPLED___    OUTPUT { FEATURE_TYPE Sampler_SAMPLED          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} JSONQueryFactory    FACTORY_NAME { JSONFlattener }    INPUT  FEATURE_TYPE JSONFragmenter_FRAGMENTS_1_EfaXYHJPtTs=    MODE FLATTEN    JSON_DOCUMENT { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>JSON_data<closeparen>,JSONFlattener)" }    READ_FROM_FILE { NO }    FILEPATH_OR_URL { "<Unused>" }    EXPLODE_QUERY "json"    RECURSIVE_FLATTEN { YES }    ERROR_LIST_ATTR { "_json_error" }    OUTPUT { EXPLODED FEATURE_TYPE JSONFlattener_OUTPUT        }    OUTPUT { REJECTED FEATURE_TYPE JSONFlattener_<REJECTED>        }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "JSONFlattener <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE JSONFlattener_<REJECTED>
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager_2 }    INPUT  FEATURE_TYPE JSONFlattener_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 4    DEF_VAL_COLUMN 2    NUM_OF_COLUMNS 5    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "Number" "Number" "" "uint8" "NO_OP" }      ATTR_ACTION { "Street" "Street" "" "buffer" "NO_OP" }      ATTR_ACTION { "Postcode" "Postcode" "" "uint32" "NO_OP" }      ATTR_ACTION { "City" "City" "" "buffer" "NO_OP" }      ATTR_ACTION { "Country" "Country" "" "buffer" "NO_OP" }      ATTR_ACTION { "JSON_data" "JSON_data" "" "varchar<openparen>200<closeparen>" "REMOVE" }      ATTR_ACTION { "json_type" "json_type" "" "buffer" "REMOVE" }      ATTR_ACTION { "json_index" "json_index" "" "uint32" "REMOVE" }      ATTR_ACTION { "lat" "lat" "" "buffer" "NO_OP" }      ATTR_ACTION { "lon" "lon" "" "buffer" "NO_OP" }      ATTR_ACTION { "" "adresse_osm" "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>address.house_number<closeparen><comma><space><at>Value<openparen>address.road<closeparen><space><at>Value<openparen>address.postcode<closeparen><space><at>Value<openparen>address.village<closeparen><space><at>Value<openparen>address.country<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;1;TEST address.city ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<at>Value<openparen>address.house_number<closeparen><comma><space><at>Value<openparen>address.road<closeparen><space><at>Value<openparen>address.postcode<closeparen><space><at>Value<openparen>address.city<closeparen><space><at>Value<openparen>address.country<closeparen>'FME_NUM_CONDITIONS2___" "varchar<openparen>200<closeparen>" "SET_TO" }      ATTR_ACTION { "address.house_number" "address.house_number" "" "buffer" "REMOVE" }      ATTR_ACTION { "address.road" "address.road" "" "buffer" "REMOVE" }      ATTR_ACTION { "address.village" "address.village" "" "buffer" "REMOVE" }      ATTR_ACTION { "address.city" "address.city" "" "buffer" "REMOVE" }      ATTR_ACTION { "address.postcode" "address.postcode" "" "buffer" "REMOVE" }      ATTR_ACTION { "address.country" "address.country" "" "buffer" "REMOVE" }      ATTR_ACTION { "place_id" "place_id" "" "buffer" "REMOVE" }      ATTR_ACTION { "class" "class" "" "buffer" "REMOVE" }      ATTR_ACTION { "type" "type" "" "buffer" "REMOVE" }      ATTR_ACTION { "id" "id" "" "int64" "NO_OP" }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} JSONQueryFactory    FACTORY_NAME { JSONFragmenter_2 }    INPUT  FEATURE_TYPE AttributeManager_OUTPUT_1_PxJ3LejZikY=    MODE EXPLODE    EXPLODE_FORMAT { JSON }    REJECT_EMPTY_LISTS { YES }    EXTRACT_ATTR { No }    JSON_ATTR { "JSON_data" }    READ_FROM_FILE { NO }    FILEPATH_OR_URL { "<Unused>" }    OUTPUT_ATTRIBUTE { "<Unused>" }    EXPLODE_QUERY { "json<openbracket>*<closebracket><openbracket><quote>address<quote><closebracket><openbracket>*<closebracket>" }    RECURSIVE_FLATTEN { <Unused> }    OUTPUT { EXPLODED FEATURE_TYPE JSONFragmenter_2_FRAGMENTS        }    OUTPUT { REJECTED FEATURE_TYPE JSONFragmenter_2_<REJECTED>        }
 FACTORY_DEF * TeeFactory   FACTORY_NAME "JSONFragmenter_2 FRAGMENTS Transformer Output Nuker"   INPUT FEATURE_TYPE JSONFragmenter_2_FRAGMENTS
 FACTORY_DEF * TeeFactory   FACTORY_NAME "JSONFragmenter_2 <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE JSONFragmenter_2_<REJECTED>
 # -------------------------------------------------------------------------
-FACTORY_DEF * JSONQueryFactory    FACTORY_NAME JSONFragmenter    INPUT  FEATURE_TYPE AttributeManager_OUTPUT_0_qkWxPTSviNs=    MODE EXPLODE    EXPLODE_FORMAT JSON    REJECT_EMPTY_LISTS YES    EXTRACT_ATTR No    JSON_ATTR "JSON_data"    READ_FROM_FILE NO    FILEPATH_OR_URL "<Unused>"    OUTPUT_ATTRIBUTE "<Unused>"    EXPLODE_QUERY "json<openbracket>*<closebracket>"    RECURSIVE_FLATTEN <Unused>    OUTPUT EXPLODED FEATURE_TYPE JSONFragmenter_FRAGMENTS    OUTPUT REJECTED FEATURE_TYPE JSONFragmenter_<REJECTED>
-FACTORY_DEF * TeeFactory   FACTORY_NAME "JSONFragmenter FRAGMENTS Splitter"   INPUT FEATURE_TYPE JSONFragmenter_FRAGMENTS   OUTPUT FEATURE_TYPE JSONFragmenter_FRAGMENTS_0_WksHgW9V8PQ=   OUTPUT FEATURE_TYPE JSONFragmenter_FRAGMENTS_1_YUGQFf9U354=
-FACTORY_DEF * TeeFactory   FACTORY_NAME "JSONFragmenter <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE JSONFragmenter_<REJECTED>
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Geocoder_CATCHER }    INPUT  FEATURE_TYPE Counter_OUTPUT_1_YlMs5CJlyeU=    OUTPUT { FEATURE_TYPE Geocoder_READY       @RenameAttributes(FME_STRICT,___fme_rejection_code___,fme_rejection_code)       ___fmegeocoder_transformer_name "Geocoder"       ___fmegeocoder_geocoder_service "OpenStreetMap"       @Split("URL;https:<solidus><solidus>nominatim.openstreetmap.org<solidus>;METHOD;geocode;ADDRESS;@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Number<closeparen><comma><space><at>Value<openparen>Street<closeparen><comma><space><at>Value<openparen>Postcode<closeparen><comma><space><at>Value<openparen>City<closeparen><comma><space><at>Value<openparen>Country<closeparen>,Geocoder);LATITUDE;<Unused>;LONGITUDE;<Unused>"," ",___fmegeocoder_parameters{})       ___fmegeocoder_timeout "60"       ___fmegeocoder_num_threads "4"       ___fmegeocoder_return_json_response "no"       ___fmegeocoder_verify_https "yes"       }
+FACTORY_DEF {*} PythonFactory     FACTORY_NAME { Geocoder_CALLER }     INPUT { FEATURE_TYPE Geocoder_READY }     PYTHON_NAMESPACE FMEOBJECTS     SYMBOL_NAME fmepy_geocoder.geocoder.Geocoder     OUTPUT { PYOUTPUT FEATURE_TYPE Geocoder_PROCESSED }
+FACTORY_DEF {*} TestFactory     FACTORY_NAME { Geocoder_ROUTER }     INPUT { FEATURE_TYPE Geocoder_PROCESSED }     TEST &fme_rejection_code == ""     OUTPUT { PASSED FEATURE_TYPE Geocoder_Output         @RenameAttributes(FME_STRICT,fme_rejection_code,___fme_rejection_code___)          }
 # -------------------------------------------------------------------------
-FACTORY_DEF * JSONQueryFactory    FACTORY_NAME JSONFlattener    INPUT  FEATURE_TYPE JSONFragmenter_FRAGMENTS_1_YUGQFf9U354=    MODE FLATTEN    JSON_DOCUMENT "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>JSON_data<closeparen>,JSONFlattener)"    READ_FROM_FILE NO    FILEPATH_OR_URL "<Unused>"    EXPLODE_QUERY "json"    RECURSIVE_FLATTEN YES    ERROR_LIST_ATTR "_json_error"    OUTPUT EXPLODED FEATURE_TYPE JSONFlattener_OUTPUT    OUTPUT REJECTED FEATURE_TYPE JSONFlattener_<REJECTED>
-FACTORY_DEF * TeeFactory   FACTORY_NAME "JSONFlattener <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE JSONFlattener_<REJECTED>
-# -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeManager_2    INPUT  FEATURE_TYPE JSONFlattener_OUTPUT    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "JSON_data" "JSON_data" "" "REMOVE" }      ATTR_ACTION { "json_type" "json_type" "" "REMOVE" }      ATTR_ACTION { "json_index" "json_index" "" "REMOVE" }      ATTR_ACTION { "" "adresse_osm" "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>address.house_number<closeparen><comma><space><at>Value<openparen>address.road<closeparen><space><at>Value<openparen>address.postcode<closeparen><space><at>Value<openparen>address.village<closeparen><space><at>Value<openparen>address.country<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;1;TEST address.city ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<at>Value<openparen>address.house_number<closeparen><comma><space><at>Value<openparen>address.road<closeparen><space><at>Value<openparen>address.postcode<closeparen><space><at>Value<openparen>address.city<closeparen><space><at>Value<openparen>address.country<closeparen>'FME_NUM_CONDITIONS2___" "SET_TO" }      ATTR_ACTION { "address.house_number" "address.house_number" "" "REMOVE" }      ATTR_ACTION { "address.road" "address.road" "" "REMOVE" }      ATTR_ACTION { "address.village" "address.village" "" "REMOVE" }      ATTR_ACTION { "address.city" "address.city" "" "REMOVE" }      ATTR_ACTION { "address.postcode" "address.postcode" "" "REMOVE" }      ATTR_ACTION { "address.country" "address.country" "" "REMOVE" }      ATTR_ACTION { "place_id" "place_id" "" "REMOVE" }      ATTR_ACTION { "class" "class" "" "REMOVE" }      ATTR_ACTION { "type" "type" "" "REMOVE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_2_OUTPUT
-# -------------------------------------------------------------------------
-FACTORY_DEF * VertexCreatorFactory    FACTORY_NAME VertexCreator_2    INPUT  FEATURE_TYPE AttributeManager_2_OUTPUT    MODE REPLACE    INDEX "<Unused>"    CONTINUE_ON_ERROR YES    XVAL "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>lat<closeparen>,VertexCreator_2)"    YVAL "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>lon<closeparen>,VertexCreator_2)"    ZVAL ""    USE_EXISTING_Z YES    MISSING_VAL_MODE <Unused>    COMPUTE_MEASURES_MODE CONTINUOUS    OUTPUT OUTPUT FEATURE_TYPE VertexCreator_2_OUTPUT
-# -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory    FACTORY_NAME CoordinateSystemSetter_2    INPUT  FEATURE_TYPE VertexCreator_2_OUTPUT    OUTPUT FEATURE_TYPE CoordinateSystemSetter_2_OUTPUT         @CoordSys("EPSG:4326")
-# -------------------------------------------------------------------------
-# If we're doing LAST N features, then the multiplier comes in as 0.
-# If we're doing First N, multiplier is -1.
-# For RANDOM, we need to treat LAST N as if it was first N (i.e. have a -1)
-# That is what the ? : does in the rate multiplier.
-INCLUDE [ if { {-1} == {0} && {ORIGINAL} == {ORIGINAL} } {              puts "MACRO REAL_MODE LAST"; 	         puts "MACRO REAL_RATE 1"; 	      } else {              puts "MACRO REAL_MODE ORIGINAL";              puts "MACRO REAL_RATE [expr 1 * ( -1 ? -1 : -1 ) ]"; 	      } ]
-FACTORY_DEF {*} SamplingFactory    FACTORY_NAME Sampler_2    COMMAND_PARM_EVALUATION SINGLE_PASS    SAMPLE_RATE $(REAL_RATE)    SAMPLE_ORDER $(REAL_MODE)    GROUP_BY { id }    FLUSH_WHEN_GROUPS_CHANGE No    INPUT  FEATURE_TYPE CoordinateSystemSetter_2_OUTPUT    OUTPUT SAMPLED FEATURE_TYPE ___SAMPLED___
-# This TeeFactory is needed because Sampler will still output features if it has no OUTPUT clauses specified.
-# This way we behave nicely even if there are no output connections on the transformer. See PR#28886.
-FACTORY_DEF * TeeFactory    FACTORY_NAME Sampler_2_Sampled    INPUT FEATURE_TYPE ___SAMPLED___
-# -------------------------------------------------------------------------
-FACTORY_DEF * JSONQueryFactory    FACTORY_NAME JSONExtractor    INPUT  FEATURE_TYPE JSONFragmenter_FRAGMENTS_0_WksHgW9V8PQ=    MODE EXTRACT    JSON_DOCUMENT "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>JSON_data<closeparen>,JSONExtractor)"    READ_FROM_FILE NO    FILEPATH_OR_URL "<Unused>"    QUERIES osm_id json<openbracket><quote>place_id<quote><closebracket> latitude json<openbracket><quote>lat<quote><closebracket> longitude json<openbracket><quote>lon<quote><closebracket> classe json<openbracket><quote>class<quote><closebracket> type json<openbracket><quote>type<quote><closebracket> adresse_osm json<openbracket><quote>address<quote><closebracket><openbracket><quote>house_number<quote><closebracket><space>+<space><quote><comma><space><quote><space>+<space>json<openbracket><quote>address<quote><closebracket><openbracket><quote>road<quote><closebracket><space>+<space><quote><space><quote><space>+<space>json<openbracket><quote>address<quote><closebracket><openbracket><quote>postcode<quote><closebracket><space>+<space><quote><space><quote><space>+<space>json<openbracket><quote>address<quote><closebracket><openbracket><quote>village<quote><closebracket> adresse_osm_json json<openbracket><quote>address<quote><closebracket>    OUTPUT EVALUATED FEATURE_TYPE JSONExtractor_EVALUATED    OUTPUT REJECTED FEATURE_TYPE JSONExtractor_<REJECTED>
-FACTORY_DEF * TeeFactory   FACTORY_NAME "JSONExtractor <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE JSONExtractor_<REJECTED>
-# -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeManager_3    INPUT  FEATURE_TYPE JSONExtractor_EVALUATED    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "JSON_data" "JSON_data" "" "REMOVE" }      ATTR_ACTION { "json_type" "json_type" "" "REMOVE" }      ATTR_ACTION { "json_index" "json_index" "" "REMOVE" }      ATTR_ACTION { "type" "type" "" "REMOVE" }      ATTR_ACTION { "classe" "classe" "" "REMOVE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_3_OUTPUT
-# -------------------------------------------------------------------------
-FACTORY_DEF * VertexCreatorFactory    FACTORY_NAME VertexCreator    INPUT  FEATURE_TYPE AttributeManager_3_OUTPUT    MODE REPLACE    INDEX "<Unused>"    CONTINUE_ON_ERROR YES    XVAL "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>longitude<closeparen>,VertexCreator)"    YVAL "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>latitude<closeparen>,VertexCreator)"    ZVAL ""    USE_EXISTING_Z YES    MISSING_VAL_MODE <Unused>    COMPUTE_MEASURES_MODE CONTINUOUS    OUTPUT OUTPUT FEATURE_TYPE VertexCreator_OUTPUT
-# -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory    FACTORY_NAME CoordinateSystemSetter    INPUT  FEATURE_TYPE VertexCreator_OUTPUT    OUTPUT FEATURE_TYPE CoordinateSystemSetter_OUTPUT         @CoordSys("EPSG:4326")
-# -------------------------------------------------------------------------
-# If we're doing LAST N features, then the multiplier comes in as 0.
-# If we're doing First N, multiplier is -1.
-# For RANDOM, we need to treat LAST N as if it was first N (i.e. have a -1)
-# That is what the ? : does in the rate multiplier.
-INCLUDE [ if { {-1} == {0} && {ORIGINAL} == {ORIGINAL} } {              puts "MACRO REAL_MODE LAST"; 	         puts "MACRO REAL_RATE 1"; 	      } else {              puts "MACRO REAL_MODE ORIGINAL";              puts "MACRO REAL_RATE [expr 1 * ( -1 ? -1 : -1 ) ]"; 	      } ]
-FACTORY_DEF {*} SamplingFactory    FACTORY_NAME Sampler    COMMAND_PARM_EVALUATION SINGLE_PASS    SAMPLE_RATE $(REAL_RATE)    SAMPLE_ORDER $(REAL_MODE)    GROUP_BY { id }    FLUSH_WHEN_GROUPS_CHANGE No    INPUT  FEATURE_TYPE CoordinateSystemSetter_OUTPUT    OUTPUT SAMPLED FEATURE_TYPE ___SAMPLED___
-# This TeeFactory is needed because Sampler will still output features if it has no OUTPUT clauses specified.
-# This way we behave nicely even if there are no output connections on the transformer. See PR#28886.
-FACTORY_DEF * TeeFactory    FACTORY_NAME Sampler_Sampled    INPUT FEATURE_TYPE ___SAMPLED___
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager_4 }    INPUT  FEATURE_TYPE Geocoder_Output    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 4    DEF_VAL_COLUMN 2    NUM_OF_COLUMNS 5    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "Number" "Number" "" "uint8" "NO_OP" }      ATTR_ACTION { "Street" "Street" "" "buffer" "NO_OP" }      ATTR_ACTION { "Postcode" "Postcode" "" "uint32" "NO_OP" }      ATTR_ACTION { "City" "City" "" "buffer" "NO_OP" }      ATTR_ACTION { "Country" "Country" "" "buffer" "NO_OP" }      ATTR_ACTION { "_address" "_address" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "_latitude" "_latitude" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "_longitude" "_longitude" "" "buffer" "NO_OP" }      ATTR_ACTION { "id" "id" "" "int64" "NO_OP" }
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Sampler_SAMPLED TO OGCGEOPACKAGE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>adresse_geocode<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
+# -------------------------------------------------------------------------
+OGCGEOPACKAGE_1_DEF adresse_geocode   geopackage_type              geopackage_point   fme_feature_operation        INSERT   fme_table_handling           DROP_CREATE   fme_selection_method         MATCH_ID   fme_match_id_attribute       ""   geopackage_geometry_column   geom   geopackage_primary_index_column ""   geopackage_create_spatial_index Yes   geopackage_z_capability      OPTIONAL   geopackage_m_capability      OPTIONAL   Number                       smallint   Street                       text   Postcode                     int   City                         text   Country                      text   id                           int   latitude                     text(200)   longitude                    text(200)   adresse_osm                  text(200)   osm_id                       text(200)   adresse_osm_json             text(200)

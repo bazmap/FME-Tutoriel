@@ -1,114 +1,144 @@
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Current FME version: FME 2024.0.3.0 (20240603 - Build 24220 - WIN64)
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|System Time: 20240827140411 UTC
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\FME_2024.0.3\'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Form (floating)
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Temporary License: 35 days left.
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Machine host name is: PO-ABAZIN
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|OS Locale Name     : fr_FR
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|OS Locale Encoding : windows-1252
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Process Encoding   : UTF-8
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME API version: '4.0 20240212'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Feature type dynamique et gestion du schema/'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'Tuto - Feature type dynamique et gestion du schema.fmw'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2024.0.3.0'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Operating System: Microsoft Windows 11 64-bit  (Build 22631)
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Platform: WIN64
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|System Status: 198.02 GB of disk space available in the FME temporary folder (C:\Users\abazin\AppData\Local\Temp\wbrun_1724762383262_28328\fmetmp_5)
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|System Status: 15.69 GB of physical memory available
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|System Status: 62.77 GB of virtual memory available
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|START - ProcessID: 23136, peak process memory usage: 42332 kB, current process memory usage: 42332 kB
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\FME_2024.0.3\fme.exe' `C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Feature type dynamique et gestion du schema\wb-xlate-1724767449387_28328' `LOG_STANDARDOUT' `YES' `LOG_TIMINGS' `YES' `LogCountServerName' `50041' `LOG_STANDARDOUT' `No' `WORKBENCH_LOG_SERVER' `60583'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\abazin\AppData\Roaming\Safe Software\FME\'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Shared folders for formats are : C:\Program Files\FME\FME_2024.0.3\datasources;C:\Users\abazin\Documents\FME\Formats
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Shared folders for transformers are : C:\Users\abazin\AppData\Roaming\Safe Software\FME\Packages\24220-win64\transformers;C:\Program Files\FME\FME_2024.0.3\transformers;C:\Users\abazin\AppData\Roaming\Safe Software\FME\FME Store\Transformers
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : C:\Users\abazin\Documents\FME\CoordinateSystems
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : C:\Users\abazin\Documents\FME\CoordinateSystemExceptions
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : C:\Users\abazin\Documents\FME\CoordinateSystemGridOverrides
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : C:\Users\abazin\Documents\FME\CsmapTransformationExceptions
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Shared folders for transformer categories are : C:\Users\abazin\Documents\FME\TransformerCategories
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Mapping File Identifier is: Dynamic feature type and schema management
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|The workspace was authored with a system encoding of 'windows-1252'. This will be the encoding used for names in this translation. Re-creating the workspace with a utf-8 system will enable FME to use utf-8 names
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `PRIMARY_DEST'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `PRIMARY_DEST_DEF'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Feature type dynamique et gestion du schema'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\abazin\AppData\Local\Temp\wbrun_1724762383262_28328\fmetmp_5', set from environment variable `FME_TEMP'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\abazin\AppData\Local\Temp'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\FME_2024.0.3\'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 47.08 GB
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 35.31 GB
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Creating writer for format: 
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Creating reader for format: 
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Using MultiWriter with keyword `PRIMARY_DEST' to output data (ID_ATTRIBUTE is `multi_writer_id')
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\FME_2024.0.3\plugins/LogCount_func.dll'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (4.0 20240212)
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Emptying factory pipeline
-2024-08-27 16:04:11|   0.0|  0.0|STATS |Router and Unexpected Input Remover (RoutingFactory): Tested 0 input feature(s), wrote 0 output feature(s): 0 matched merge filters, 0 were routed to output, 0 could not be routed.
-2024-08-27 16:04:11|   0.0|  0.0|STATS |Unwanted Router Input Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2024-08-27 16:04:11|   0.0|  0.0|STATS |data_input - table A_CSV2_3 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2024-08-27 16:04:11|   0.0|  0.0|STATS |data_input - table A_CSV2_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2024-08-27 16:04:11|   0.0|  0.0|STATS |data_input - table B_CSV2_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2024-08-27 16:04:11|   0.0|  0.0|STATS |Restoring 2 feature(s) from FME feature store file `C:\Users\abazin\AppData\Local\Temp\wb-cache-Tuto - Feature type dynamique et-WRKfHy\Main_Junction -1 64 fo 0 Output  0  4b1c03e704d8bb31fdbb94fe3a6ad20791bb5000.ffs'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Creating writer for format: CSV (Comma Separated Value)
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Trying to find a DYNAMIC plugin for writer named `CSV2'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Loaded module 'CSV2' from file 'C:\Program Files\FME\FME_2024.0.3\plugins/CSV2.dll'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME API version of module 'CSV2' matches current internal version (4.0 20240212)
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Writer `CSV2_4' of type `CSV2' using group definition keyword `CSV2_4_DEF'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|CSV writer: Directive '_EXTENSION' has the value 'csv'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|CSV writer: Directive '_DELIMITER' has the value ';'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|CSV writer: Directive '_ENCODING' has the value 'UTF-8'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|CSV writer: Directive '_WRITE_BOM_FOR_UNICODE' has the value 'Yes'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|CSV writer: Directive '_QUALIFY_FIELD_NAMES' has the value 'if_needed'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|CSV writer: Directive '_QUALIFY_FIELD_VALUES' has the value 'if_needed'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|CSV writer: Directive '_FIELD_QUALIFIER_CHARACTER' has the value '"'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|CSV writer: Directive '_FIELD_QUALIFIER_ESCAPE_CHARACTER' has the value '"'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|CSV writer: Directive '_ROW_TERMINATION' has the value 'System'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|CSV writer: Directive '_WRITE_SCHEMA_FILE' has the value 'NO'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|CSV writer: Opening dataset 'C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Feature type dynamique et gestion du schema\data_output\resultat_1_data_input - table A.csv'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|CSV writer: Writing 3 feature(s) to file 'C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Feature type dynamique et gestion du schema\data_output\resultat_1_data_input - table A.csv'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|CSV writer: Opening dataset 'C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Feature type dynamique et gestion du schema\data_output\resultat_1_data_input - table B.csv'
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|CSV writer: Writing 3 feature(s) to file 'C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Feature type dynamique et gestion du schema\data_output\resultat_1_data_input - table B.csv'
-2024-08-27 16:04:11|   0.0|  0.0|STATS |Destination Feature Type Routing Correlator (RoutingFactory): Tested 6 input feature(s), wrote 6 output feature(s): 0 matched merge filters, 6 were routed to output, 0 could not be routed.
-2024-08-27 16:04:11|   0.0|  0.0|STATS |Final Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Feature output statistics for `CSV2' writer using keyword `CSV2_4':
-2024-08-27 16:04:11|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2024-08-27 16:04:11|   0.0|  0.0|STATS |                               Features Written
-2024-08-27 16:04:11|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2024-08-27 16:04:11|   0.0|  0.0|STATS |resultat_1_data_input - table A                                              3
-2024-08-27 16:04:11|   0.0|  0.0|STATS |resultat_1_data_input - table B                                              3
-2024-08-27 16:04:11|   0.0|  0.0|STATS |==============================================================================
-2024-08-27 16:04:11|   0.0|  0.0|STATS |Total Features Written                                                       6
-2024-08-27 16:04:11|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2024-08-27 16:04:11|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2024-08-27 16:04:11|   0.0|  0.0|STATS |                            Features Read Summary
-2024-08-27 16:04:11|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2024-08-27 16:04:11|   0.0|  0.0|STATS |==============================================================================
-2024-08-27 16:04:11|   0.0|  0.0|STATS |Total Features Read                                                          0
-2024-08-27 16:04:11|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2024-08-27 16:04:11|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2024-08-27 16:04:11|   0.0|  0.0|STATS |                           Features Written Summary
-2024-08-27 16:04:11|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2024-08-27 16:04:11|   0.0|  0.0|STATS |resultat_1_data_input - table A                                              3
-2024-08-27 16:04:11|   0.0|  0.0|STATS |resultat_1_data_input - table B                                              3
-2024-08-27 16:04:11|   0.0|  0.0|STATS |==============================================================================
-2024-08-27 16:04:11|   0.0|  0.0|STATS |Total Features Written                                                       6
-2024-08-27 16:04:11|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-2024-08-27 16:04:11|   0.0|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
-2024-08-27 16:04:11|   0.0|  0.0|WARN  |-~                                                                             ~-
-2024-08-27 16:04:11|   0.0|  0.0|WARN  |-~    Feature caches have been recorded at every stage of the translation.     ~-
-2024-08-27 16:04:11|   0.0|  0.0|WARN  |-~                      To inspect the recorded features,                      ~-
-2024-08-27 16:04:11|   0.0|  0.0|WARN  |-~              click the feature cache icons next to the ports.               ~-
-2024-08-27 16:04:11|   0.0|  0.0|WARN  |-~                                                                             ~-
-2024-08-27 16:04:11|   0.0|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|Translation was SUCCESSFUL with 7 warning(s) (6 feature(s) output)
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|FME Session Duration: 0.6 seconds. (CPU: 0.0s user, 0.0s system)
-2024-08-27 16:04:11|   0.0|  0.0|INFORM|END - ProcessID: 23136, peak process memory usage: 51088 kB, current process memory usage: 51024 kB
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Current FME version: FME 2024.0.3.0 (20240603 - Build 24220 - WIN64)
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|System Time: 20240828125836 UTC
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\FME_2024.0.3\'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Form (floating)
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Temporary License: 34 days left.
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Machine host name is: PO-ABAZIN
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|OS Locale Name     : fr_FR
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|OS Locale Encoding : windows-1252
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Process Encoding   : UTF-8
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME API version: '4.0 20240212'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Feature type dynamique et gestion du schema/'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'Tuto - Feature type dynamique et gestion du schema.fmw'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2024.0.3.0'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Operating System: Microsoft Windows 11 64-bit  (Build 22631)
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Platform: WIN64
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|System Status: 201.38 GB of disk space available in the FME temporary folder (C:\Users\abazin\AppData\Local\Temp\wbrun_1724849821625_30056\fmetmp_0)
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|System Status: 15.69 GB of physical memory available
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|System Status: 62.77 GB of virtual memory available
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|START - ProcessID: 33852, peak process memory usage: 42760 kB, current process memory usage: 42760 kB
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\FME_2024.0.3\fme.exe' `C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Feature type dynamique et gestion du schema\wb-xlate-1724849914193_30056' `LOG_STANDARDOUT' `YES' `LOG_TIMINGS' `YES' `LogCountServerName' `64886' `LOG_STANDARDOUT' `No' `WORKBENCH_LOG_SERVER' `64834'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\abazin\AppData\Roaming\Safe Software\FME\'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Shared folders for formats are : C:\Program Files\FME\FME_2024.0.3\datasources;C:\Users\abazin\Documents\FME\Formats
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Shared folders for transformers are : C:\Users\abazin\AppData\Roaming\Safe Software\FME\Packages\24220-win64\transformers;C:\Program Files\FME\FME_2024.0.3\transformers;C:\Users\abazin\AppData\Roaming\Safe Software\FME\FME Store\Transformers
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : C:\Users\abazin\Documents\FME\CoordinateSystems
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : C:\Users\abazin\Documents\FME\CoordinateSystemExceptions
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : C:\Users\abazin\Documents\FME\CoordinateSystemGridOverrides
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : C:\Users\abazin\Documents\FME\CsmapTransformationExceptions
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Shared folders for transformer categories are : C:\Users\abazin\Documents\FME\TransformerCategories
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Mapping File Identifier is: Dynamic feature type and schema management
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|The workspace was authored with a system encoding of 'windows-1252'. This will be the encoding used for names in this translation. Re-creating the workspace with a utf-8 system will enable FME to use utf-8 names
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `PRIMARY_DEST'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `PRIMARY_DEST_DEF'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Feature type dynamique et gestion du schema'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\abazin\AppData\Local\Temp\wbrun_1724849821625_30056\fmetmp_0', set from environment variable `FME_TEMP'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\abazin\AppData\Local\Temp'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\FME_2024.0.3\'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 47.08 GB
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 35.31 GB
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Creating writer for format: 
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Creating reader for format: 
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding CSV2 Reader with keyword CSV2_1
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME Configuration: Reading 2 dataset(s) with CSV2 reader identified by CSV2_1
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Creating reader for format: CSV (Comma Separated Value)
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|MULTI_READER(CSV2_1): Will continue past member reader failures
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|MULTI_READER(CSV2_1): Adding CSV2 Reader with keyword CSV2_1
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Using Multi Reader with keyword `CSV2_1' to read multiple datasets
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Creating reader for format: CSV (Comma Separated Value)
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `CSV2'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Loaded module 'CSV2' from file 'C:\Program Files\FME\FME_2024.0.3\plugins/CSV2.dll'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME API version of module 'CSV2' matches current internal version (4.0 20240212)
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Opening dataset 'C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Feature type dynamique et gestion du schema\data_input\data_input - table A.csv'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_DELIMITER' has the value 'auto'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_FIELD_NAMES_LINE' has the value '1'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_DATA_START_LINE' has the value '2'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_SCAN_MAX_ROWS' has the value '10000'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_READ_SKIPPED_LINES' has the value 'No'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_ENCODING' has the value 'windows-1252'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive 'FME_NAMES_ENCODING' has the value 'windows-1252'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_SKIP_DUPLICATE_DELIMITERS' has the value 'No'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_FIELD_QUALIFIER_CHARACTER' has the value '"'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_FIELD_QUALIFIER_ESCAPE_CHARACTER' has the value '"'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_TRIM_FIELD_NAME_QUALIFIERS' has the value 'Yes'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_TRIM_FIELD_VALUE_QUALIFIERS' has the value 'Yes'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_PRESERVE_SOURCE_ENCODING' has the value 'No'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_CASE_SENSITIVE_FIELD_NAMES' has the value 'Yes'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_ENFORCE_STRICT_SCHEMA' has the value 'No'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_SCAN_TYPES' has the value 'Yes'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_SCAN_ADDITIONAL_FIELDS' has the value 'No'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_CHUNK_SIZE' has the value '100000'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Using MultiWriter with keyword `PRIMARY_DEST' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\FME_2024.0.3\plugins/LogCount_func.dll'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (4.0 20240212)
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Creating reader for format: CSV (Comma Separated Value)
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `CSV2'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Opening dataset 'C:\Users\abazin\Documents\1 - BG\FME\Formation\Tutoriels\Tuto - Feature type dynamique et gestion du schema\data_input\data_input - table B.csv'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_DELIMITER' has the value 'auto'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_FIELD_NAMES_LINE' has the value '1'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_DATA_START_LINE' has the value '2'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_SCAN_MAX_ROWS' has the value '10000'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_READ_SKIPPED_LINES' has the value 'No'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_ENCODING' has the value 'windows-1252'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive 'FME_NAMES_ENCODING' has the value 'windows-1252'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_SKIP_DUPLICATE_DELIMITERS' has the value 'No'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_FIELD_QUALIFIER_CHARACTER' has the value '"'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_FIELD_QUALIFIER_ESCAPE_CHARACTER' has the value '"'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_TRIM_FIELD_NAME_QUALIFIERS' has the value 'Yes'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_TRIM_FIELD_VALUE_QUALIFIERS' has the value 'Yes'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_PRESERVE_SOURCE_ENCODING' has the value 'No'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_CASE_SENSITIVE_FIELD_NAMES' has the value 'Yes'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_ENFORCE_STRICT_SCHEMA' has the value 'No'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_SCAN_TYPES' has the value 'Yes'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_SCAN_ADDITIONAL_FIELDS' has the value 'No'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|CSV reader: Directive '_CHUNK_SIZE' has the value '100000'
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|MULTI_READER(CSV2_1): Done reading 6 features from 2 readers
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|MULTI_READER(MULTI_READER): Done reading 6 features from 1 readers
+2024-08-28 14:58:36|   0.0|  0.0|INFORM|Emptying factory pipeline
+2024-08-28 14:58:36|   0.0|  0.0|STATS |Router and Unexpected Input Remover (RoutingFactory): Tested 6 input feature(s), wrote 6 output feature(s): 6 matched merge filters, 6 were routed to output, 0 could not be routed.
+2024-08-28 14:58:36|   0.0|  0.0|STATS |Unwanted Router Input Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2024-08-28 14:58:36|   0.0|  0.0|STATS |data_input - table A_CSV2_1 Splitter (TeeFactory): Cloned 3 input feature(s) into 3 output feature(s)
+2024-08-28 14:58:36|   0.0|  0.0|STATS |data_input - table B_CSV2_1 Splitter (TeeFactory): Cloned 3 input feature(s) into 0 output feature(s)
+2024-08-28 14:58:36|   0.0|  0.0|STATS |data_input - table A_CSV2_3 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2024-08-28 14:58:36|   0.0|  0.0|STATS |Destination Feature Type Routing Correlator (RoutingFactory): Tested 3 input feature(s), wrote 3 output feature(s): 0 matched merge filters, 0 were routed to output, 3 could not be routed.
+2024-08-28 14:58:36|   0.0|  0.0|STATS |Final Output Nuker (TeeFactory): Cloned 3 input feature(s) into 0 output feature(s)
+2024-08-28 14:58:36|   0.0|  0.0|WARN  |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-08-28 14:58:36|   0.0|  0.0|WARN  |      Features not written - verify feature type fanout/dynamic settings
+2024-08-28 14:58:36|   0.0|  0.0|WARN  |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-08-28 14:58:36|   0.0|  0.0|WARN  |  (Check that fanout/dynamic feature type attribute exists and has a value)
+2024-08-28 14:58:36|   0.0|  0.0|WARN  |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-08-28 14:58:36|   0.0|  0.0|WARN  |                                                                             3
+2024-08-28 14:58:36|   0.0|  0.0|WARN  |==============================================================================
+2024-08-28 14:58:36|   0.0|  0.0|WARN  |Total features not written                                                   3
+2024-08-28 14:58:36|   0.0|  0.0|WARN  |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-08-28 14:58:36|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-08-28 14:58:36|   0.0|  0.0|STATS |                            Features Read Summary
+2024-08-28 14:58:36|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-08-28 14:58:36|   0.0|  0.0|STATS |data_input - table A                                                         3
+2024-08-28 14:58:36|   0.0|  0.0|STATS |data_input - table B                                                         3
+2024-08-28 14:58:36|   0.0|  0.0|STATS |==============================================================================
+2024-08-28 14:58:36|   0.0|  0.0|STATS |Total Features Read                                                          6
+2024-08-28 14:58:36|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-08-28 14:58:37|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-08-28 14:58:37|   0.0|  0.0|STATS |                           Features Written Summary
+2024-08-28 14:58:37|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-08-28 14:58:37|   0.0|  0.0|STATS |==============================================================================
+2024-08-28 14:58:37|   0.0|  0.0|STATS |Total Features Written                                                       0
+2024-08-28 14:58:37|   0.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-08-28 14:58:37|   0.0|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2024-08-28 14:58:37|   0.0|  0.0|WARN  |-~                                                                             ~-
+2024-08-28 14:58:37|   0.0|  0.0|WARN  |-~    Feature caches have been recorded at every stage of the translation.     ~-
+2024-08-28 14:58:37|   0.0|  0.0|WARN  |-~                      To inspect the recorded features,                      ~-
+2024-08-28 14:58:37|   0.0|  0.0|WARN  |-~              click the feature cache icons next to the ports.               ~-
+2024-08-28 14:58:37|   0.0|  0.0|WARN  |-~                                                                             ~-
+2024-08-28 14:58:37|   0.0|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2024-08-28 14:58:37|   0.0|  0.0|INFORM|Translation was SUCCESSFUL with 16 warning(s) (0 feature(s) output)
+2024-08-28 14:58:37|   0.0|  0.0|INFORM|FME Session Duration: 0.7 seconds. (CPU: 0.0s user, 0.0s system)
+2024-08-28 14:58:37|   0.0|  0.0|INFORM|END - ProcessID: 33852, peak process memory usage: 72440 kB, current process memory usage: 62052 kB
