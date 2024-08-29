@@ -1,0 +1,1238 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\FME_2024.0.3\fme.exe" "C:\Users\abazin\Documents\1 - BG\FME\Workspaces\import_ban.fmw"
+#          --temp_directory "C:\Users\abazin\Downloads"
+#          --dept_number "74"
+#          --DestDataset_OGCGEOPACKAGE "C:\Users\abazin\Downloads\ban.gpkg"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON="#&lt;space&gt;Import&lt;space&gt;des&lt;space&gt;modules&lt;space&gt;FME&lt;lf&gt;import&lt;space&gt;fme&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;#&lt;space&gt;Cr&lt;u00e9&gt;ation&lt;space&gt;d&lt;apos&gt;un&lt;space&gt;logger&lt;space&gt;pour&lt;space&gt;afficher&lt;space&gt;les&lt;space&gt;messages&lt;lf&gt;global_logger&lt;space&gt;=&lt;space&gt;fmeobjects.FMELogFile&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;"
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION="&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le but de ce workspace est de récupérer les données de la base adresse de la BAN pour les stocker dans un geopackage.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Les données sont issues dun fichier CSV gzippé récupéré depuis la BAN.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;La sortie se fait dans une table au sein d&apos;un geopackage.&lt;/p&gt;"
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="5100 976.003"
+#!   DOC_TOP_LEFT="1100 -571"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24220"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="085c7e82-62f0-48b9-9a09-1977260efa8e"
+#!   FME_DOCUMENT_PRIORGUID="80cb859e-bb4c-4001-ad85-aaf3033e8ebf,df0c34c2-9cbf-4243-bba0-76541d7e17e6,83b1ddf1-641b-4b90-8fb1-75f2efbff010"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.0.3.0 (20240603 - Build 24220 - WIN64)"
+#!   LAST_SAVE_DATE="2024-08-29T09:55:48"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="2"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="2"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="310"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE="Tuto - Adresse BAN"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="343.753 800.789"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="80"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="OGCGEOPACKAGE"
+#!   DATASET="$(DestDataset_OGCGEOPACKAGE)"
+#!   KEYWORD="OGCGEOPACKAGE_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="256"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="geopackage_type {FME_GEN_GEOMETRY} fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_ID fme_match_id_attribute &quot;&quot; geopackage_geometry_column geom geopackage_primary_index_column &quot;&quot; geopackage_create_spatial_index YES geopackage_z_capability OPTIONAL geopackage_m_capability OPTIONAL"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename text(50) fme_color text(50) fme_dataset text(50) fme_feature_type text(50) fme_fill_color text(50) fme_geometry text(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string text(50) fme_type text(50) geopackage_type text(255)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%mie_pack%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Upsert,UPSERT,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE Table Handling&quot; CREATE_IF_MISSING &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group geopackage_geometry_column%geopackage_create_spatial_index%geopackage_z_capability%geopackage_m_capability Table Creation&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_ENCODED geopackage_geometry_column Spatial Column&quot; geom &quot;GUI CHOICE geopackage_create_spatial_index Yes%No Create Spatial Index&quot; Yes &quot;GUI LOOKUP_CHOICE_ENCODED geopackage_z_capability Not&lt;space&gt;Allowed,NOT_ALLOWED%Required,REQUIRED%Optional,OPTIONAL Z&quot; OPTIONAL &quot;GUI LOOKUP_CHOICE_ENCODED geopackage_m_capability Not&lt;space&gt;Allowed,NOT_ALLOWED%Required,REQUIRED%Optional,OPTIONAL M&quot; OPTIONAL "
+#!   ATTR_INDEX_TYPES="Indexed PrimaryKey"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="24220"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="OGCGEOPACKAGE_OUT_TRANSACTION_SIZE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the GeoPackage file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the GeoPackage file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="tinyint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="mediumint"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="mediumint"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multipoint"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multicurve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multilinestring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_curve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_linestring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_compoundcurve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_circularstring"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multisurface"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_surface"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multilinestring"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multisurface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multilinestring"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multipolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_multisurface"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_surface"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_curvepolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_curvepolygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_curvepolygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_geometrycollection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_geometry"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geopackage_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="OGCGEOPACKAGE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="adresse"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="39"
+#!   FEAT_GEOMTYPE="geopackage_point"
+#!   POSITION="6200 -500"
+#!   BOUNDING_RECT="6200 -500 -1 -1"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="false"
+#!   KEYWORD="OGCGEOPACKAGE_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="2"
+#!   DYNAMIC_SCHEMA="true"
+#!   DYNAMIC_SCHEMA_SOURCES="SCHEMA_FROM_FIRST_FEATURE"
+#!   DYNAMIC_SCHEMA_FEATURE_TYPE="FIXED"
+#!   DYNAMIC_SCHEMA_FEATURE_TYPE_NAME="adresse"
+#!   DYNAMIC_SCHEMA_DEFINITION="AUTOMATIC"
+#!   DYNAMIC_SCHEMA_DEFINITION_NAME=""
+#!   DYNAMIC_SCHEMA_GEOMETRY="AUTOMATIC"
+#!   DYNAMIC_SCHEMA_GEOMETRY_NAME="from_schema_definition"
+#!   DYNAMIC_SCHEMA_ATTRIBUTES_TO_REMOVE=""
+#! >
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_feature_operation" PARM_VALUE="INSERT"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_creation_group" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_handling" PARM_VALUE="DROP_CREATE"/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_create_spatial_index" PARM_VALUE="Yes"/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_geometry_column" PARM_VALUE="geom"/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_m_capability" PARM_VALUE="OPTIONAL"/>
+#!     <DEFLINE_PARM PARM_NAME="geopackage_z_capability" PARM_VALUE="OPTIONAL"/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="OGCGEOPACKAGE_1"
+#!   OVERRIDE="-OGCGEOPACKAGE_1_DATASET"
+#!   DATASET="OGCGEOPACKAGE_1/ban.gpkg"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME_OR_ATTR temp_directory Répertoire temporaire"
+#!   DEFAULT_VALUE="C:\Users\abazin\Downloads"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI RANGE_SLIDER_OR_ATTR dept_number RANGE:(0,1000)%PRECISION:0 Numéro de département"
+#!   DEFAULT_VALUE="74"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_OGCGEOPACKAGE GeoPackage_Files(*.gpkg)|*.gpkg|All_files(*)|* GeoPackage File:"
+#!   DEFAULT_VALUE="C:\Users\abazin\Downloads\ban.gpkg"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJhbGxvd1VSTCI6ZmFsc2UsImRlZmF1bHRWYWx1ZSI6IkM6XFxVc2Vyc1xcYWJhemluXFxEb3dubG9hZHMiLCJpdGVtc1RvU2VsZWN0IjoiZm9sZGVycyIsIm5hbWUiOiJ0ZW1wX2RpcmVjdG9yeSIsInByb21wdCI6IlLDqXBlcnRvaXJlIHRlbXBvcmFpcmUiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJzaG93UHJvbXB0Ijp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6dHJ1ZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiI3NCIsIm1heGltdW0iOjEwMDAsIm1heGltdW1FeGNsdXNpdmUiOnRydWUsIm1pbmltdW0iOjAsIm1pbmltdW1FeGNsdXNpdmUiOnRydWUsIm11bHRpcGxlT2YiOjEsIm5hbWUiOiJkZXB0X251bWJlciIsInByb21wdCI6Ik51bcOpcm8gZGUgZMOpcGFydGVtZW50IiwicmVxdWlyZWQiOnRydWUsInNob3dQcm9tcHQiOnRydWUsInNob3dTbGlkZXIiOmZhbHNlLCJzbGlkZXJUaWNrSW5jcmVtZW50IjowLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6Im51bWJlciIsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiQzpcXFVzZXJzXFxhYmF6aW5cXERvd25sb2Fkc1xcYmFuLmdwa2ciLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6Ikdlb1BhY2thZ2UgRmlsZXMiLCJmaWx0ZXIiOlsiKi5ncGtnIl19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0RGF0YXNldF9PR0NHRU9QQUNLQUdFIiwicHJvbXB0IjoiR2VvUGFja2FnZSBGaWxlOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV19"
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="temp_directory" 
+#!   DEFAULT_VALUE="C:\Users\abazin\Downloads"
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI DIRNAME_OR_ATTR temp_directory Répertoire temporaire"
+#! />
+#!     <INFO NAME="dept_number" 
+#!   DEFAULT_VALUE="74"
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI RANGE_SLIDER_OR_ATTR dept_number RANGE:(0,1000)%PRECISION:0 Numéro de département"
+#! />
+#!     <INFO NAME="DestDataset_OGCGEOPACKAGE" 
+#!   DEFAULT_VALUE="C:\Users\abazin\Downloads\ban.gpkg"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI FILENAME DestDataset_OGCGEOPACKAGE GeoPackage_Files(*.gpkg)|*.gpkg|All_files(*)|* GeoPackage File:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="31"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Chaque objet récupère son schéma associé&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="5499 -194.99824998249983"
+#!   TOP_LEFT="5499 -194.99824998249983"
+#!   BOTTOM_RIGHT="5934.9901880268799 -195.99824998249983"
+#!   BOUNDING_RECT="5499 -194.99824998249983 435.99018802688028 1"
+#!   ORDER="500000000000055"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{b24e20e4-58df-4ef4-9f7b-046d65c51f6f}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="30"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="34"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Récupération des données depuis l&apos;API&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1800 -200"
+#!   TOP_LEFT="1800 -200"
+#!   BOTTOM_RIGHT="2253.9591177161774 -201"
+#!   BOUNDING_RECT="1800 -200 453.95911771617716 1"
+#!   ORDER="500000000000056"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{509196f3-97de-42d6-a82e-c11eb271a6d9}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="24"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="35"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Dégzippage des données&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Parssage du CSV&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2500 -100"
+#!   TOP_LEFT="2500 -100"
+#!   BOTTOM_RIGHT="2935.9901880268803 -101"
+#!   BOUNDING_RECT="2500 -100 435.99018802688028 1"
+#!   ORDER="500000000000057"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{717e39fe-c042-4882-8d04-b8f3eee26ceb}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="26"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="36"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Création de la géométrie&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="3300 -200"
+#!   TOP_LEFT="3300 -200"
+#!   BOTTOM_RIGHT="3753.9591177161774 -201"
+#!   BOUNDING_RECT="3300 -200 453.95911771617716 1"
+#!   ORDER="500000000000058"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{87c46d2c-9181-4e94-8794-1d30d149ee28}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="11"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="37"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Attribution d&apos;un système de coordonnées&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="3999.0179276792769 -200"
+#!   TOP_LEFT="3999.0179276792769 -200"
+#!   BOTTOM_RIGHT="4600 -201"
+#!   BOUNDING_RECT="3999.0179276792769 -200 600.9820723207232 1"
+#!   ORDER="500000000000059"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{443a0fdb-cc6d-43fb-a9ee-00b905facd0c}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="13"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="38"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Détection du schéma de la donnée&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="4800 -200"
+#!   TOP_LEFT="4800 -200"
+#!   BOTTOM_RIGHT="5235.9901880268799 -201"
+#!   BOUNDING_RECT="4800 -200 435.99018802688028 1"
+#!   ORDER="500000000000060"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{e483286a-f52a-4e06-a64d-8b2ed4c2e95b}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="28"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="23"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Initialisation&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1100 -300"
+#!   TOP_LEFT="1100 -300"
+#!   BOTTOM_RIGHT="1529.984268592686 -301"
+#!   BOUNDING_RECT="1100 -300 429.98426859268591 1"
+#!   ORDER="500000000000061"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{d059b2f4-a08f-489a-822f-24e637421538}"
+#!   COLOUR="0,0.2196078431372549,0.48627450980392156,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="2"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="41"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le but de ce workspace est de récupérer les données de la base adresse de la BAN pour les stocker dans un geopackage.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Les données sont issues dun fichier CSV gzippé récupéré depuis la BAN.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;La sortie se fait dans une table au sein d&apos;un geopackage.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1100 405.00275002750027"
+#!   TOP_LEFT="1100 405.00275002750027"
+#!   BOTTOM_RIGHT="3000.9950724507244 -87.501875018750184"
+#!   BOUNDING_RECT="1100 405.00275002750027 1900.9950724507244 492.50462504625045"
+#!   ORDER="500000000000027"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="true"
+#!   UUID="{8c8a6f22-b262-4f5c-b977-5381de368511}"
+#!   COLOUR="0,0.67450980392156867,0.22352941176470589,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="Creator"
+#!   VERSION="6"
+#!   POSITION="1100 -500"
+#!   BOUNDING_RECT="1100 -500 430 71"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23319"
+#!   SHOW_BLANK_INPUT_FT="false"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="VertexCreator"
+#!   VERSION="5"
+#!   POSITION="3300 -500"
+#!   BOUNDING_RECT="3300 -500 454 71"
+#!   ORDER="500000000000007"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23319"
+#!   SHOW_BLANK_INPUT_FT="false"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="x" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="y" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_PARAMETERS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CLOSE_LINES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="IGNORE_DUPLICATES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="INDEX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MEASURE_TYPE" PARM_VALUE="Continuous"/>
+#!     <XFORM_PARM PARM_NAME="MISSING_VAL_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MODE_NAME" PARM_VALUE="Replace with Point"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="VertexCreator"/>
+#!     <XFORM_PARM PARM_NAME="XVAL" PARM_VALUE="@Value(x)"/>
+#!     <XFORM_PARM PARM_NAME="YVAL" PARM_VALUE="@Value(y)"/>
+#!     <XFORM_PARM PARM_NAME="ZVAL" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="13"
+#!   TYPE="CoordinateSystemSetter"
+#!   VERSION="0"
+#!   POSITION="3999 -500"
+#!   BOUNDING_RECT="3999 -500 601 71"
+#!   ORDER="500000000000008"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23319"
+#!   SHOW_BLANK_INPUT_FT="false"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE="EPSG:2154"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateSystemSetter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="24"
+#!   TYPE="HTTPCaller"
+#!   VERSION="6"
+#!   POSITION="1800 -500"
+#!   BOUNDING_RECT="1800 -500 454 71"
+#!   ORDER="500000000000003"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_response_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_response_body" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADDITIONAL_PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ADDITIONAL_URL_PARAMETERS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="ADVANCED_REQUEST_PARAMETERS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="AUTH_METHOD" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AUTH_NAMED_CONNECTION" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AUTH_PASSWORD" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AUTH_USERNAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CONCURRENCY_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="CONNECTION_TIMEOUT_LENGTH" PARM_VALUE="60"/>
+#!     <XFORM_PARM PARM_NAME="CUSTOM_HEADERS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CUSTOM_HEADERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ERROR_ATTR" PARM_VALUE="_error"/>
+#!     <XFORM_PARM PARM_NAME="FILE_PATH_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="FILE_PATH_ATTR2" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="FILE_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="FOLLOW_REDIRECTS" PARM_VALUE="FOLLOW_WITH_GET"/>
+#!     <XFORM_PARM PARM_NAME="HTTPURL_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="HTTP_AUTH_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="HTTP_METHOD" PARM_VALUE="GET"/>
+#!     <XFORM_PARM PARM_NAME="HTTP_RESPONSE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LOOP_MESSAGE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MAX_HTTP_VERSION" PARM_VALUE="HTTP_2"/>
+#!     <XFORM_PARM PARM_NAME="MAX_TRANSFERS_IN_PROGRESS" PARM_VALUE="10"/>
+#!     <XFORM_PARM PARM_NAME="MINIMUM_ENCRYPTION_LEVEL" PARM_VALUE="OS_DEFAULT"/>
+#!     <XFORM_PARM PARM_NAME="MULTIPARTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTIPART_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTIPART_RESPONSE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MULTIPART_RESPONSE_HEADER_LIST_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_DIRNAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FILENAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RATE_LIMIT_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="RATE_LIMIT_INTERVAL_IN_SECONDS" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="RATE_LIMIT_MAX_REQUESTS" PARM_VALUE="5"/>
+#!     <XFORM_PARM PARM_NAME="RATE_LIMIT_REQUEST_TIMING" PARM_VALUE="BURST"/>
+#!     <XFORM_PARM PARM_NAME="REDIRECT_AUTH" PARM_VALUE="ORIGINAL_DOMAIN_ONLY"/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_ATTRS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_ATTR_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_DIR_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_FILE_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_HEADER_LIST_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RESPONSE_TYPE" PARM_VALUE="Attribute"/>
+#!     <XFORM_PARM PARM_NAME="RETRY_FAILED_TRANSFERS" PARM_VALUE="CONNECTION 429 500 501 502 503 504 505 506 507 508 509 510 511"/>
+#!     <XFORM_PARM PARM_NAME="RETRY_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="RETRY_INITIAL_BACKOFF" PARM_VALUE="500"/>
+#!     <XFORM_PARM PARM_NAME="RETRY_MAX_RETRIES" PARM_VALUE="2"/>
+#!     <XFORM_PARM PARM_NAME="SPLIT_MULTIPART_DOWNLOADS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="STATUS_CODE_ATTR" PARM_VALUE="_http_status_code"/>
+#!     <XFORM_PARM PARM_NAME="TARGET_ATTR" PARM_VALUE="_response_body"/>
+#!     <XFORM_PARM PARM_NAME="TARGET_ATTR_ENCODING" PARM_VALUE="auto-detect"/>
+#!     <XFORM_PARM PARM_NAME="TARGET_URL" PARM_VALUE="https:&lt;solidus&gt;&lt;solidus&gt;adresse.data.gouv.fr&lt;solidus&gt;data&lt;solidus&gt;ban&lt;solidus&gt;adresses&lt;solidus&gt;latest&lt;solidus&gt;csv&lt;solidus&gt;adresses-$(dept_number).csv.gz"/>
+#!     <XFORM_PARM PARM_NAME="TLS_PARAMETERS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFER_TIMEOUT_LENGTH" PARM_VALUE="90"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="UPLOAD_BODY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="UPLOAD_CONTENT_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="UPLOAD_FILE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="UPLOAD_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="UPLOAD_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="USE_COOKIES" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="VERIFY_SSL_CERTIFICATES" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="HTTPCaller_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="26"
+#!   TYPE="PythonCaller"
+#!   VERSION="5"
+#!   POSITION="2500 -500"
+#!   BOUNDING_RECT="2500 -500 436 65"
+#!   ORDER="500000000000012"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE="_creation_instance _http_status_code _response_body"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="x buffer y buffer"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="#&lt;space&gt;Import&lt;space&gt;des&lt;space&gt;modules&lt;space&gt;FME&lt;space&gt;non&lt;space&gt;n&lt;u00e9&gt;cessaire&lt;space&gt;car&lt;space&gt;d&lt;u00e9&gt;j&lt;u00e0&gt;&lt;space&gt;fait&lt;space&gt;dans&lt;space&gt;le&lt;space&gt;script&lt;space&gt;au&lt;space&gt;d&lt;u00e9&gt;marrage&lt;lf&gt;import&lt;space&gt;io&lt;lf&gt;import&lt;space&gt;gzip&lt;lf&gt;import&lt;space&gt;csv&lt;lf&gt;&lt;lf&gt;class&lt;space&gt;FeatureProcessor&lt;openparen&gt;object&lt;closeparen&gt;:&lt;lf&gt;&lt;lf&gt;&lt;tab&gt;#&lt;space&gt;Initialisation&lt;space&gt;de&lt;space&gt;la&lt;space&gt;classe&lt;lf&gt;&lt;tab&gt;def&lt;space&gt;__init__&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;#&lt;space&gt;On&lt;space&gt;r&lt;u00e9&gt;utilise&lt;space&gt;des&lt;space&gt;variables&lt;space&gt;cr&lt;u00e9&gt;&lt;u00e9&gt;es&lt;space&gt;dans&lt;space&gt;le&lt;space&gt;script&lt;space&gt;au&lt;space&gt;d&lt;u00e9&gt;marrage&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;#&lt;space&gt;Premier&lt;space&gt;message&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;global_logger.logMessageString&lt;openparen&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;apos&gt;&lt;apos&gt;.ljust&lt;openparen&gt;100&lt;comma&gt;&lt;space&gt;&lt;apos&gt;-&lt;apos&gt;&lt;closeparen&gt;&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;backslash&gt;n&lt;apos&gt;&lt;space&gt;+&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;apos&gt;PythonCaller&lt;space&gt;&lt;apos&gt;.ljust&lt;openparen&gt;100&lt;comma&gt;&lt;space&gt;&lt;apos&gt;-&lt;apos&gt;&lt;closeparen&gt;&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;backslash&gt;n&lt;apos&gt;&lt;space&gt;+&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;apos&gt;&lt;apos&gt;.ljust&lt;openparen&gt;100&lt;comma&gt;&lt;space&gt;&lt;apos&gt;-&lt;apos&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;fmeobjects.FME_WARN&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;tab&gt;#&lt;space&gt;M&lt;u00e9&gt;thode&lt;space&gt;appel&lt;u00e9&gt;e&lt;space&gt;pour&lt;space&gt;chaque&lt;space&gt;objets&lt;space&gt;&lt;openparen&gt;pass&lt;u00e9&gt;&lt;space&gt;dans&lt;space&gt;l&lt;apos&gt;argument&lt;space&gt;&lt;apos&gt;feature&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;tab&gt;def&lt;space&gt;input&lt;openparen&gt;self&lt;comma&gt;&lt;space&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;#&lt;space&gt;Ungzip&lt;space&gt;data&lt;space&gt;from&lt;space&gt;httpcaller&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;with&lt;space&gt;gzip.open&lt;openparen&gt;io.BytesIO&lt;openparen&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;_response_body&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;apos&gt;rb&lt;apos&gt;&lt;closeparen&gt;&lt;space&gt;as&lt;space&gt;gzip_file:&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;#&lt;space&gt;Convert&lt;space&gt;byte&lt;space&gt;as&lt;space&gt;text&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;with&lt;space&gt;io.TextIOWrapper&lt;openparen&gt;gzip_file&lt;comma&gt;&lt;space&gt;encoding=&lt;apos&gt;utf-8&lt;apos&gt;&lt;closeparen&gt;&lt;space&gt;as&lt;space&gt;decoded_file:&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;#&lt;space&gt;Read&lt;space&gt;CSV&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;csv_reader&lt;space&gt;=&lt;space&gt;csv.reader&lt;openparen&gt;decoded_file&lt;comma&gt;&lt;space&gt;delimiter=&lt;apos&gt;&lt;semicolon&gt;&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;#&lt;space&gt;Get&lt;space&gt;headers&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;csv_header&lt;space&gt;=&lt;space&gt;next&lt;openparen&gt;csv_reader&lt;closeparen&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;for&lt;space&gt;row&lt;space&gt;in&lt;space&gt;csv_reader:&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;#&lt;space&gt;New&lt;space&gt;object&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;newFeature&lt;space&gt;=&lt;space&gt;fmeobjects.FMEFeature&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;#&lt;space&gt;Add&lt;space&gt;attributes&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;for&lt;space&gt;index&lt;comma&gt;&lt;space&gt;column&lt;space&gt;in&lt;space&gt;enumerate&lt;openparen&gt;csv_header&lt;closeparen&gt;:&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;newFeature.setAttribute&lt;openparen&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;column&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;row&lt;openbracket&gt;index&lt;closebracket&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;#&lt;space&gt;Sortie&lt;space&gt;de&lt;space&gt;l&lt;apos&gt;objet&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;self.pyoutput&lt;openparen&gt;newFeature&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;tab&gt;#&lt;space&gt;Fermeture&lt;space&gt;de&lt;space&gt;la&lt;space&gt;classe&lt;lf&gt;&lt;tab&gt;def&lt;space&gt;close&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;global_logger.logMessageString&lt;openparen&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;apos&gt;&lt;apos&gt;.ljust&lt;openparen&gt;100&lt;comma&gt;&lt;space&gt;&lt;apos&gt;-&lt;apos&gt;&lt;closeparen&gt;&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;backslash&gt;n&lt;apos&gt;&lt;space&gt;+&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;apos&gt;PythonCaller&lt;space&gt;&lt;apos&gt;.ljust&lt;openparen&gt;100&lt;comma&gt;&lt;space&gt;&lt;apos&gt;-&lt;apos&gt;&lt;closeparen&gt;&lt;space&gt;+&lt;space&gt;&lt;apos&gt;&lt;backslash&gt;n&lt;apos&gt;&lt;space&gt;+&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;&lt;apos&gt;&lt;apos&gt;.ljust&lt;openparen&gt;100&lt;comma&gt;&lt;space&gt;&lt;apos&gt;-&lt;apos&gt;&lt;closeparen&gt;&lt;comma&gt;&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;tab&gt;fmeobjects.FME_WARN&lt;lf&gt;&lt;tab&gt;&lt;tab&gt;&lt;closeparen&gt;&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="FeatureProcessor"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="28"
+#!   TYPE="SchemaScanner"
+#!   VERSION="1"
+#!   POSITION="4799 -500"
+#!   BOUNDING_RECT="4799 -500 436 65"
+#!   ORDER="500000000000014"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;SCHEMA&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="x" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="y" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="DATE_OPTIONS_GROUP" PARM_VALUE="NO_DATE"/>
+#!     <XFORM_PARM PARM_NAME="DATE_OPTIONS_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATE_TIME_ATTRIBUTE_FORMAT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="EMPTY_ATTR_HANDLING" PARM_VALUE="SCANNER_DEFAULT"/>
+#!     <XFORM_PARM PARM_NAME="FME_DATE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="HOLD" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="IGNORE_REGEXP" PARM_VALUE="^&lt;openparen&gt;fme_&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MAX_FEATURES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NO_DATE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NUMERIC_ALLOW_LEADING_ZEROES" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_ATTR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SCHEMA_NAME_ATTR" PARM_VALUE="fme_feature_type_name"/>
+#!     <XFORM_PARM PARM_NAME="TEST_STRING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TYPE_OPTIONS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="UNBOUNDED_NUMBERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="UNBOUNDED_STRINGS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SchemaScanner"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="30"
+#!   TYPE="FeatureJoiner"
+#!   VERSION="1001"
+#!   POSITION="5499 -500"
+#!   BOUNDING_RECT="5499 -500 436 65"
+#!   ORDER="500000000000053"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24220"
+#! >
+#!     <OUTPUT_FEAT NAME="JOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="y" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_LEFT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="x" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="y" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_RIGHT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="x" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="y" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Prefer Left"/>
+#!     <XFORM_PARM PARM_NAME="GEOMETRY_HANDLING" PARM_VALUE="Prefer Left"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="fme_feature_type_name fme_feature_type_name AUTO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE" PARM_VALUE="Left"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ON_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureJoiner"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="25"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="24"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="13"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="29"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="28"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="27"
+#!   SOURCE_NODE="24"
+#!   TARGET_NODE="26"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="26"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="32"
+#!   SOURCE_NODE="28"
+#!   TARGET_NODE="30"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 LEFT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="40"
+#!   SOURCE_NODE="30"
+#!   TARGET_NODE="39"
+#!   SOURCE_PORT_DESC="fo 0 JOINED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="33"
+#!   SOURCE_NODE="28"
+#!   TARGET_NODE="30"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;SCHEMA&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 1 RIGHT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 310
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE DestDataset_OGCGEOPACKAGE_1,OGCGEOPACKAGE_OUT_FME_CONNECTION_GROUP_OGCGEOPACKAGE_1,OGCGEOPACKAGE_OUT_OVERWRITE_DATASET_OGCGEOPACKAGE_1,OGCGEOPACKAGE_OUT_DATASET_TEMPLATE_OGCGEOPACKAGE_1,OGCGEOPACKAGE_OUT_FME_GROUP_NAMED1_OGCGEOPACKAGE_1,OGCGEOPACKAGE_OUT_VERSION_OGCGEOPACKAGE_1,OGCGEOPACKAGE_OUT_GEOPACKAGE_WRT_ADV_PARM_OGCGEOPACKAGE_1,OGCGEOPACKAGE_OUT_TRANSACTION_SIZE_OGCGEOPACKAGE_1
+# ============================================================================
+DEFAULT_MACRO temp_directory C:\Users\abazin\Downloads
+
+DEFAULT_MACRO dept_number 74
+
+DEFAULT_MACRO DestDataset_OGCGEOPACKAGE C:\Users\abazin\Downloads\ban.gpkg
+
+# ============================================================================
+INCLUDE [ if {{$(temp_directory$encode)} == {}} { puts_real {Parameter 'temp_directory' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(dept_number$encode)} == {}} { puts_real {Parameter 'dept_number' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_OGCGEOPACKAGE$encode)} == {}} { puts_real {Parameter 'DestDataset_OGCGEOPACKAGE' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD PRIMARY_DEST
+PRIMARY_DEST_DATASET_ORDER BY_ID
+PRIMARY_DEST_FIRST_WRITER_ID 0
+PRIMARY_DEST_TYPE{0} OGCGEOPACKAGE
+PRIMARY_DEST_KEYWORD{0} OGCGEOPACKAGE_1
+PRIMARY_DEST_GEN_DIRECTIVES{0} DESTINATION_DATASETTYPE_VALIDATION,Yes,OVERWRITE_DATASET,NO,ADD_WRITER_NEXT_ACTION,automatic,WRITE_NULLS,YES,DATASET_TEMPLATE,,GEOPACKAGE_WRT_ADV_PARM,,VERSION,1.2,EXPOSE_PRIMARY_KEY_ATTRIBUTE,YES,COORDINATE_SYSTEM_GRANULARITY,FEATURE_TYPE,ENFORCE_GEOMETRY_COLUMN_CONSTRAINTS,YES,ENCODE_FEATURE_TYPE_AND_ATTR_NAMES,YES,TRANSACTION_SIZE,5000
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "OGCGEOPACKAGE_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER OGCGEOPACKAGE OGCGEOPACKAGE_1
+# ============================================================================
+# The following GUI line prompts for a file to be used as the
+# destination of the GEOPACKAGE File. The user input is stored
+# in a macro, which is then used to define the dataset to be written.
+GUI MULTIFILE DestDataset_OGCGEOPACKAGE_1 GeoPackage_Files(*.gpkg)|*.gpkg|All_files(*)|* GeoPackage File:
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_FME_CONNECTION_GROUP_OGCGEOPACKAGE_1 
+GUI OPTIONAL DISCLOSUREGROUP OGCGEOPACKAGE_OUT_FME_CONNECTION_GROUP_OGCGEOPACKAGE_1 OGCGEOPACKAGE_OUT_NAMED_CONNECTION%OGCGEOPACKAGE_OUT_OVERWRITE_DATASET_OGCGEOPACKAGE_1%OGCGEOPACKAGE_OUT_DATASET_TEMPLATE_OGCGEOPACKAGE_1 Database Connection
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_OVERWRITE_DATASET_OGCGEOPACKAGE_1 NO
+OGCGEOPACKAGE_1_OVERWRITE_DATASET "$(OGCGEOPACKAGE_OUT_OVERWRITE_DATASET_OGCGEOPACKAGE_1)"
+GUI OPTIONAL ACTIVECHECK OGCGEOPACKAGE_OUT_OVERWRITE_DATASET_OGCGEOPACKAGE_1 YES%NO,OGCGEOPACKAGE_OUT_DATASET_TEMPLATE_OGCGEOPACKAGE_1 Overwrite Existing Database:
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_DATASET_TEMPLATE_OGCGEOPACKAGE_1 
+OGCGEOPACKAGE_1_DATASET_TEMPLATE "$(OGCGEOPACKAGE_OUT_DATASET_TEMPLATE_OGCGEOPACKAGE_1)"
+GUI OPTIONAL FILENAME_MUSTEXIST OGCGEOPACKAGE_OUT_DATASET_TEMPLATE_OGCGEOPACKAGE_1 GeoPackage_Files(*.gpkg)|*.gpkg|All_files(*)|* Template File:
+GUI LOOKUP OGCGEOPACKAGE_OUT_DATASET_TEMPLATE_OGCGEOPACKAGE_1 <Unused>, 
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_FME_GROUP_NAMED1_OGCGEOPACKAGE_1 
+GUI OPTIONAL DISCLOSUREGROUP OGCGEOPACKAGE_OUT_FME_GROUP_NAMED1_OGCGEOPACKAGE_1 OGCGEOPACKAGE_OUT_VERSION_OGCGEOPACKAGE_1 Writer Parameters
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_VERSION_OGCGEOPACKAGE_1 1.2
+OGCGEOPACKAGE_1_VERSION "$(OGCGEOPACKAGE_OUT_VERSION_OGCGEOPACKAGE_1)"
+GUI CHOICE OGCGEOPACKAGE_OUT_VERSION_OGCGEOPACKAGE_1 1.0%1.1%1.2%1.3 Version:
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_GEOPACKAGE_WRT_ADV_PARM_OGCGEOPACKAGE_1 
+GUI OPTIONAL DISCLOSUREGROUP OGCGEOPACKAGE_OUT_GEOPACKAGE_WRT_ADV_PARM_OGCGEOPACKAGE_1 OGCGEOPACKAGE_OUT_TRANSACTION_SIZE_OGCGEOPACKAGE_1 Advanced
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_TRANSACTION_SIZE_OGCGEOPACKAGE_1 5000
+OGCGEOPACKAGE_1_TRANSACTION_SIZE "$(OGCGEOPACKAGE_OUT_TRANSACTION_SIZE_OGCGEOPACKAGE_1)"
+GUI INTEGER OGCGEOPACKAGE_OUT_TRANSACTION_SIZE_OGCGEOPACKAGE_1 Features Per Transaction:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_DESTINATION_DATASETTYPE_VALIDATION_OGCGEOPACKAGE_1 Yes
+OGCGEOPACKAGE_1_DESTINATION_DATASETTYPE_VALIDATION "$(OGCGEOPACKAGE_OUT_DESTINATION_DATASETTYPE_VALIDATION_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_COORDINATE_SYSTEM_GRANULARITY_OGCGEOPACKAGE_1 FEATURE_TYPE
+OGCGEOPACKAGE_1_COORDINATE_SYSTEM_GRANULARITY "$(OGCGEOPACKAGE_OUT_COORDINATE_SYSTEM_GRANULARITY_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES "$(OGCGEOPACKAGE_OUT_ENCODE_FEATURE_TYPE_AND_ATTR_NAMES_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_ENFORCE_GEOMETRY_COLUMN_CONSTRAINTS_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_ENFORCE_GEOMETRY_COLUMN_CONSTRAINTS "$(OGCGEOPACKAGE_OUT_ENFORCE_GEOMETRY_COLUMN_CONSTRAINTS_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_EXPOSE_PRIMARY_KEY_ATTRIBUTE_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_EXPOSE_PRIMARY_KEY_ATTRIBUTE "$(OGCGEOPACKAGE_OUT_EXPOSE_PRIMARY_KEY_ATTRIBUTE_OGCGEOPACKAGE_1)"
+DEFAULT_MACRO OGCGEOPACKAGE_OUT_WRITE_NULLS_OGCGEOPACKAGE_1 YES
+OGCGEOPACKAGE_1_WRITE_NULLS "$(OGCGEOPACKAGE_OUT_WRITE_NULLS_OGCGEOPACKAGE_1)"
+# ============================================================================
+OGCGEOPACKAGE_1_GENERATE_FME_BUILD_NUM 24220
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_OGCGEOPACKAGE_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER OGCGEOPACKAGE OGCGEOPACKAGE_1
+DEFAULT_MACRO DestDataset_OGCGEOPACKAGE_1 $(DestDataset_OGCGEOPACKAGE)
+OGCGEOPACKAGE_1_DATASET "$(DestDataset_OGCGEOPACKAGE_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)import_ban.log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 2
+LOG_MAX_RECORDED_FEATURES 2
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.0.3.0 (20240603 - Build 24220 - WIN64)"
+MAPPING_FILE_ID Tuto<space>-<space>Adresse<space>BAN
+DEFAULT_MACRO DATASET_KEYWORD_OGCGEOPACKAGE_1 OGCGEOPACKAGE_1
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+FME_BEGIN_PYTHON_ENC #<space>Import<space>des<space>modules<space>FME<lf>import<space>fme<lf>import<space>fmeobjects<lf><lf>#<space>Cr<u00e9>ation<space>d<apos>un<space>logger<space>pour<space>afficher<space>les<space>messages<lf>global_logger<space>=<space>fmeobjects.FMELogFile<openparen><closeparen><space>
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME import_ban
+MACRO FME_VIEWER_APP fmedatainspector
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+Tcl2 proc Creator_CoordSysRemover {} {   global FME_CoordSys;   set FME_CoordSys {}; }
+MACRO Creator_XML     NOT_ACTIVATED
+MACRO Creator_CLASSIC NOT_ACTIVATED
+MACRO Creator_2D3D    2D_GEOMETRY
+MACRO Creator_COORDS  <Unused>
+INCLUDE [ if { {Geometry Object} == {Geometry Object} } {            puts {MACRO Creator_XML *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Coordinate List} } {            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {3D Coordinate List} } {            puts {MACRO Creator_2D3D 3D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Min/Max Box} } {            set comment {                We need to turn the COORDS which are                    minX minY maxX maxY                into a full polygon list of coordinates            };            set splitCoords [split [string trim {<Unused>}]];            if { [llength $splitCoords] > 4} {               set trimmedCoords {};               foreach item $splitCoords { if { $item != {} } {lappend trimmedCoords $item} };               set splitCoords $trimmedCoords;            };            if { [llength $splitCoords] != 4 } {                error {Creator: Coordinate list is expected to be a space delimited list of four numbers as 'minx miny maxx maxy' - `<Unused>' is invalid};            };            set minX [lindex $splitCoords 0];            set minY [lindex $splitCoords 1];            set maxX [lindex $splitCoords 2];            set maxY [lindex $splitCoords 3];            puts "MACRO Creator_COORDS $minX $minY $minX $maxY $maxX $maxY $maxX $minY $minX $minY";            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+FACTORY_DEF {$(Creator_XML)} CreationFactory    FACTORY_NAME { Creator_XML_Creator }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______        @Geometry(FROM_ENCODED_STRING,<lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>US_ASCII<quote><space>standalone=<quote>no<quote><space>?<gt><lt>geometry<space>dimension=<quote>2<quote><gt><lt>null<solidus><gt><lt><solidus>geometry<gt>) }
+FACTORY_DEF {$(Creator_CLASSIC)} CreationFactory    FACTORY_NAME { Creator_CLASSIC_Creator }    $(Creator_2D3D) { $(Creator_COORDS) }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______ }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Creator_Cloner }    INPUT FEATURE_TYPE _____CREATED______        @Tcl2(Creator_CoordSysRemover)        @CoordSys()    NUMBER_OF_COPIES { 1 }    COPY_NUMBER_ATTRIBUTE { "_creation_instance" }    OUTPUT { FEATURE_TYPE Creator_CREATED        fme_feature_type Creator         }
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_CREATED Brancher -1 25"   INPUT FEATURE_TYPE Creator_CREATED   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+# Combine the two "file path attribute" parameters into one value.
+DEFAULT_MACRO HTTPCaller_3_FILE_PATH_ATTR
+INCLUDE [ 	if { {<Unused>} == {<Unused>} } { 		puts {MACRO HTTPCaller_3_FILE_PATH_ATTR "<Unused>"}; 	} else { 		puts {MACRO HTTPCaller_3_FILE_PATH_ATTR "<Unused>"}; 	} ]
+FACTORY_DEF {*} HTTPFactory    FACTORY_NAME { HTTPCaller_3 }       INPUT  FEATURE_TYPE Creator_CREATED    TARGET_URL { "@EvaluateExpression(FDIV,STRING_ENCODED,https:<solidus><solidus>adresse.data.gouv.fr<solidus>data<solidus>ban<solidus>adresses<solidus>latest<solidus>csv<solidus>adresses-$(dept_number$encode).csv.gz,HTTPCaller_3)" }    HTTP_METHOD { GET }    SAVE_FILE { NO }    OUTPUT_FILENAME { "<Unused>" }    OUTPUT_DIRECTORY { "<Unused>" }    FILE_EXTENSION { "<Unused>" }    TARGET_ATTR { "_response_body" }    FILE_PATH_ATTR { $(HTTPCaller_3_FILE_PATH_ATTR) }    UPLOAD_FILE { "<Unused>" }    UPLOAD_BODY { "<Unused>" }    MULTIPART_UPLOAD { <Unused> }    UPLOAD_CONTENT_TYPE { "<Unused>" }    COMBINED_MULTIPART_TABLE {  }    REQUEST_HEADER_TABLE {  }    ADDITIONAL_URL_PARAMETERS {  }    AUTH_USERNAME { "<Unused>" }    AUTH_PASSWORD { "<Unused>" }    AUTH_METHOD { "<Unused>" }    TARGET_ATTRIBUTE_ENCODING { auto-detect }    RESPONSE_HEADER_LIST_ATTR { "" }    STATUS_CODE_ATTR { "_http_status_code" }    ERROR_ATTR { "_error" }    CONNECTION_TIMEOUT_LENGTH { 60 }    TRANSFER_TIMEOUT_LENGTH { 90 }    FOLLOW_REDIRECTS { FOLLOW_WITH_GET }    REDIRECT_AUTH { ORIGINAL_DOMAIN_ONLY }    VERIFY_SSL_CERTIFICATES { Yes }    NAMED_CONNECTION { "<Unused>" }    USE_COOKIES { No }    MAX_TRANSFERS_IN_PROGRESS { 10 }    MAX_HTTP_VERSION { HTTP_2 }    RATE_LIMIT_MAX_REQUESTS { 5 }    RATE_LIMIT_INTERVAL_IN_SECONDS { 1 }    RATE_LIMIT_REQUEST_TIMING { BURST }    RETRY_FAILED_TRANSFERS { CONNECTION 429 500 501 502 503 504 505 506 507 508 509 510 511 }    RETRY_MAX_RETRIES { 2 }    RETRY_INITIAL_BACKOFF { 500 }    SPLIT_MULTIPART_RESPONSE { NO }    MULTIPART_RESPONSE_HEADER_LIST_ATTR { "<Unused>" }    MINIMUM_ENCRYPTION_LEVEL { "OS_DEFAULT" }    OUTPUT { OUTPUT FEATURE_TYPE HTTPCaller_3_Output          }    OUTPUT { REJECTED FEATURE_TYPE HTTPCaller_3_<REJECTED>          }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "HTTPCaller_3 <REJECTED> Transformer Output Nuker"   INPUT FEATURE_TYPE HTTPCaller_3_<REJECTED>
+# -------------------------------------------------------------------------
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+FACTORY_DEF {*} PythonFactory    FACTORY_NAME { PythonCaller }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT  FEATURE_TYPE HTTPCaller_3_Output    SYMBOL_NAME { FeatureProcessor }    SOURCE_CODE { #<space>Import<space>des<space>modules<space>FME<space>non<space>n<u00e9>cessaire<space>car<space>d<u00e9>j<u00e0><space>fait<space>dans<space>le<space>script<space>au<space>d<u00e9>marrage<lf>import<space>io<lf>import<space>gzip<lf>import<space>csv<lf><lf>class<space>FeatureProcessor<openparen>object<closeparen>:<lf><lf><tab>#<space>Initialisation<space>de<space>la<space>classe<lf><tab>def<space>__init__<openparen>self<closeparen>:<lf><tab><tab><lf><tab><tab>#<space>On<space>r<u00e9>utilise<space>des<space>variables<space>cr<u00e9><u00e9>es<space>dans<space>le<space>script<space>au<space>d<u00e9>marrage<lf><tab><tab><lf><tab><tab>#<space>Premier<space>message<lf><tab><tab>global_logger.logMessageString<openparen><lf><tab><tab><tab><apos><apos>.ljust<openparen>100<comma><space><apos>-<apos><closeparen><space>+<space><apos><backslash>n<apos><space>+<lf><tab><tab><tab><apos>PythonCaller<space><apos>.ljust<openparen>100<comma><space><apos>-<apos><closeparen><space>+<space><apos><backslash>n<apos><space>+<lf><tab><tab><tab><apos><apos>.ljust<openparen>100<comma><space><apos>-<apos><closeparen><comma><lf><tab><tab><tab>fmeobjects.FME_WARN<lf><tab><tab><closeparen><lf><lf><lf><lf><tab>#<space>M<u00e9>thode<space>appel<u00e9>e<space>pour<space>chaque<space>objets<space><openparen>pass<u00e9><space>dans<space>l<apos>argument<space><apos>feature<apos><closeparen><lf><tab>def<space>input<openparen>self<comma><space>feature<closeparen>:<lf><tab><tab><lf><tab><tab>#<space>Ungzip<space>data<space>from<space>httpcaller<lf><tab><tab>with<space>gzip.open<openparen>io.BytesIO<openparen>feature.getAttribute<openparen><apos>_response_body<apos><closeparen><closeparen><comma><space><apos>rb<apos><closeparen><space>as<space>gzip_file:<lf><tab><tab><tab>#<space>Convert<space>byte<space>as<space>text<lf><tab><tab><tab>with<space>io.TextIOWrapper<openparen>gzip_file<comma><space>encoding=<apos>utf-8<apos><closeparen><space>as<space>decoded_file:<lf><tab><tab><tab><tab>#<space>Read<space>CSV<lf><tab><tab><tab><tab>csv_reader<space>=<space>csv.reader<openparen>decoded_file<comma><space>delimiter=<apos><semicolon><apos><closeparen><lf><tab><tab><tab><tab>#<space>Get<space>headers<lf><tab><tab><tab><tab>csv_header<space>=<space>next<openparen>csv_reader<closeparen><lf><tab><tab><tab><tab><lf><tab><tab><tab><tab>for<space>row<space>in<space>csv_reader:<lf><tab><tab><tab><tab><tab><lf><tab><tab><tab><tab><tab>#<space>New<space>object<lf><tab><tab><tab><tab><tab>newFeature<space>=<space>fmeobjects.FMEFeature<openparen><closeparen><lf><tab><tab><tab><tab><tab><lf><tab><tab><tab><tab><tab>#<space>Add<space>attributes<lf><tab><tab><tab><tab><tab>for<space>index<comma><space>column<space>in<space>enumerate<openparen>csv_header<closeparen>:<lf><tab><tab><tab><tab><tab><tab>newFeature.setAttribute<openparen><lf><tab><tab><tab><tab><tab><tab><tab>column<comma><lf><tab><tab><tab><tab><tab><tab><tab>row<openbracket>index<closebracket><lf><tab><tab><tab><tab><tab><tab><closeparen><lf><lf><tab><tab><tab><tab><tab>#<space>Sortie<space>de<space>l<apos>objet<lf><tab><tab><tab><tab><tab>self.pyoutput<openparen>newFeature<closeparen><lf><lf><lf><lf><tab>#<space>Fermeture<space>de<space>la<space>classe<lf><tab>def<space>close<openparen>self<closeparen>:<lf><tab><tab><lf><tab><tab>global_logger.logMessageString<openparen><lf><tab><tab><tab><apos><apos>.ljust<openparen>100<comma><space><apos>-<apos><closeparen><space>+<space><apos><backslash>n<apos><space>+<lf><tab><tab><tab><apos>PythonCaller<space><apos>.ljust<openparen>100<comma><space><apos>-<apos><closeparen><space>+<space><apos><backslash>n<apos><space>+<lf><tab><tab><tab><apos><apos>.ljust<openparen>100<comma><space><apos>-<apos><closeparen><comma><lf><tab><tab><tab>fmeobjects.FME_WARN<lf><tab><tab><closeparen><lf> }    OUTPUT { PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} VertexCreatorFactory    FACTORY_NAME { VertexCreator }    INPUT  FEATURE_TYPE PythonCaller_OUTPUT    MODE { REPLACE }    INDEX { "<Unused>" }    CONTINUE_ON_ERROR YES    XVAL { "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>x<closeparen>,VertexCreator)" }    YVAL { "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>y<closeparen>,VertexCreator)" }    ZVAL { "" }    USE_EXISTING_Z YES    ALLOW_DUPLICATES { "<Unused>" }    CLOSE_LINES { "<Unused>" }    ADD_MODE_VERSION 5    MISSING_VAL_MODE { <Unused> }    COMPUTE_MEASURES_MODE { CONTINUOUS }    COMMAND_PARM_EVALUATION SINGLE_PASS    OUTPUT { OUTPUT FEATURE_TYPE VertexCreator_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { CoordinateSystemSetter }    INPUT  FEATURE_TYPE VertexCreator_OUTPUT    OUTPUT { FEATURE_TYPE CoordinateSystemSetter_OUTPUT         @CoordSys("EPSG:2154")          }
+# -------------------------------------------------------------------------
+INCLUDE [    set dateTimeFormat FME;    set fixDateAttrs No;    switch NO_DATE {       NO_DATE                    { set dateTimeFormat <Invalid>; }       DATE_TIME_ATTRIBUTE_FORMAT { set dateTimeFormat {<Unused>};                                    set fixDateAttrs Yes; }    };    puts "MACRO SSFACT_DATE_TIME_ATTRIBUTE_FORMAT $dateTimeFormat";    puts "MACRO SSFACT_FIX_DATE_ATTRS $fixDateAttrs";    ;    set inferEmptySchema No;    set scanEmptyAttributes No;    switch SCANNER_DEFAULT {       IGNORE              {}       SCANNER_DEFAULT     { set scanEmptyAttributes Yes; }       INFER_EMPTY_SCHEMA  { set inferEmptySchema Yes; }    };    puts "MACRO SSFACT_INFER_EMPTY_SCHEMA $inferEmptySchema";    puts "MACRO SSFACT_SCAN_EMPTY_ATTRIBUTES $scanEmptyAttributes"; ]
+FACTORY_DEF {*} SchemaScannerFactory    FACTORY_NAME { SchemaScanner }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE CoordinateSystemSetter_OUTPUT    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    SCHEMA_FEATURES_FIRST { Yes }    SCHEMA_DEF_NAME_ATTR { "fme_feature_type_name" }    IGNORE_ATTRIBUTES_CONTAINING_REGEX { ^<openparen>fme_<closeparen> }    IGNORE_ATTRIBUTES_CASE_SENSITIVE { No }    COERCE_CHAR_TO_VARCHAR { Yes }    FIX_DATE_ATTRS { $(SSFACT_FIX_DATE_ATTRS) }    INFER_EMPTY_SCHEMA { $(SSFACT_INFER_EMPTY_SCHEMA) }    TEMPLATE_SCHEMA { x,buffer,y,buffer }    TYPE_OPTIONS { SCAN_USE_UNBOUNDED_STRINGS=Yes                   SCAN_USE_UNBOUNDED_TYPES=Yes                   SCAN_PREFER_UNSIGNED_TYPES_FOR_INTEGERS=Yes                   SCAN_FOR_DATE_ATTRIBUTES=Yes                   SCAN_FORCE_DATETIME=No                   SCAN_EMPTY_ATTRIBUTES=$(SSFACT_SCAN_EMPTY_ATTRIBUTES);                   SCAN_FOR_DATE_ATTRIBUTE_FORMAT=$(SSFACT_DATE_TIME_ATTRIBUTE_FORMAT)                   SCAN_ALLOW_NUMERIC_LEADING_ZEROES=Yes }    OUTPUT { SCANNED FEATURE_TYPE SchemaScanner_Output        }    OUTPUT { SCHEMA FEATURE_TYPE SchemaScanner_<SCHEMA>           }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} FeatureJoinerFactory    FACTORY_NAME { FeatureJoiner }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT LEFT FEATURE_TYPE SchemaScanner_Output    INPUT RIGHT FEATURE_TYPE SchemaScanner_<SCHEMA>    JOIN_MODE { Left }    JOIN_KEYS { fme_feature_type_name fme_feature_type_name AUTO }    ATTR_CONFLICT_RES { USE_LEFT }    PRESERVE_VALUES_FROM_UNJOINED_FEATURES { YES }    GEOMETRY_HANDLING { USE_LEFT }    OUTPUT { JOINED FEATURE_TYPE FeatureJoiner_JOINED        }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC FeatureJoiner_JOINED TO OGCGEOPACKAGE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>adresse<closeparen>,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>adresse<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+OGCGEOPACKAGE_1_DEF_TEMPLATE adresse   geopackage_type              {FME_GEN_GEOMETRY}   fme_feature_operation        INSERT   fme_table_handling           DROP_CREATE   fme_selection_method         MATCH_ID   fme_match_id_attribute       ""   geopackage_geometry_column   geom   geopackage_primary_index_column ""   geopackage_create_spatial_index Yes   geopackage_z_capability      OPTIONAL   geopackage_m_capability      OPTIONAL   fme_schema_feature_first     Yes   fme_schema_attributes_to_remove ""
